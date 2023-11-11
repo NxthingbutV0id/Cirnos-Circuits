@@ -1,4 +1,4 @@
-# Cirno's Circuits (V0.1.0)
+# Cirno's Circuits (V0.1.1)
 
 A random assortment of parts and logic for Logic World
 

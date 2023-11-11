@@ -1082,6 +1082,7 @@ LargeMux:
                     x: 270
                     y: 0
                     z: 0
+    logicCode: CirnosCircuits.AsciiDisplay
     placingRules:
         offsetDimensions:
             x: 2
