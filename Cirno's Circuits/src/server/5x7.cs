@@ -865,7 +865,16 @@ namespace CirnosCircuits
                     0b10010,
                     0b00000,
                     0b00000
-                } // ~
+                }, // ~
+                {
+                    0b11111,
+                    0b11111,
+                    0b11111,
+                    0b11111,
+                    0b11111,
+                    0b11111,
+                    0b11111
+                } // Full White
             };
 
         protected override void DoLogicUpdate()
