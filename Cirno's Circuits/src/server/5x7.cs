@@ -905,6 +905,7 @@ namespace CirnosCircuits
             }
 
             address -= 32;
+            row--;
 
             return IntToBoolArray(asciiTable[address, row]);
         }
