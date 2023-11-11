@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>CirnosCircuits</RootNamespace>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="LogicAPI">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicAPI.Server">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Server\LogicAPI.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicLog">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicLog.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicWorld.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
