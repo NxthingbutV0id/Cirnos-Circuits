@@ -1,5 +1,5 @@
 ExtraLargeMux:
-    column: Cirnos Circuits
+    column: Cirno's Circuits
     category: Multiplexers
     prefab:
         blocks:
@@ -263,7 +263,7 @@ ExtraLargeMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 SmallMux:
-    column: Cirnos Circuits
+    column: Cirno's Circuits
     category: Multiplexers
     prefab:
         blocks:
@@ -357,7 +357,7 @@ SmallMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 MediumMux:
-    column: Cirnos Circuits
+    column: Cirno's Circuits
     category: Multiplexers
     prefab:
         blocks:
@@ -481,7 +481,7 @@ MediumMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 LargeMux:
-    column: Cirnos Circuits
+    column: Cirno's Circuits
     category: Multiplexers
     prefab:
         blocks:
@@ -655,7 +655,7 @@ LargeMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 4BitDecoder:
-    column: Cirnos Circuits
+    column: Cirno's Circuits
     category: Decoders
     prefab:
         blocks:
@@ -909,7 +909,7 @@ LargeMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 5x7 Display Rom:
-    column: Cirnos Circuits
+    column: Cirno's Circuits
     category: Misc
     prefab:
         blocks:
@@ -1083,6 +1083,510 @@ LargeMux:
                     y: 0
                     z: 0
     logicCode: CirnosCircuits.AsciiDisplay
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Sideways AND:
+    column: Cirno's Circuits
+    category: Sideways Logic
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 151
+                    g: 0
+                    b: 0
+                scale:
+                    x: 1
+                    y: 1
+                    z: 1
+                position:
+                    x: 0
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.25
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.75
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.SidewaysAND
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Sideways OR:
+    column: Cirno's Circuits
+    category: Sideways Logic
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 0
+                    g: 151
+                    b: 0
+                scale:
+                    x: 1
+                    y: 1
+                    z: 1
+                position:
+                    x: 0
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.25
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.75
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.SidewaysOR
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Sideways XOR:
+    column: Cirno's Circuits
+    category: Sideways Logic
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 0
+                    g: 0
+                    b: 151
+                scale:
+                    x: 1
+                    y: 1
+                    z: 1
+                position:
+                    x: 0
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.25
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.75
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.SidewaysXOR
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Sideways NAND:
+    column: Cirno's Circuits
+    category: Sideways Logic
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 0
+                    g: 151
+                    b: 151
+                scale:
+                    x: 1
+                    y: 1
+                    z: 1
+                position:
+                    x: 0
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.25
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.75
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: true
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.SidewaysNAND
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Sideways NOR:
+    column: Cirno's Circuits
+    category: Sideways Logic
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 151
+                    g: 0
+                    b: 151
+                scale:
+                    x: 1
+                    y: 1
+                    z: 1
+                position:
+                    x: 0
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.25
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.75
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: true
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.SidewaysNOR
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Sideways XNOR:
+    column: Cirno's Circuits
+    category: Sideways Logic
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 151
+                    g: 151
+                    b: 0
+                scale:
+                    x: 1
+                    y: 1
+                    z: 1
+                position:
+                    x: 0
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.25
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.75
+                    z: 0.5
+                rotation:
+                    x: 89.98022
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: true
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.SidewaysXNOR
     placingRules:
         offsetDimensions:
             x: 2

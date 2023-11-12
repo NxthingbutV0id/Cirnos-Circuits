@@ -1,4 +1,4 @@
-# Cirno's Circuits (V0.1.3)
+# Cirno's Circuits (V0.1.4)
 
 A random assortment of parts and logic for Logic World
 
@@ -10,6 +10,9 @@ A random assortment of parts and logic for Logic World
 	
 	- 7 bit ascii value (first 32 are blank)
 	- 3 bit row selector (runs top down, 1 to 7, 0 is always blank)
+
+- (*New!*) Sideways Logic Gates!
+	- And, Or, Xor, Nand, Nor, and Xnor BUT ON THEIR SIDES!!!!
 
 ## Install
 
