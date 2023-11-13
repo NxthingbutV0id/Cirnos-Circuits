@@ -1,6 +1,6 @@
-# Cirno's Circuits (V0.1.4)
+# Cirno's Circuits (V0.1.4.1)
 
-A random assortment of parts and logic for Logic World
+A random assortment of parts and logic for Logic World (v0.91.1)
 
 ## Includes:
 
@@ -11,9 +11,11 @@ A random assortment of parts and logic for Logic World
 	- 7 bit ascii value (first 32 are blank)
 	- 3 bit row selector (runs top down, 1 to 7, 0 is always blank)
 
-- (*New!*) Sideways Logic Gates!
+- Sideways Logic Gates!
 	- And, Or, Xor, Nand, Nor, and Xnor BUT ON THEIR SIDES!!!!
+
+- Byte Relay (Not yet Implemented)
 
 ## Install
 
-To install the mod, Download the "Cirno's Circuits" folder and place it in the "GameData" folder in your Logic World directory
+To install the mod, Click on the green "<> Code" button and download the zip. In the file where this README.md file is contained, there is a folder called "Cirno's Circuits", Copy that  folder and place it in the "GameData" folder in your Logic World directory

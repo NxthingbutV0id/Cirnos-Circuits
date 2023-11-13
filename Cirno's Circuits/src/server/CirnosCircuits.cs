@@ -1,5 +1,6 @@
 ﻿using LogicAPI.Server.Components;
 using System.Collections.Generic;
+using LogicWorld.LogicCode.Relay;
 
 namespace CirnosCircuits {
 	static class Utils {
@@ -196,37 +197,72 @@ namespace CirnosCircuits {
 
 	public class SidewaysAND : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Outputs[0].On = Inputs[0].On && Inputs[1].On;
+			Outputs[0].On = Inputs[0].On & Inputs[1].On;
 		}
 	}
 
 	public class SidewaysOR : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Outputs[0].On = Inputs[0].On || Inputs[1].On;
+			Outputs[0].On = Inputs[0].On | Inputs[1].On;
 		}
 	}
 
 	public class SidewaysXOR : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Outputs[0].On = Inputs[0].On != Inputs[1].On;
+			Outputs[0].On = Inputs[0].On ^ Inputs[1].On;
 		}
 	}
 
 	public class SidewaysNAND : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Outputs[0].On = !(Inputs[0].On && Inputs[1].On);
+			Outputs[0].On = !(Inputs[0].On & Inputs[1].On);
 		}
 	}
 
 	public class SidewaysNOR : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Outputs[0].On = !(Inputs[0].On || Inputs[1].On);
+			Outputs[0].On = !(Inputs[0].On | Inputs[1].On);
 		}
 	}
 
 	public class SidewaysXNOR : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Outputs[0].On = Inputs[0].On == Inputs[1].On;
+			Outputs[0].On = !(Inputs[0].On ^ Inputs[1].On);
+		}
+	}
+
+	public class ByteRelay : LogicComponent { //TODO: Implement Circuit Design
+		private readonly IInputPeg[] inputsA = new IInputPeg[8];
+		private readonly IInputPeg[] inputsB = new IInputPeg[8];
+		private bool wasOpen;
+
+		protected override void Initialize() {
+            for (int i = 0; i < 8; i++) {
+                inputsA[i] = Inputs[i];
+                inputsB[i] = Inputs[i + 8];
+
+            }
+        }
+
+		protected override void DoLogicUpdate() {
+			bool isOpen = Inputs[16].On;
+
+			if (wasOpen != isOpen) {
+				if (isOpen) {
+					for (int i = 0; i < 8; i++) {
+						inputsA[i].AddPhasicLinkWith(inputsB[i]);
+					}
+				} else {
+					for (int i = 0; i < 8; i++) {
+						inputsA[i].RemovePhasicLinkWith(inputsB[i]);
+					}
+				}
+				wasOpen = isOpen;
+			}
+		}
+
+		public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) {
+			return inputIndex == 16;
 		}
 	}
 }

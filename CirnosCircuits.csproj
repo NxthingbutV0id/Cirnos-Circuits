@@ -20,6 +20,12 @@
     <Reference Include="LogicWorld">
       <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicWorld.dll</HintPath>
     </Reference>
+    <Reference Include="LogicWorld.ClientCode">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicWorld.ClientCode.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.SharedCode">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Server\LogicWorld.SharedCode.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
