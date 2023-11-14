@@ -1,11 +1,11 @@
-# Cirno's Circuits (V0.1.4.1)
+# Cirno's Circuits (V0.1.6)
 
 A random assortment of parts and logic for Logic World (v0.91.1)
 
 ## Includes:
 
 - Stackable Multiplexers
-- 4 to 16 Decoder
+- 2, 3, and 4 bit Decoders
 - Ascii to 5x7 matrix
 	
 	- 7 bit ascii value (first 32 are blank)
@@ -14,7 +14,8 @@ A random assortment of parts and logic for Logic World (v0.91.1)
 - Sideways Logic Gates!
 	- And, Or, Xor, Nand, Nor, and Xnor BUT ON THEIR SIDES!!!!
 
-- Byte Relay (Not yet Implemented)
+- Byte Relay (Experimental)
+- Byte D Latch
 
 ## Install
 

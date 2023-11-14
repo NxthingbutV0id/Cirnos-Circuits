@@ -1,16 +1,31 @@
 ﻿using LogicAPI.Server.Components;
 using System.Collections.Generic;
-using LogicWorld.LogicCode.Relay;
+using System.Data;
 
 namespace CirnosCircuits {
-	static class Utils {
-		public static void ClearOutputs(IReadOnlyList<IOutputPeg> outputs) {
+	public class Utils {
+		private IReadOnlyList<IInputPeg> inputs;
+		private IReadOnlyList<IOutputPeg> outputs;
+
+        public Utils(IReadOnlyList<IInputPeg> inputs, IReadOnlyList<IOutputPeg> outputs) { 
+			this.inputs = inputs;
+			this.outputs = outputs;
+		}
+
+		/// <summary>
+		/// Clears the Output pins to all 0
+		/// </summary>
+		public void ClearOutputs() {
 			for (int i = 0; i < outputs.Count; i++) {
 				outputs[i].On = false;
 			}
 		}
 
-		public static int InputValue(IReadOnlyList<IInputPeg> inputs) {
+        /// <summary>
+        /// Turns the binary value of the Input pins into a number.
+        /// </summary>
+        /// <returns></returns>
+        public int InputValue() {
 			int result = 0;
 
 			for (int i = 0; i < inputs.Count; i++) {
@@ -20,6 +35,35 @@ namespace CirnosCircuits {
 			}
 
 			return result;
+		}
+
+        /// <summary>
+        /// Turns the binary value of the Input pins into a number, from the startPin, up to AND INCLUDING the endPin.
+        /// </summary>
+        /// <param name="startPin"></param>
+        /// <param name="endPin"></param>
+        /// <returns></returns>
+        public int InputValue(int startPin, int endPin) {
+            int result = 0;
+
+            for (int i = 0; i < endPin + 1 && i < inputs.Count; i++) {
+                if (inputs[i + startPin].On) {
+                    result |= 1 << i;
+                }
+            }
+
+            return result;
+        }
+
+		/// <summary>
+		/// Sets the Output Pins to the binary representation of the argument
+		/// </summary>
+		/// <param name="value"></param>
+        public void OutputValue(uint value) {
+			for (int i = 0; i < outputs.Count; i++) {
+				bool bit = (value & (1 << i)) == 1;
+				outputs[i].On = bit;
+			}
 		}
 	}
 
@@ -124,73 +168,72 @@ namespace CirnosCircuits {
 			};
 
 		protected override void DoLogicUpdate() {
-			int value = Utils.InputValue(Inputs);
+            Utils utils = new(Inputs, Outputs);
+            int address = utils.InputValue(0, 7) - 32;
+            int row = utils.InputValue(7, 9) - 1;
 
-			bool[] outer = AsciiValues(value);
+            if (address < 0 || row < 0) {
+				utils.ClearOutputs();
+                return;
+            }
 
-			for (int i = 0; i < Outputs.Count; i++) {
+			bool[] outer = IntToBoolArray(asciiTable[address, row]);
+
+
+            for (int i = 0; i < Outputs.Count; i++) {
 				Outputs[i].On = outer[i];
 			}
 		}
 
-		private bool[] AsciiValues(int input) {
-			int address = input & 0x7f;
-			int row = input >> 7;
-			if (address < 32 || row == 0) {
-				return new bool[] { false, false, false, false, false };
-			}
-
-			address -= 32;
-			row--;
-
-			return IntToBoolArray(asciiTable[address, row]);
-		}
-
 		private static bool[] IntToBoolArray(int num) {
-			return new bool[] {
-				((num >> 4) & 1) == 1,
-				((num >> 3) & 1) == 1,
-				((num >> 2) & 1) == 1,
-				((num >> 1) & 1) == 1,
-				(num & 1) == 1
-			};
+			bool[] result = new bool[5];
+
+			for (int i = 0; i < 5; i++) {
+                result[i] = (num & (1 << i)) == 1;
+            }
+
+			return result;
 		}
 	}
 
-	public class IVBitDecoder : LogicComponent {
+	public class Decoder : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Utils.ClearOutputs(Outputs);
+			Utils utils = new(Inputs, Outputs);
+			utils.ClearOutputs();
 
-			int index = Utils.InputValue(Inputs);
+			int index = utils.InputValue();
 
 			Outputs[index].On = true;
 		}
 	}
 
-	public class ExtraLargeMux : LogicComponent {
+    public class ExtraLargeMux : LogicComponent {
 		protected override void DoLogicUpdate() {
-			int selecter = Utils.InputValue(Inputs) & 0xf;
+            Utils utils = new(Inputs, Outputs);
+            int selecter = utils.InputValue(0, 4);
 			Outputs[0].On = Inputs[selecter + 4].On;
 		}
 	}
 
 	public class LargeMux : LogicComponent {
 		protected override void DoLogicUpdate() {
-			int selecter = Utils.InputValue(Inputs) & 7;
+            Utils utils = new(Inputs, Outputs);
+            int selecter = utils.InputValue(0, 3);
 			Outputs[0].On = Inputs[selecter + 3].On;
 		}
 	}
 
 	public class MediumMux : LogicComponent {
 		protected override void DoLogicUpdate() {
-			int selecter = Utils.InputValue(Inputs) & 3;
-			Outputs[0].On = Inputs[selecter + 2].On;
+            Utils utils = new(Inputs, Outputs);
+            int selecter = utils.InputValue(0, 2);
+            Outputs[0].On = Inputs[selecter + 2].On;
 		}
 	}
 
 	public class SmallMux : LogicComponent {
 		protected override void DoLogicUpdate() {
-			var select = Inputs[2].On ? 1 : 0;
+			int select = Inputs[2].On ? 1 : 0;
 			Outputs[0].On = Inputs[select].On;
 		}
 	}
@@ -231,7 +274,7 @@ namespace CirnosCircuits {
 		}
 	}
 
-	public class ByteRelay : LogicComponent { //TODO: Implement Circuit Design
+	public class ByteRelay : LogicComponent {
 		private readonly IInputPeg[] inputsA = new IInputPeg[8];
 		private readonly IInputPeg[] inputsB = new IInputPeg[8];
 		private bool wasOpen;
@@ -240,7 +283,6 @@ namespace CirnosCircuits {
             for (int i = 0; i < 8; i++) {
                 inputsA[i] = Inputs[i];
                 inputsB[i] = Inputs[i + 8];
-
             }
         }
 
@@ -263,6 +305,29 @@ namespace CirnosCircuits {
 
 		public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) {
 			return inputIndex == 16;
+		}
+	}
+
+	public class ByteDLatch : LogicComponent {
+		private bool[]? data;
+        private int enablePin;
+        protected override void Initialize() {
+            enablePin = Outputs.Count; // the index of the enable signal is the last input pin
+			data = new bool[Outputs.Count];
+        }
+
+        protected override void DoLogicUpdate() {
+			if (data != null) {
+				if (Inputs[enablePin].On) {
+					for (int i = 0; i < data.Length; i++) {
+						data[i] = Inputs[i].On;
+					}
+				}
+
+				for (int i = 0; i < Outputs.Count; i++) {
+					Outputs[i].On = data[i];
+				}
+			}
 		}
 	}
 }
