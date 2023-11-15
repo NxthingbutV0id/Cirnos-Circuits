@@ -25,46 +25,6 @@ ExtraLargeMux:
                 length: 0.6
                 position:
                     x: 0
-                    y: 8
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
-            -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 8
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
-            -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 8
-                    z: -0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
-            -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 8
-                    z: -1.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
-            -
-                length: 0.6
-                position:
-                    x: 0
                     y: 0.25
                     z: 0.5
                 rotation:
@@ -219,6 +179,46 @@ ExtraLargeMux:
                     z: 0.5
                 rotation:
                     x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 8
+                    z: 0.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 8
+                    z: -0.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 8
+                    z: -0.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 8
+                    z: -1.25
+                rotation:
+                    x: 0
                     y: 0
                     z: 0
         outputs:
@@ -383,26 +383,6 @@ MediumMux:
                 length: 0.6
                 position:
                     x: 0
-                    y: 2
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
-            -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 2
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
-            -
-                length: 0.6
-                position:
-                    x: 0
                     y: 0.25
                     z: 0.5
                 rotation:
@@ -437,6 +417,26 @@ MediumMux:
                     z: 0.5
                 rotation:
                     x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 2
+                    z: 0.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 2
+                    z: -0.25
+                rotation:
+                    x: 0
                     y: 0
                     z: 0
         outputs:
