@@ -1,6 +1,5 @@
 ﻿using LogicAPI.Server.Components;
 using System.Collections.Generic;
-using System.Data;
 
 namespace CirnosCircuits {
 	public class Utils {

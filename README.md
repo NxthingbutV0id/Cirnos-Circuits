@@ -14,7 +14,7 @@ A random assortment of parts and logic for Logic World (v0.91.1)
 - Sideways Logic Gates!
 	- And, Or, Xor, Nand, Nor, and Xnor BUT ON THEIR SIDES!!!!
 
-- Byte Relay (Experimental)
+- Byte Relay
 - Byte D Latch
 
 ## Install
