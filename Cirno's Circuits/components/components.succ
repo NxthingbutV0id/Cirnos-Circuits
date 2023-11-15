@@ -232,7 +232,7 @@ ExtraLargeMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.ExtraLargeMux
+    logicCode: CirnosCircuits.Multiplexer
     placingRules:
         offsetDimensions:
             x: 2
@@ -326,7 +326,7 @@ SmallMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.SmallMux
+    logicCode: CirnosCircuits.Multiplexer
     placingRules:
         offsetDimensions:
             x: 2
@@ -450,7 +450,7 @@ MediumMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.MediumMux
+    logicCode: CirnosCircuits.Multiplexer
     placingRules:
         offsetDimensions:
             x: 2
@@ -624,7 +624,7 @@ LargeMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.LargeMux
+    logicCode: CirnosCircuits.Multiplexer
     placingRules:
         offsetDimensions:
             x: 2
@@ -1527,8 +1527,8 @@ Sideways XNOR:
         primaryEdgePositions:
         secondaryEdgePositions:
 ByteRelay:
-    column: Byte Parts
-    category: 1 Byte Relay
+    column: Cirno's Circuits
+    category: Byte Size
     prefab:
         blocks:
             -
@@ -2120,7 +2120,7 @@ ByteRelay:
         secondaryEdgePositions:
 Byte D Latch:
     column: Cirno's Circuits
-    category: Memory
+    category: Byte Size
     prefab:
         blocks:
             -

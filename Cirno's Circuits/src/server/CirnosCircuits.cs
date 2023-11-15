@@ -38,7 +38,7 @@ namespace CirnosCircuits {
 		}
 
         /// <summary>
-        /// Turns the binary value of the Input pins into a number, from the startPin, up to AND INCLUDING the endPin.
+        /// Turns the binary value of the Input pins into a number, from the startPin, up to but not including the endPin.
         /// </summary>
         /// <param name="startPin"></param>
         /// <param name="endPin"></param>
@@ -46,7 +46,7 @@ namespace CirnosCircuits {
         public int InputValue(int startPin, int endPin) {
             int result = 0;
 
-            for (int i = 0; i < endPin + 1 && i < inputs.Count; i++) {
+            for (int i = 0; (i < endPin) && (i + startPin < inputs.Count); i++) {
                 if (inputs[i + startPin].On) {
                     result |= 1 << i;
                 }
@@ -55,10 +55,27 @@ namespace CirnosCircuits {
             return result;
         }
 
-		/// <summary>
-		/// Sets the Output Pins to the binary representation of the argument
+        /// <summary>
+		/// Turns the binary value of the Input pins into a number, starting from the offset to the end
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="offset"></param>
+		/// <returns></returns>
+        public int InputValue(int offset) {
+            int result = 0;
+
+            for (int i = 0; i + offset < inputs.Count; i++) {
+                if (inputs[i + offset].On) {
+                    result |= 1 << i;
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Sets the Output Pins to the binary representation of the argument
+        /// </summary>
+        /// <param name="value"></param>
         public void OutputValue(uint value) {
 			for (int i = 0; i < outputs.Count; i++) {
 				bool bit = (value & (1 << i)) == 1;
@@ -168,9 +185,9 @@ namespace CirnosCircuits {
 			};
 
 		protected override void DoLogicUpdate() {
-            Utils utils = new(Inputs, Outputs);
+            var utils = new Utils(Inputs, Outputs);
             int address = utils.InputValue(0, 7) - 32;
-            int row = utils.InputValue(7, 9) - 1;
+            int row = utils.InputValue(7, 10) - 1;
 
             if (address < 0 || row < 0) {
 				utils.ClearOutputs();
@@ -198,8 +215,8 @@ namespace CirnosCircuits {
 
 	public class Decoder : LogicComponent {
 		protected override void DoLogicUpdate() {
-			Utils utils = new(Inputs, Outputs);
-			utils.ClearOutputs();
+            var utils = new Utils(Inputs, Outputs);
+            utils.ClearOutputs();
 
 			int index = utils.InputValue();
 
@@ -207,36 +224,22 @@ namespace CirnosCircuits {
 		}
 	}
 
-    public class ExtraLargeMux : LogicComponent {
-		protected override void DoLogicUpdate() {
-            Utils utils = new(Inputs, Outputs);
-            int selecter = utils.InputValue(0, 4);
-			Outputs[0].On = Inputs[selecter + 4].On;
-		}
-	}
+	public class Multiplexer : LogicComponent {
+        protected override void DoLogicUpdate() {
+			int pins = Inputs.Count;
+			int leftCount = 0;
+			var utils = new Utils(Inputs, Outputs);
 
-	public class LargeMux : LogicComponent {
-		protected override void DoLogicUpdate() {
-            Utils utils = new(Inputs, Outputs);
-            int selecter = utils.InputValue(0, 3);
-			Outputs[0].On = Inputs[selecter + 3].On;
-		}
-	}
+			while (pins != 1) {
+				pins >>= 1;
+				leftCount++;
+			}
 
-	public class MediumMux : LogicComponent {
-		protected override void DoLogicUpdate() {
-            Utils utils = new(Inputs, Outputs);
-            int selecter = utils.InputValue(0, 2);
-            Outputs[0].On = Inputs[selecter + 2].On;
-		}
-	}
+			int selecter = utils.InputValue(Inputs.Count - leftCount);
 
-	public class SmallMux : LogicComponent {
-		protected override void DoLogicUpdate() {
-			int select = Inputs[2].On ? 1 : 0;
-			Outputs[0].On = Inputs[select].On;
-		}
-	}
+			Outputs[0].On = Inputs[selecter].On;
+        }
+    }
 
 	public class SidewaysAND : LogicComponent {
 		protected override void DoLogicUpdate() {
@@ -309,7 +312,7 @@ namespace CirnosCircuits {
 	}
 
 	public class ByteDLatch : LogicComponent {
-		private bool[]? data;
+		private bool[] data = new bool[1];
         private int enablePin;
         protected override void Initialize() {
             enablePin = Outputs.Count; // the index of the enable signal is the last input pin
