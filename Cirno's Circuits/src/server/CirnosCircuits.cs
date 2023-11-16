@@ -75,13 +75,25 @@ namespace CirnosCircuits {
         /// Sets the Output Pins to the binary representation of the argument
         /// </summary>
         /// <param name="value"></param>
-        public void OutputValue(uint value) {
+        public void OutputValue(int value) {
 			for (int i = 0; i < outputs.Count; i++) {
 				bool bit = (value & (1 << i)) == 1;
 				outputs[i].On = bit;
 			}
 		}
-	}
+
+        /// <summary>
+        /// Sets the Output Pins to the binary representation of the argument
+        /// </summary>
+        /// <param name="outputPins"></param>
+        /// <param name="value"></param>
+        public void OutputValue(int outputPins, int value) {
+            for (int i = 0; i < outputPins; i++) {
+                bool bit = (value & (1 << i)) == 1;
+                outputs[i].On = bit;
+            }
+        }
+    }
 
 	public class AsciiDisplay : LogicComponent {
 		public readonly int[,] asciiTable = new int[,] {
