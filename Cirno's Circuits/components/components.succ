@@ -2833,7 +2833,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499999
+                    y: 0.25
                     z: -15.5
                 rotation:
                     x: 0
@@ -2843,7 +2843,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499999
+                    y: 0.75
                     z: -15.5
                 rotation:
                     x: 0
@@ -2873,7 +2873,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2500001
+                    y: 0.25
                     z: -15
                 rotation:
                     x: 0
@@ -2883,7 +2883,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7500001
+                    y: 0.75
                     z: -15
                 rotation:
                     x: 0
@@ -2913,7 +2913,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499995
+                    y: 0.25
                     z: -14
                 rotation:
                     x: 0
@@ -2923,7 +2923,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499995
+                    y: 0.75
                     z: -14
                 rotation:
                     x: 0
@@ -2953,7 +2953,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499994
+                    y: 0.25
                     z: -13.5
                 rotation:
                     x: 0
@@ -2963,7 +2963,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499994
+                    y: 0.75
                     z: -13.5
                 rotation:
                     x: 0
@@ -2973,7 +2973,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 1.249999
+                    y: 1.25
                     z: -13.5
                 rotation:
                     x: 0
@@ -2993,7 +2993,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499993
+                    y: 0.25
                     z: -13
                 rotation:
                     x: 0
@@ -3003,7 +3003,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499993
+                    y: 0.75
                     z: -13
                 rotation:
                     x: 0
@@ -3013,7 +3013,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 1.249999
+                    y: 1.25
                     z: -13
                 rotation:
                     x: 0
@@ -3033,7 +3033,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499998
+                    y: 0.25
                     z: -11.75
                 rotation:
                     x: 0
@@ -3043,7 +3043,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499998
+                    y: 0.75
                     z: -11.75
                 rotation:
                     x: 0
@@ -3073,7 +3073,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499996
+                    y: 0.25
                     z: -11.25
                 rotation:
                     x: 0
@@ -3083,7 +3083,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499996
+                    y: 0.75
                     z: -11.25
                 rotation:
                     x: 0
@@ -3123,7 +3123,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7500002
+                    y: 0.75
                     z: -10.75
                 rotation:
                     x: 0
@@ -3153,7 +3153,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2500002
+                    y: 0.25
                     z: -9.5
                 rotation:
                     x: 0
@@ -3203,7 +3203,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499998
+                    y: 0.75
                     z: -9
                 rotation:
                     x: 0
@@ -3233,7 +3233,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499999
+                    y: 0.25
                     z: -8.5
                 rotation:
                     x: 0
@@ -3243,7 +3243,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499999
+                    y: 0.75
                     z: -8.5
                 rotation:
                     x: 0
@@ -3273,7 +3273,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499998
+                    y: 0.25
                     z: -7.25
                 rotation:
                     x: 0
@@ -3283,7 +3283,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499998
+                    y: 0.75
                     z: -7.25
                 rotation:
                     x: 0
@@ -3313,7 +3313,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499996
+                    y: 0.25
                     z: -6.75
                 rotation:
                     x: 0
@@ -3323,7 +3323,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499996
+                    y: 0.75
                     z: -6.75
                 rotation:
                     x: 0
@@ -3353,7 +3353,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499999
+                    y: 0.25
                     z: -6.25
                 rotation:
                     x: 0
@@ -3363,7 +3363,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499999
+                    y: 0.75
                     z: -6.25
                 rotation:
                     x: 0
@@ -3433,7 +3433,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499998
+                    y: 0.25
                     z: -4.5
                 rotation:
                     x: 0
@@ -3443,7 +3443,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499998
+                    y: 0.75
                     z: -4.5
                 rotation:
                     x: 0
@@ -3513,7 +3513,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.2499994
+                    y: 0.25
                     z: -2.75
                 rotation:
                     x: 0
@@ -3523,7 +3523,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 0.7499994
+                    y: 0.75
                     z: -2.75
                 rotation:
                     x: 0
@@ -3533,7 +3533,7 @@ BCD To Binary Converter:
                 length: 0.6
                 position:
                     x: -0.5
-                    y: 1.249999
+                    y: 1.25
                     z: -2.75
                 rotation:
                     x: 0
@@ -4190,7 +4190,7 @@ BCD To Binary Converter:
                     x: 0
                     y: 0
                     z: 270
-    logicCode: BCDToBinary
+    logicCode: CirnosCircuits.BCDToBinary
     placingRules:
         offsetDimensions:
             x: 2
@@ -4444,7 +4444,7 @@ Byte Comparator:
                     x: 0
                     y: 0
                     z: 270
-    logicCode: Comparator
+    logicCode: CirnosCircuits.Comparator
     placingRules:
         offsetDimensions:
             x: 2
@@ -4858,7 +4858,7 @@ Word Comparator:
                     x: 0
                     y: 0
                     z: 270
-    logicCode: Comparator
+    logicCode: CirnosCircuits.Comparator
     placingRules:
         offsetDimensions:
             x: 2
