@@ -31,7 +31,7 @@ namespace CirnosCircuits {
 
 			for (int i = offset; i < inputs.Count; i++) {
 				if (inputs[i].On) {
-					result |= 1ul << i;
+					result |= 1ul << i - offset;
 				}
 			}
 

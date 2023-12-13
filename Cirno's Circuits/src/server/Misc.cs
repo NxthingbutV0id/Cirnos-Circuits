@@ -17,9 +17,9 @@ namespace CirnosCircuits {
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
 
-			int offset = (int) Math.Floor(Math.Log2(Inputs.Count));
+			int offset = 1 << (int) Math.Floor(Math.Log2(Inputs.Count));
 
-			int selecter = (int) utils.GrabValueFromInput(Inputs.Count - 1 - offset);
+			int selecter = (int) utils.GrabValueFromInput(offset);
 
 			Outputs[0].On = Inputs[selecter].On;
 		}
