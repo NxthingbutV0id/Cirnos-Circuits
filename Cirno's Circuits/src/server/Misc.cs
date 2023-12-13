@@ -1,6 +1,4 @@
 ﻿using LogicAPI.Server.Components;
-using LogicWorld;
-using LogicWorld.ClientCode;
 
 namespace CirnosCircuits {
 	public class Decoder : LogicComponent {

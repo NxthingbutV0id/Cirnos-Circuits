@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
-using LogicAPI.Server;
-using LogicLog;
 
 namespace CirnosCircuits {
 	public class Utils {

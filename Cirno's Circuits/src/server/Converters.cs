@@ -1,5 +1,4 @@
 ﻿using LogicAPI.Server.Components;
-using LogicWorld.ClientCode;
 
 namespace CirnosCircuits {
 	public class BCDToBinary : LogicComponent {
