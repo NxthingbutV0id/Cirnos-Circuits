@@ -1,8 +1,8 @@
-using LogicAPI.Server;
+﻿using LogicAPI.Server;
 using LogicLog;
 
 public class Loader : ServerMod {
-    protected override void Initialize() {
-        Logger.Info("Cirno's Circuits initialized");
-    }
+	protected override void Initialize() {
+		Logger.Info("Cirno's Circuits initialized! Enjoy the mod ᗜˬᗜ");
+	}
 }

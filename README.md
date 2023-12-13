@@ -1,6 +1,7 @@
-# Cirno's Circuits (V0.1.7)
+# Cirno's Circuits (V0.2.0)
 
-A random assortment of parts and logic for Logic World (v0.91.1)
+A mod for Logic World. (v0.91.1)
+A random asortment of parts and logic.
 
 ## Includes:
 
@@ -15,7 +16,24 @@ A random assortment of parts and logic for Logic World (v0.91.1)
 	- And, Or, Xor, Nand, Nor, and Xnor BUT ON THEIR SIDES!!!!
 
 - Byte Relay
-- Byte D Latch
+- Byte D-Latch
+- Byte and Word Comparators
+- BCD to binary Converter (19 digits to QWord)
+
+## Future Plans (in order of priority):
+
+- Word, DWord, and QWord relays
+- Word, DWord, and QWord D-latches
+- Dword and QWord Comparators
+- Pulse Extender
+- Edge Detecter
+- Binary to BCD 7 segment with ripple blanking and negative support
+- Binary to Fractional BCD (fixed point values from 0.0000... to 0.9999...)
+- 14 and 16 segment displays
+- Text input to Binary (type in "42", output 101010)
+- JK Flip-Flop + D Flip-Flop
+- Program Counter
+- Stack
 
 ## Install
 

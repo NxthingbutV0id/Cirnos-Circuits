@@ -1,100 +1,7 @@
 ﻿using LogicAPI.Server.Components;
-using System.Collections.Generic;
+using LogicWorld.ClientCode;
 
 namespace CirnosCircuits {
-	public class Utils {
-		private IReadOnlyList<IInputPeg> inputs;
-		private IReadOnlyList<IOutputPeg> outputs;
-
-        public Utils(IReadOnlyList<IInputPeg> inputs, IReadOnlyList<IOutputPeg> outputs) { 
-			this.inputs = inputs;
-			this.outputs = outputs;
-		}
-
-		/// <summary>
-		/// Clears the Output pins to all 0
-		/// </summary>
-		public void ClearOutputs() {
-			for (int i = 0; i < outputs.Count; i++) {
-				outputs[i].On = false;
-			}
-		}
-
-        /// <summary>
-        /// Turns the binary value of the Input pins into a number.
-        /// </summary>
-        /// <returns></returns>
-        public int InputValue() {
-			int result = 0;
-
-			for (int i = 0; i < inputs.Count; i++) {
-				if (inputs[i].On) {
-					result |= 1 << i;
-				}
-			}
-
-			return result;
-		}
-
-        /// <summary>
-        /// Turns the binary value of the Input pins into a number, from the startPin, up to but not including the endPin.
-        /// </summary>
-        /// <param name="startPin"></param>
-        /// <param name="endPin"></param>
-        /// <returns></returns>
-        public int InputValue(int startPin, int endPin) {
-            int result = 0;
-
-            for (int i = 0; (i < endPin) && (i + startPin < inputs.Count); i++) {
-                if (inputs[i + startPin].On) {
-                    result |= 1 << i;
-                }
-            }
-
-            return result;
-        }
-
-        /// <summary>
-		/// Turns the binary value of the Input pins into a number, starting from the offset to the end
-		/// </summary>
-		/// <param name="offset"></param>
-		/// <returns></returns>
-        public int InputValue(int offset) {
-            int result = 0;
-
-            for (int i = 0; i + offset < inputs.Count; i++) {
-                if (inputs[i + offset].On) {
-                    result |= 1 << i;
-                }
-            }
-
-            return result;
-        }
-
-        /// <summary>
-        /// Sets the Output Pins to the binary representation of the argument
-        /// </summary>
-        /// <param name="value"></param>
-        public void OutputValue(int value) {
-			for (int i = 0; i < outputs.Count; i++) {
-				bool bit = (value & (1 << i)) == 1;
-				outputs[i].On = bit;
-			}
-		}
-
-        /// <summary>
-        /// Sets the Output Pins to the binary representation of the argument
-        /// </summary>
-        /// <param name="outputPins"></param>
-        /// <param name="value"></param>
-        public void OutputValue(int outputPins, int value) {
-            for (int i = 0; i < outputPins; i++) {
-                bool bit = (value & (1 << i)) == 1;
-                outputs[i].On = bit;
-            }
-        }
-    }
-
 	public class AsciiDisplay : LogicComponent {
 		public readonly int[,] asciiTable = new int[,] {
 				{0b00000,0b00000,0b00000,0b00000,0b00000,0b00000,0b00000},// space
@@ -196,19 +103,19 @@ namespace CirnosCircuits {
 			};
 
 		protected override void DoLogicUpdate() {
-            var utils = new Utils(Inputs, Outputs);
-            int address = utils.InputValue(0, 7) - 32;
-            int row = utils.InputValue(7, 10) - 1;
+			var utils = new Utils(Inputs, Outputs);
+			var address = utils.InputValue<int>(0, 7) - 32;
+			var row = utils.InputValue<int>(7, 10) - 1;
 
-            if (address < 0 || row < 0) {
+			if (address < 0 || row < 0) {
 				utils.ClearOutputs();
-                return;
-            }
+				return;
+			}
 
 			bool[] outer = IntToBoolArray(asciiTable[address, row]);
 
 
-            for (int i = 0; i < Outputs.Count; i++) {
+			for (int i = 0; i < Outputs.Count; i++) {
 				Outputs[i].On = outer[i];
 			}
 		}
@@ -217,131 +124,10 @@ namespace CirnosCircuits {
 			bool[] result = new bool[5];
 
 			for (int i = 0; i < 5; i++) {
-                result[i] = (num & (1 << i)) == 1;
-            }
+				result[i] = (num & (1 << i)) == 1;
+			}
 
 			return result;
-		}
-	}
-
-	public class Decoder : LogicComponent {
-		protected override void DoLogicUpdate() {
-            var utils = new Utils(Inputs, Outputs);
-            utils.ClearOutputs();
-
-			int index = utils.InputValue();
-
-			Outputs[index].On = true;
-		}
-	}
-
-	public class Multiplexer : LogicComponent {
-        protected override void DoLogicUpdate() {
-			int pins = Inputs.Count;
-			int leftCount = 0;
-			var utils = new Utils(Inputs, Outputs);
-
-			while (pins != 1) {
-				pins >>= 1;
-				leftCount++;
-			}
-
-			int selecter = utils.InputValue(Inputs.Count - leftCount);
-
-			Outputs[0].On = Inputs[selecter].On;
-        }
-    }
-
-	public class SidewaysAND : LogicComponent {
-		protected override void DoLogicUpdate() {
-			Outputs[0].On = Inputs[0].On & Inputs[1].On;
-		}
-	}
-
-	public class SidewaysOR : LogicComponent {
-		protected override void DoLogicUpdate() {
-			Outputs[0].On = Inputs[0].On | Inputs[1].On;
-		}
-	}
-
-	public class SidewaysXOR : LogicComponent {
-		protected override void DoLogicUpdate() {
-			Outputs[0].On = Inputs[0].On ^ Inputs[1].On;
-		}
-	}
-
-	public class SidewaysNAND : LogicComponent {
-		protected override void DoLogicUpdate() {
-			Outputs[0].On = !(Inputs[0].On & Inputs[1].On);
-		}
-	}
-
-	public class SidewaysNOR : LogicComponent {
-		protected override void DoLogicUpdate() {
-			Outputs[0].On = !(Inputs[0].On | Inputs[1].On);
-		}
-	}
-
-	public class SidewaysXNOR : LogicComponent {
-		protected override void DoLogicUpdate() {
-			Outputs[0].On = !(Inputs[0].On ^ Inputs[1].On);
-		}
-	}
-
-	public class ByteRelay : LogicComponent {
-		private readonly IInputPeg[] inputsA = new IInputPeg[8];
-		private readonly IInputPeg[] inputsB = new IInputPeg[8];
-		private bool wasOpen;
-
-		protected override void Initialize() {
-            for (int i = 0; i < 8; i++) {
-                inputsA[i] = Inputs[i];
-                inputsB[i] = Inputs[i + 8];
-            }
-        }
-
-		protected override void DoLogicUpdate() {
-			bool isOpen = Inputs[16].On;
-
-			if (wasOpen != isOpen) {
-				if (isOpen) {
-					for (int i = 0; i < 8; i++) {
-						inputsA[i].AddPhasicLinkWith(inputsB[i]);
-					}
-				} else {
-					for (int i = 0; i < 8; i++) {
-						inputsA[i].RemovePhasicLinkWith(inputsB[i]);
-					}
-				}
-				wasOpen = isOpen;
-			}
-		}
-
-		public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) {
-			return inputIndex == 16;
-		}
-	}
-
-	public class ByteDLatch : LogicComponent {
-		private bool[] data = new bool[1];
-        private int enablePin;
-        protected override void Initialize() {
-            enablePin = Outputs.Count; // the index of the enable signal is the last input pin
-			data = new bool[Outputs.Count];
-        }
-
-        protected override void DoLogicUpdate() {
-			if (data != null) {
-				if (Inputs[enablePin].On) {
-					for (int i = 0; i < data.Length; i++) {
-						data[i] = Inputs[i].On;
-					}
-				}
-
-				for (int i = 0; i < Outputs.Count; i++) {
-					Outputs[i].On = data[i];
-				}
-			}
 		}
 	}
 }
