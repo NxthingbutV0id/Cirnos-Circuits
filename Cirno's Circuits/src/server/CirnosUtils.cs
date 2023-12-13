@@ -2,11 +2,12 @@
 using LogicWorld.ClientCode;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 
 namespace CirnosCircuits {
 	public class Utils {
-		private IReadOnlyList<IInputPeg> inputs;
-		private IReadOnlyList<IOutputPeg> outputs;
+		private readonly IReadOnlyList<IInputPeg> inputs;
+		private readonly IReadOnlyList<IOutputPeg> outputs;
 
 		public Utils(IReadOnlyList<IInputPeg> inputs, IReadOnlyList<IOutputPeg> outputs) {
 			this.inputs = inputs;
@@ -80,49 +81,10 @@ namespace CirnosCircuits {
 		/// </summary>
 		/// <typeparam name="T"></typeparam>
 		/// <param name="value"></param>
-		public void OutputInteger<T>(T value)
-			where T : IShiftOperators<T, int, T>, IBitwiseOperators<T, T, T>, IEqualityOperators<T, T, bool>, IBinaryInteger<T> {
-			switch (value) {
-				case byte:
-					for (int i = 0; i < 8; i++) {
-						outputs[i].On = ((value >> i) & T.One) == T.One;
-					}
-					break;
-				case ushort:
-					for (int i = 0; i < 16; i++) {
-						outputs[i].On = ((value >> i) & T.One) == T.One;
-					}
-					break;
-				case uint:
-					for (int i = 0; i < 32; i++) {
-						outputs[i].On = ((value >> i) & T.One) == T.One;
-					}
-					break;
-				case ulong:
-					for (int i = 0; i < 64; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case sbyte:
-					for (int i = 0; i < 8; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case short:
-					for (int i = 0; i < 16; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case int:
-					for (int i = 0; i < 32; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case long:
-					for (int i = 0; i < 64; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
+		public void OutputInteger<T>(T value) where T : notnull, IBinaryInteger<T> {
+			dynamic val = value;
+			for (int i = 0; i < (Unsafe.SizeOf<T>() * 8); i++) {
+				outputs[i].On = ((val >> i) & 1) == 1;
 			}
 		}
 
@@ -132,49 +94,10 @@ namespace CirnosCircuits {
 		/// <typeparam name="T"></typeparam>
 		/// <param name="offset"></param>
 		/// <param name="value"></param>
-		public void OutputInteger<T>(int offset, T value)
-			where T : IShiftOperators<T, int, T>, IBitwiseOperators<T, T, T>, IEqualityOperators<T, T, bool>, IBinaryInteger<T> {
-			switch (value) {
-				case byte:
-					for (int i = offset; i < 8 + offset; i++) {
-						outputs[i].On = ((value >> i) & T.One) == T.One;
-					}
-					break;
-				case ushort:
-					for (int i = offset; i < 16 + offset; i++) {
-						outputs[i].On = ((value >> i) & T.One) == T.One;
-					}
-					break;
-				case uint:
-					for (int i = offset; i < 32 + offset; i++) {
-						outputs[i].On = ((value >> i) & T.One) == T.One;
-					}
-					break;
-				case ulong:
-					for (int i = offset; i < 64 + offset; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case sbyte:
-					for (int i = offset; i < 8 + offset; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case short:
-					for (int i = offset; i < 16 + offset; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case int:
-					for (int i = offset; i < 32 + offset; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
-				case long:
-					for (int i = offset; i < 64 + offset; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
+		public void OutputInteger<T>(int offset, T value) where T : notnull, IBinaryInteger<T> {
+			dynamic val = value;
+			for (int i = offset; i < (Unsafe.SizeOf<T>() * 8) + offset; i++) {
+				outputs[i].On = ((val >> i) & 1) == 1;
 			}
 		}
 
@@ -184,26 +107,11 @@ namespace CirnosCircuits {
 		/// <typeparam name="T"></typeparam>
 		/// <param name="range"></param>
 		/// <param name="value"></param>
-		public void OutputInteger<T>((int start, int end) range, T value)
-			where T : IShiftOperators<T, int, T>, IBitwiseOperators<T, T, T>, IEqualityOperators<T, T, bool>, IBinaryInteger<T> {
+		public void OutputInteger<T>((int start, int end) range, T value) where T : notnull, IBinaryInteger<T> {
 			if (range.start >= range.end) { return; }
-			switch (value) {
-				case byte:
-				case ushort:
-				case uint:
-				case ulong:
-					for (int i = range.start; i < range.end; i++) {
-						outputs[i].On = ((value >> i) & T.One) == T.One;
-					}
-					break;
-				case sbyte:
-				case short:
-				case int:
-				case long:
-					for (int i = range.start; i < range.end; i++) {
-						outputs[i].On = ((value >>> i) & T.One) == T.One;
-					}
-					break;
+			dynamic val = value;
+			for (int i = range.start; i < range.end; i++) {
+				outputs[i].On = ((val >> i) & 1) == 1;
 			}
 		}
 
