@@ -7,7 +7,7 @@ namespace CirnosCircuits {
 			ulong result = 0;
 
 			for (int i = 0; i < 19; i++) {
-				var input = utils.InputValue<byte>(i << 2, i << 2 + 4);
+				var input = utils.GrabValueFromInput(i << 2, i << 2 + 4);
 				if (input > 9) { input = 9; }
 
 				result += input * Pow(10, i);

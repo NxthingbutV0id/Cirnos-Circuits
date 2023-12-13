@@ -6,7 +6,7 @@ namespace CirnosCircuits {
 			var utils = new Utils(Inputs, Outputs);
 			utils.ClearOutputs();
 
-			var index = utils.InputValue<int>();
+			int index = (int) utils.GrabValueFromInput();
 
 			Outputs[index].On = true;
 		}
@@ -23,7 +23,7 @@ namespace CirnosCircuits {
 				leftCount++;
 			}
 
-			var selecter = utils.InputValue<int>(Inputs.Count - leftCount);
+			int selecter = (int) utils.GrabValueFromInput(Inputs.Count - leftCount);
 
 			Outputs[0].On = Inputs[selecter].On;
 		}
@@ -60,11 +60,11 @@ namespace CirnosCircuits {
 			int bitres = (Inputs.Count - 1) >> 1;
 
 			if (signed) {
-				a = utils.InputValue<long>(0, bitres);
-				b = utils.InputValue<long>(bitres, bitres << 1);
+				a = utils.GrabValueFromInput(0, bitres);
+				b = utils.GrabValueFromInput(bitres, bitres << 1);
 			} else {
-				a = utils.InputValue<ulong>(0, bitres);
-				b = utils.InputValue<ulong>(bitres, bitres << 1);
+				a = utils.GrabValueFromInput(0, bitres);
+				b = utils.GrabValueFromInput(bitres, bitres << 1);
 			}
 
 			Outputs[0].On = a > b;

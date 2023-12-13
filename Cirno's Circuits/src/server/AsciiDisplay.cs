@@ -103,8 +103,8 @@ namespace CirnosCircuits {
 
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
-			var address = utils.InputValue<int>(0, 7) - 32;
-			var row = utils.InputValue<int>(7, 10) - 1;
+			var address = utils.GrabValueFromInput(0, 7) - 32;
+			var row = utils.GrabValueFromInput(7, 10) - 1;
 
 			if (address < 0 || row < 0) {
 				utils.ClearOutputs();

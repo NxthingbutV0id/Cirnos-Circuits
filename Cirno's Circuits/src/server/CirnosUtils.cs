@@ -26,49 +26,32 @@ namespace CirnosCircuits {
 		/// Turns the binary value of the Input pins into a number.
 		/// </summary>
 		/// <returns></returns>
-		public T InputValue<T>() where T : IBitwiseOperators<T, T, T>, IShiftOperators<T, int, T>, IBinaryInteger<T> {
-			T result = T.Zero;
+		public ulong GrabValueFromInput(int offset = 0) {
+			ulong result = 0;
 
-			for (int i = 0; i < inputs.Count; i++) {
+			for (int i = offset; i < inputs.Count + offset; i++) {
 				if (inputs[i].On) {
-					result |= T.One << i;
+					result |= 1ul << i;
 				}
 			}
 
 			return result;
 		}
 
-		/// <summary>
-		/// Turns the binary value of the Input pins into a number, from the startPin, up to but not including the endPin.
-		/// </summary>
-		/// <param name="startPin"></param>
-		/// <param name="endPin"></param>
-		/// <returns></returns>
-		public T InputValue<T>(int startPin, int endPin)
-			where T : IBitwiseOperators<T, T, T>, IShiftOperators<T, int, T>, IBinaryInteger<T> {
-			T result = T.Zero;
+
+
+        /// <summary>
+        /// Turns the binary value of the Input pins into a number, from the startPin, up to but not including the endPin.
+        /// </summary>
+        /// <param name="startPin"></param>
+        /// <param name="endPin"></param>
+        /// <returns></returns>
+        public ulong GrabValueFromInput(int startPin, int endPin) {
+			ulong result = 0;
 
 			for (int i = 0; (i < endPin) && (i + startPin < inputs.Count); i++) {
 				if (inputs[i + startPin].On) {
-					result |= T.One << i;
-				}
-			}
-
-			return result;
-		}
-
-		/// <summary>
-		/// Turns the binary value of the Input pins into a number, starting from the offset to the end
-		/// </summary>
-		/// <param name="offset"></param>
-		/// <returns></returns>
-		public T InputValue<T>(int offset)
-			where T : IBitwiseOperators<T, T, T>, IShiftOperators<T, int, T>, IBinaryInteger<T> {
-			T result = T.Zero;
-
-			for (int i = 0; i + offset < inputs.Count; i++) {
-				if (inputs[i + offset].On) {
-					result |= T.One << i;
+					result |= 1ul << i;
 				}
 			}
 
