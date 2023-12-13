@@ -75,50 +75,126 @@ namespace CirnosCircuits {
 			return result;
 		}
 
-		/// <summary>
-		/// Sets the output pins from 0 to n-1 for an n bit number, Types T: (s)byte, (u)short, (u)int, (u)long 
-		/// </summary>
-		/// <typeparam name="T"></typeparam>
-		/// <param name="value"></param>
-		public void OutputInteger<T>(T value) where T : notnull, IBinaryInteger<T> {
-			dynamic val = value;
-			for (int i = 0; i < (Unsafe.SizeOf<T>() * 8); i++) {
-				outputs[i].On = ((val >> i) & 1) == 1;
+		//OutputInteger(number, offset = 0)
+		public void OutputInteger(ulong number, int offset = 0) {
+			for (int i = offset; i < (sizeof(ulong) * 8) + offset; i++) {
+				outputs[i].On = ((number >> (i - offset)) & 1) == 1;
 			}
 		}
 
-		/// <summary>
-		/// Sets the output pins from offset to (n-1) + offset for an n bit number, Types T: (s)byte, (u)short, (u)int, (u)long
-		/// </summary>
-		/// <typeparam name="T"></typeparam>
-		/// <param name="offset"></param>
-		/// <param name="value"></param>
-		public void OutputInteger<T>(int offset, T value) where T : notnull, IBinaryInteger<T> {
-			dynamic val = value;
-			for (int i = offset; i < (Unsafe.SizeOf<T>() * 8) + offset; i++) {
-				outputs[i].On = ((val >> i) & 1) == 1;
-			}
-		}
+        public void OutputInteger(long number, int offset = 0) {
+            for (int i = offset; i < (sizeof(long) * 8) + offset; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
 
-		/// <summary>
-		/// Sets the output pins from start pin up to and not including end
-		/// </summary>
-		/// <typeparam name="T"></typeparam>
-		/// <param name="range"></param>
-		/// <param name="value"></param>
-		public void OutputInteger<T>((int start, int end) range, T value) where T : notnull, IBinaryInteger<T> {
+        public void OutputInteger(uint number, int offset = 0) {
+            for (int i = offset; i < (sizeof(uint) * 8) + offset; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger(int number, int offset = 0) {
+            for (int i = offset; i < (sizeof(int) * 8) + offset; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger(ushort number, int offset = 0) {
+            for (int i = offset; i < (sizeof(ushort) * 8) + offset; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger(short number, int offset = 0) {
+            for (int i = offset; i < (sizeof(short) * 8) + offset; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger(byte number, int offset = 0) {
+            for (int i = offset; i < (sizeof(byte) * 8) + offset; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger(sbyte number, int offset = 0) {
+            for (int i = offset; i < (sizeof(sbyte) * 8) + offset; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        //OutputInteger((start, end) range, number)
+        public void OutputInteger((int start, int end) range, ulong number) {
 			if (range.start >= range.end) { return; }
-			dynamic val = value;
 			for (int i = range.start; i < range.end; i++) {
-				outputs[i].On = ((val >> i) & 1) == 1;
+				outputs[i].On = ((number >> i) & 1) == 1;
 			}
 		}
 
-		public void OutputBoolArray(bool[] arr) {
-			for (int i = 0; i < arr.Length; i++) {
-				outputs[i].On = arr[i];
+        public void OutputInteger((int start, int end) range, long number) {
+            if (range.start >= range.end) { return; }
+            for (int i = range.start; i < range.end; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger((int start, int end) range, uint number) {
+            if (range.start >= range.end) { return; }
+            for (int i = range.start; i < range.end; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger((int start, int end) range, int number) {
+            if (range.start >= range.end) { return; }
+            for (int i = range.start; i < range.end; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger((int start, int end) range, ushort number) {
+            if (range.start >= range.end) { return; }
+            for (int i = range.start; i < range.end; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger((int start, int end) range, short number) {
+            if (range.start >= range.end) { return; }
+            for (int i = range.start; i < range.end; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger((int start, int end) range, byte number) {
+            if (range.start >= range.end) { return; }
+            for (int i = range.start; i < range.end; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        public void OutputInteger((int start, int end) range, sbyte number) {
+            if (range.start >= range.end) { return; }
+            for (int i = range.start; i < range.end; i++) {
+                outputs[i].On = ((number >> i) & 1) == 1;
+            }
+        }
+
+        /// <summary>
+        /// Sets the output pins using a list of booleans
+        /// </summary>
+        /// <param name="arr"></param>
+        public void OutputBoolArray(bool[] arr, int offset = 0) {
+			for (int i = offset; i < arr.Length + offset; i++) {
+				outputs[i].On = arr[i - offset];
 			}
 		}
+
+        /// <summary>
+        /// Sets the output pins, from 0 to the size of the input, to a 2D array of booleans
+        /// </summary>
+        /// <param name="arr"></param>
 		public void OutputBoolArray(bool[][] arr) {
 			for (int i = 0; i < arr.Length; i++) {
 				for (int j = 0; j < arr[i].Length; j++) {
