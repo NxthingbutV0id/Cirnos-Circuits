@@ -1,4 +1,5 @@
 ﻿using LogicAPI.Server.Components;
+using System;
 
 namespace CirnosCircuits {
 	public class Decoder : LogicComponent {
@@ -14,16 +15,11 @@ namespace CirnosCircuits {
 
 	public class Multiplexer : LogicComponent {
 		protected override void DoLogicUpdate() {
-			int pins = Inputs.Count;
-			int leftCount = 0;
 			var utils = new Utils(Inputs, Outputs);
 
-			while (pins != 1) {
-				pins >>= 1;
-				leftCount++;
-			}
+			int offset = (int) Math.Floor(Math.Log2(Inputs.Count));
 
-			int selecter = (int) utils.GrabValueFromInput(Inputs.Count - leftCount);
+			int selecter = (int) utils.GrabValueFromInput(Inputs.Count - 1 - offset);
 
 			Outputs[0].On = Inputs[selecter].On;
 		}
