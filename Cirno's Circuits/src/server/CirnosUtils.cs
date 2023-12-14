@@ -49,9 +49,9 @@ namespace CirnosCircuits {
         public ulong GrabValueFromInput(int startPin, int endPin) {
 			ulong result = 0;
 
-			for (int i = 0; (i < endPin) && (i + startPin < inputs.Count); i++) {
-				if (inputs[i + startPin].On) {
-					result |= 1ul << i;
+			for (int i = startPin; (i < endPin) && (i < inputs.Count); i++) {
+				if (inputs[i].On) {
+					result |= 1ul << i - startPin;
 				}
 			}
 
@@ -169,8 +169,8 @@ namespace CirnosCircuits {
         /// </summary>
         /// <param name="arr"></param>
         public void OutputBoolArray(bool[] arr, int offset = 0) {
-			for (int i = offset; i < arr.Length + offset; i++) {
-				outputs[i].On = arr[i - offset];
+			for (int i = 0; i < arr.Length; i++) {
+				outputs[i + offset].On = arr[i - offset];
 			}
 		}
 
