@@ -1,0 +1,1114 @@
+Byte D Latch:
+    column: Cirno's Circuits
+    category: Memory
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 0
+                    g: 146
+                    b: 0
+                scale:
+                    x: 8
+                    y: 1
+                    z: 2
+                position:
+                    x: -0.5
+                    y: 0
+                    z: -0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: -4
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 1
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: -4
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -3
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -2
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -1
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 1
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 2
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 3
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.DLatch
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+D Flip-Flop:
+    column: Cirno's Circuits
+    category: Memory
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 0
+                    g: 113
+                    b: 0
+                scale:
+                    x: 1
+                    y: 1
+                    z: 2
+                position:
+                    x: 0
+                    y: 0
+                    z: -0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 1
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.DFlipFlop
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Byte D Flip-Flop:
+    column: Cirno's Circuits
+    category: Memory
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 0
+                    g: 113
+                    b: 0
+                scale:
+                    x: 8
+                    y: 1
+                    z: 2
+                position:
+                    x: -0.5
+                    y: 0
+                    z: -0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: -4
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 1
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: -4
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -3
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -2
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -1
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 1
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 2
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 3
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.DFlipFlop
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Word D Flip-Flop:
+    column: Cirno's Circuits
+    category: Memory
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 0
+                    g: 113
+                    b: 0
+                scale:
+                    x: 16
+                    y: 1
+                    z: 2
+                position:
+                    x: -0.5
+                    y: 0
+                    z: -0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: -8
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -7
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -6
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -5
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -4
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 4
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 5
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 6
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 7
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 7
+                    y: 1
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: -8
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -7
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -6
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -5
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -4
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -3
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -2
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -1
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 1
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 2
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 3
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 4
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 5
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 6
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 7
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.DFlipFlop
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+JK Flip-Flop:
+    column: Cirno's Circuits
+    category: Memory
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 229
+                    g: 106
+                    b: 0
+                scale:
+                    x: 2
+                    y: 1
+                    z: 2
+                position:
+                    x: 0.5
+                    y: 0
+                    z: -0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0.5
+                    y: 1
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+            -
+                startOn: true
+                position:
+                    x: 1
+                    y: 1
+                    z: -1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.JKFlipFlop
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+SR Latch:
+    column: Cirno's Circuits
+    category: Memory
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 255
+                    g: 182
+                    b: 89
+                scale:
+                    x: 2
+                    y: 1
+                    z: 1
+                position:
+                    x: -0.5
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: -1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: -1
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+            -
+                startOn: true
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.SRLatch
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:

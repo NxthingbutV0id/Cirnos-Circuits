@@ -1,0 +1,278 @@
+5x7 Display Rom:
+    column: Cirno's Circuits
+    category: Misc
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 21
+                    g: 107
+                    b: 91
+                scale:
+                    x: 5
+                    y: 1
+                    z: 2
+                position:
+                    x: 0
+                    y: 0
+                    z: 0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: -1.5
+                    y: 0.5
+                    z: 1.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -1
+                    y: 0.5
+                    z: 1.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -0.5
+                    y: 0.5
+                    z: 1.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 1.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: 1.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 1
+                    y: 0.5
+                    z: 1.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 1.5
+                    y: 0.5
+                    z: 1.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 2.5
+                    y: 0.5
+                    z: 1
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                length: 0.6
+                position:
+                    x: 2.5
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                length: 0.6
+                position:
+                    x: 2.5
+                    y: 0.5
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: -2
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: -1
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 1
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+            -
+                startOn: false
+                position:
+                    x: 2
+                    y: 0.5
+                    z: -0.5
+                rotation:
+                    x: 270
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.AsciiDisplay
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
+Edge Detector:
+    column: Cirno's Circuits
+    category: Misc
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 113
+                    g: 0
+                    b: 0
+                scale:
+                    x: 1
+                    y: 0.5
+                    z: 1
+                position:
+                    x: 0
+                    y: 0
+                    z: 0
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        outputs:
+            -
+                startOn: false
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -0.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+    logicCode: CirnosCircuits.EdgeDetector
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:
