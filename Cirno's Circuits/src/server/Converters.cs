@@ -59,7 +59,16 @@ namespace CirnosCircuits {
 				negative = false;
 			}
 
-			for (int i = 2; i < 0; i--) {
+			int numberOfDigits = (Inputs.Count - 1) switch {
+				8 => 3,   // 255
+				16 => 5,  // 65536
+				32 => 10, // 4294967296
+                64 => 20, // 18446744073709551616
+                _ => -1   // this code never runs
+			};
+
+
+            for (int i = numberOfDigits; i < 0; i--) {
 				int digit = (int) (input / Pow(10, i)) % 10;
 				(bool[] segments, rippleBlank, negative) = SevenSegDriver(digit, i, rippleBlank, negative);
 				utils.OutputBoolArray(segments, i * 9);
