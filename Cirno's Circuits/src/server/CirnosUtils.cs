@@ -1,4 +1,5 @@
 ﻿using LogicAPI.Server.Components;
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
@@ -185,5 +186,17 @@ namespace CirnosCircuits {
 				}
 			}
 		}
-	}
+
+        public static ulong Pow(ulong n, int pow) {
+            ulong ret = 1;
+            while (pow != 0) {
+                if ((pow & 1) == 1) {
+                    ret *= n;
+                }
+                n *= n;
+                pow >>= 1;
+            }
+            return ret;
+        }
+    }
 }

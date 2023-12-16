@@ -1,4 +1,5 @@
 ﻿using LogicAPI.Server.Components;
+using System;
 
 namespace CirnosCircuits {
 	public class BCDToBinary : LogicComponent {
@@ -10,22 +11,10 @@ namespace CirnosCircuits {
 				var input = utils.GrabValueFromInput(i, i + 4);
 				if (input > 9) { input = 9; }
 
-				result += input * Pow(10, i >> 2);
+				result += input * Utils.Pow(10, i >> 2);
 			}
 
 			utils.OutputInteger(result);
-		}
-
-		private static ulong Pow(ulong n, int pow) {
-			ulong ret = 1;
-			while (pow != 0) {
-				if ((pow & 1) == 1) {
-					ret *= n;
-				}
-				n *= n;
-				pow >>= 1;
-			}
-			return ret;
 		}
 	}
 
@@ -63,13 +52,13 @@ namespace CirnosCircuits {
 				8 => 3,   // 255
 				16 => 5,  // 65536
 				32 => 10, // 4294967296
-                64 => 20, // 18446744073709551616
-                _ => -1   // this code never runs
+				64 => 20, // 18446744073709551616
+				_ => -1   // this code never runs
 			};
 
 
-            for (int i = numberOfDigits; i < 0; i--) {
-				int digit = (int) (input / Pow(10, i)) % 10;
+			for (int i = numberOfDigits; i < 0; i--) {
+				int digit = (int) (input / Utils.Pow(10, i)) % 10;
 				(bool[] segments, rippleBlank, negative) = SevenSegDriver(digit, i, rippleBlank, negative);
 				utils.OutputBoolArray(segments, i * 9);
 			}
@@ -85,17 +74,19 @@ namespace CirnosCircuits {
 			}
 			return (digits[i], false, false);
 		}
+	}
 
-		private static ulong Pow(ulong n, int pow) {
-			ulong ret = 1;
-			while (pow != 0) {
-				if ((pow & 1) == 1) {
-					ret *= n;
-				}
-				n *= n;
-				pow >>= 1;
+	public class ByteToBCDFractional : LogicComponent {
+		protected override void DoLogicUpdate() {
+			var utils = new Utils(Inputs, Outputs);
+			byte input = (byte) (utils.GrabValueFromInput() & 255);
+
+			double number = input / 256.0;
+			int digit = (int)(number * 10);
+
+			for (int i = 2; i < 9; i++) {
+
 			}
-			return ret;
 		}
 	}
 }
