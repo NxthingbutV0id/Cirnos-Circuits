@@ -2,7 +2,7 @@
 using System;
 
 namespace CirnosCircuits {
-	public class BCDToBinary : LogicComponent {
+	public class BCDToBinary : LogicComponent { //Complete
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
 			ulong result = 0;
@@ -18,7 +18,7 @@ namespace CirnosCircuits {
 		}
 	}
 
-	public class ByteToBCD7Seg : LogicComponent {
+	public class ByteToBCD7Seg : LogicComponent { //Not Implemented
 		private readonly bool[][] digits = {
 			new bool[] { true, true, true, true, true, true, false }, // 0
 			new bool[] { false, true, true, false, false, false, false }, // 1
@@ -76,17 +76,75 @@ namespace CirnosCircuits {
 		}
 	}
 
-	public class ByteToBCDFractional : LogicComponent {
+    public class ByteToBCDFractional : LogicComponent { //Not Implemented
+        private readonly int BitRes = 8;
+
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
-			byte input = (byte) (utils.GrabValueFromInput() & 255);
+			byte input = (byte)(utils.GrabValueFromInput() & 0xFF);
 
-			double number = input / 256.0;
-			int digit = (int)(number * 10);
+			double number = input / Math.Pow(2, BitRes);
+			int digit;
 
-			for (int i = 2; i < 9; i++) {
-
+			for (int i = 0; i < BitRes; i++) {
+				digit = (int)Math.Floor(number * Utils.Pow(10, i + 1)) % 10;
+				utils.OutputInteger((i * 4, i * 4 + 4), digit);
 			}
 		}
-	}
+    }
+
+    public class WordToBCDFractional : LogicComponent { //Not Implemented
+        private readonly int BitRes = 16;
+
+        protected override void DoLogicUpdate() {
+            var utils = new Utils(Inputs, Outputs);
+            ushort input = (ushort)(utils.GrabValueFromInput() & 0xFFFF);
+
+            double number = input / Math.Pow(2, BitRes);
+            int digit;
+
+            for (int i = 0; i < BitRes; i++) {
+                digit = (int)Math.Floor(number * Utils.Pow(10, i + 1)) % 10;
+                utils.OutputInteger((i * 4, i * 4 + 4), digit);
+            }
+        }
+    }
+
+    public class DWordToBCDFractional : LogicComponent { //Not Implemented
+        private readonly int BitRes = 32;
+
+        protected override void DoLogicUpdate() {
+            var utils = new Utils(Inputs, Outputs);
+            uint input = (uint)(utils.GrabValueFromInput() & 0xFFFFFFFF);
+
+            double number = input / Math.Pow(2, BitRes);
+            int digit;
+
+            for (int i = 0; i < BitRes; i++) {
+                digit = (int)Math.Floor(number * Utils.Pow(10, i + 1)) % 10;
+                utils.OutputInteger((i * 4, i * 4 + 4), digit);
+            }
+        }
+    }
+
+    public class QWordToBCDFractional : LogicComponent { //Not Implemented
+        private int DigitRes;
+
+        protected override void Initialize() {
+            DigitRes = Outputs.Count >> 2;
+        }
+
+        protected override void DoLogicUpdate() {
+            var utils = new Utils(Inputs, Outputs);
+            var input = utils.GrabValueFromInput();
+
+            double number = input / Math.Pow(2, 64);
+            int digit;
+
+            for (int i = 0; i < DigitRes; i++) {
+                digit = (int)Math.Floor(number * Utils.Pow(10, i + 1)) % 10;
+                utils.OutputInteger((i * 4, i * 4 + 4), digit);
+            }
+        }
+    }
 }

@@ -7,7 +7,7 @@ namespace CirnosCircuits {
 		}
 	}
 
-	public class EdgeDetector : LogicComponent {
+	public class EdgeDetector : LogicComponent { //Implemented, Not Tested
 		private bool prevTick;
 		protected override void Initialize() {
 			prevTick = false;

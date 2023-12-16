@@ -1,7 +1,7 @@
 ﻿using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
-	public class AsciiDisplay : LogicComponent {
+	public class AsciiDisplay : LogicComponent { //Completed
 		public readonly int[,] asciiTable = new int[,] {
 				{0b00000,0b00000,0b00000,0b00000,0b00000,0b00000,0b00000},// space
 				{0b00100,0b00100,0b00100,0b00100,0b00100,0b00000,0b00100},// !

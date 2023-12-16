@@ -1,0 +1,224 @@
+Byte Relay:
+    column: Cirno's Circuits
+    category: Relays
+    prefab:
+        blocks:
+            -
+                color:
+                    r: 255
+                    g: 0
+                    b: 202
+                scale:
+                    x: 8
+                    y: 1
+                    z: 2
+                position:
+                    x: -0.5
+                    y: 0
+                    z: -0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        inputs:
+            -
+                length: 0.6
+                position:
+                    x: -4
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 1
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 2
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 0.5
+                    z: 0.5
+                rotation:
+                    x: 90
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -4
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -3
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -2
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: -1
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 0
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 1
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 2
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 0.5
+                    z: -1.5
+                rotation:
+                    x: 270.0198
+                    y: 0
+                    z: 0
+            -
+                length: 0.6
+                position:
+                    x: 3
+                    y: 1
+                    z: -0.5
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 0
+        outputs:
+    logicCode: CirnosCircuits.Relay
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+                x: 0.5
+                y: 0.5
+        secondaryGridPositions:
+        primaryEdgePositions:
+        secondaryEdgePositions:

@@ -1,8 +1,8 @@
 ﻿using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
-	public class ProgramCounter : LogicComponent {
-		private ulong counter;
+	public class ProgramCounter : LogicComponent { //Not Implemented
+        private ulong counter;
 		private bool CLK, prevCLK, JumpEnable;
 		protected override void Initialize() {
 			counter = 0;
