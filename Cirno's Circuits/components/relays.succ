@@ -223,6 +223,8 @@ Byte Relay:
         primaryEdgePositions:
         secondaryEdgePositions:
 Word Relay:
+    column: Cirno's Circuits
+    category: Relays
     prefab:
         blocks:
             -
@@ -574,6 +576,7 @@ Word Relay:
                     y: 0
                     z: 0
         outputs:
+    logicCode: CirnosCircuits.WordRelay
     placingRules:
         offsetDimensions:
             x: 2

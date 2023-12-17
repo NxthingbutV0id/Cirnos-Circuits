@@ -230,7 +230,7 @@ D Flip-Flop:
             -
                 color:
                     r: 0
-                    g: 113
+                    g: 79
                     b: 0
                 scale:
                     x: 1
@@ -314,7 +314,7 @@ Byte D Flip-Flop:
             -
                 color:
                     r: 0
-                    g: 113
+                    g: 80
                     b: 0
                 scale:
                     x: 8
@@ -538,7 +538,7 @@ Word D Flip-Flop:
             -
                 color:
                     r: 0
-                    g: 113
+                    g: 80
                     b: 0
                 scale:
                     x: 16

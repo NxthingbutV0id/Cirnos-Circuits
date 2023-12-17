@@ -8,18 +8,17 @@ namespace CirnosCircuits {
 	}
 
 	public class EdgeDetector : LogicComponent {
-		private bool prevTick, currTick;
+		private bool prevTick;
 		protected override void Initialize() {
 			prevTick = false;
 		}
 
 		protected override void DoLogicUpdate() {
-			Outputs[0].On = false;
-			currTick = Inputs[0].On;
-			if (prevTick != currTick) {
-				Outputs[0].On = true;
+			Outputs[0].On = prevTick != Inputs[0].On;
+			if (prevTick != Inputs[0].On) {
+				QueueLogicUpdate();
 			}
-			prevTick = currTick;
-		}
-	} // Implemented, Not Tested
+            prevTick = Inputs[0].On;
+        }
+	} // Completed
 }

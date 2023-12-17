@@ -37,7 +37,7 @@ namespace CirnosCircuits {
 		public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) {
 			return inputIndex == (size << 1);
 		}
-    } // Implemented, Not Tested
+    } // Completed
 
     public class WordRelay : LogicComponent {
         private IInputPeg[] inputsA, inputsB;
@@ -75,7 +75,7 @@ namespace CirnosCircuits {
         public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) {
             return inputIndex == (size << 1);
         }
-    } // Not Implemented
+    } // Completed
 
     public class DWordRelay : LogicComponent {
         private IInputPeg[] inputsA, inputsB;

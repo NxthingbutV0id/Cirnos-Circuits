@@ -15,24 +15,29 @@ A random asortment of parts and logic.
 - Sideways Logic Gates!
 	- And, Or, Xor, Nand, Nor, and Xnor BUT ON THEIR SIDES!!!!
 
-- Byte Relay
+- Byte and Word Relays
 - Byte D-Latch
+- Bit, Byte, and Word D-Flip Flops
 - Byte and Word Comparators
 - BCD to binary Converter (19 digits to QWord)
+- Edge Detecter (Rising and Falling)
+- JK FlipFlop
+- SR Latch
 
-## Future Plans (in order of priority):
+## Future Plans:
 
-- Word, DWord, and QWord relays
-- Word, DWord, and QWord D-latches
+### Coded, Not Implemented
+
 - Dword and QWord Comparators
-- Pulse Extender
-- Edge Detecter
 - Binary to BCD 7 segment with ripple blanking and negative support
 - Binary to Fractional BCD (fixed point values from 0.0000... to 0.9999...)
+- Program Counter
+
+### Not Coded
+
+- Pulse Extender
 - 14 and 16 segment displays
 - Text input to Binary (type in "42", output 101010)
-- JK Flip-Flop + D Flip-Flop
-- Program Counter
 - Stack
 
 ## Install
