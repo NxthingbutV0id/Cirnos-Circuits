@@ -42,4 +42,4 @@ A random asortment of parts and logic.
 
 ## Install
 
-To install the mod, Click on the green "<> Code" button and download the zip. In the file where this README.md file is contained, there is a folder called "Cirno's Circuits", Copy that  folder and place it in the "GameData" folder in your Logic World directory
+To install the mod, Download the ZIP file below and put it in your GameData folder
