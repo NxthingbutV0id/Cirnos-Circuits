@@ -42,4 +42,4 @@ A random asortment of parts and logic.
 
 ## Install
 
-To install the mod, Download the ZIP file below and put it in your GameData folder
+To install the mod, Download the ZIP file below. Copy the folder called "Cirno's Circuits" and paste it in your GameData folder
