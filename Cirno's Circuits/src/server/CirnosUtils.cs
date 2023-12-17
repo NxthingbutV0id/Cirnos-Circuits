@@ -21,16 +21,6 @@ namespace CirnosCircuits {
 		}
 
         /// <summary>
-        /// Clears the Output pins to all 0
-        /// </summary>
-        /// <param name="outputs"></param>
-        public static void ClearOutputs(IReadOnlyList<IOutputPeg> outputs) {
-            for (int i = 0; i < outputs.Count; i++) {
-                outputs[i].On = false;
-            }
-        }
-
-        /// <summary>
         /// Turns the binary value of the Input pins into a number.
         /// </summary>
         /// <returns></returns>

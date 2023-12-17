@@ -11,9 +11,9 @@ namespace CirnosCircuits {
 
 			Outputs[index].On = true;
 		}
-    } // Completed
+	} // Completed
 
-    public class Multiplexer : LogicComponent {
+	public class Multiplexer : LogicComponent {
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
 
@@ -23,9 +23,9 @@ namespace CirnosCircuits {
 
 			Outputs[0].On = Inputs[selecter].On;
 		}
-    } // Completed
+	} // Completed
 
-    public class DLatch : LogicComponent { //Completed
+	public class DLatch : LogicComponent { //Completed
 		private bool[] data = new bool[1];
 		private int enablePin;
 		protected override void Initialize() {
@@ -46,19 +46,19 @@ namespace CirnosCircuits {
 				}
 			}
 		}
-    } // Completed
+	} // Completed
 
-    public class DFlipFlop : LogicComponent { 
+	public class DFlipFlop : LogicComponent { 
 		private bool[] data = new bool[1];
 		private bool prevCLK, CLK;
 		protected override void Initialize() {
-			CLK = Inputs[Outputs.Count].On; // the index of the enable signal is the last input pin
 			prevCLK = false;
 			data = new bool[Outputs.Count];
 		}
 
 		protected override void DoLogicUpdate() {
-			if (data != null) {
+            CLK = Inputs[Outputs.Count].On;
+            if (data != null) {
 				if (!prevCLK && CLK) {
 					for (int i = 0; i < data.Length; i++) {
 						data[i] = Inputs[i].On;
@@ -70,9 +70,9 @@ namespace CirnosCircuits {
 				prevCLK = CLK;
 			}
 		}
-    } // Implemented, Not Tested
+	} // Completed
 
-    public class Comparator : LogicComponent { 
+	public class Comparator : LogicComponent { 
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
 			dynamic a, b;
@@ -91,9 +91,9 @@ namespace CirnosCircuits {
 			Outputs[1].On = a == b;
 			Outputs[2].On = a < b;
 		}
-    } // Completed
+	} // Completed
 
-    public class SRLatch : LogicComponent { 
+	public class SRLatch : LogicComponent { 
 		private bool S, R, Q, Qbar;
 
 		protected override void Initialize() {
@@ -112,9 +112,9 @@ namespace CirnosCircuits {
 			Outputs[0].On = Q;
 			Outputs[1].On = Qbar;
 		}
-    } // Implemented, Not Tested
+	} // Completed
 
-    public class JKFlipFlop : LogicComponent { 
+	public class JKFlipFlop : LogicComponent { 
 		private bool J, K, CLK, previousCLK;
 
 		protected override void Initialize() {
@@ -131,56 +131,59 @@ namespace CirnosCircuits {
 				if (J && K) {
 					Outputs[0].On = !Outputs[0].On;
 					Outputs[1].On = !Outputs[1].On;
-					return;
-				}
-				if (J && !K) {
-					Outputs[0].On = true;
-					Outputs[1].On = false;
-					return;
-				}
-				if (!J && K) {
-					Outputs[0].On = false;
-					Outputs[1].On = true;
-					return;
-				}
-			}
+                    previousCLK = CLK;
+                    return;
+                }
+                if (!J && K) {
+                    Outputs[0].On = false;
+                    Outputs[1].On = true;
+                    previousCLK = CLK;
+                    return;
+                }
+                if (J && !K) {
+                    Outputs[0].On = true;
+                    Outputs[1].On = false;
+                    previousCLK = CLK;
+                    return;
+                }
+            }
 			previousCLK = CLK;
 		}
-    } // Implemented, Not Tested
+	} // Completed
 
-    public class SidewaysAND : LogicComponent { 
+	public class SidewaysAND : LogicComponent { 
 		protected override void DoLogicUpdate() {
 			Outputs[0].On = Inputs[0].On & Inputs[1].On;
 		}
-    } // Completed
+	} // Completed
 
-    public class SidewaysOR : LogicComponent {
+	public class SidewaysOR : LogicComponent {
 		protected override void DoLogicUpdate() {
 			Outputs[0].On = Inputs[0].On | Inputs[1].On;
 		}
-    } // Completed
+	} // Completed
 
-    public class SidewaysXOR : LogicComponent {
+	public class SidewaysXOR : LogicComponent {
 		protected override void DoLogicUpdate() {
 			Outputs[0].On = Inputs[0].On ^ Inputs[1].On;
 		}
-    } // Completed
+	} // Completed
 
-    public class SidewaysNAND : LogicComponent {
+	public class SidewaysNAND : LogicComponent {
 		protected override void DoLogicUpdate() {
 			Outputs[0].On = !(Inputs[0].On & Inputs[1].On);
 		}
-    } // Completed
+	} // Completed
 
-    public class SidewaysNOR : LogicComponent {
+	public class SidewaysNOR : LogicComponent {
 		protected override void DoLogicUpdate() {
 			Outputs[0].On = !(Inputs[0].On | Inputs[1].On);
 		}
-    } // Completed
+	} // Completed
 
-    public class SidewaysXNOR : LogicComponent {
+	public class SidewaysXNOR : LogicComponent {
 		protected override void DoLogicUpdate() {
 			Outputs[0].On = !(Inputs[0].On ^ Inputs[1].On);
 		}
-    } // Completed
+	} // Completed
 }

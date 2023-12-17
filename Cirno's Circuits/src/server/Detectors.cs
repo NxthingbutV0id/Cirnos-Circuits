@@ -14,9 +14,12 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
+			Outputs[0].On = false;
 			currTick = Inputs[0].On;
-			Outputs[0].On = !(prevTick ^ currTick);
+			if (prevTick != currTick) {
+				Outputs[0].On = true;
+			}
 			prevTick = currTick;
 		}
-    } // Implemented, Not Tested
+	} // Implemented, Not Tested
 }
