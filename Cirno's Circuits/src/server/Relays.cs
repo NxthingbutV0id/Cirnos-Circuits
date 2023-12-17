@@ -1,7 +1,7 @@
 ﻿using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
-	public class Relay : LogicComponent { //Implemented, Not Tested
+	public class Relay : LogicComponent {
 		private IInputPeg[] inputsA, inputsB;
 		private bool wasOpen;
 		private int size;
@@ -38,5 +38,5 @@ namespace CirnosCircuits {
 		public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) {
 			return inputIndex == (size << 1);
 		}
-	}
+    } // Implemented, Not Tested
 }

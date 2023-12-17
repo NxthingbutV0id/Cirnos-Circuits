@@ -1,7 +1,7 @@
 ﻿using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
-	public class ProgramCounter : LogicComponent { //Not Implemented
+	public class ProgramCounter : LogicComponent { 
         private ulong counter;
 		private bool CLK, prevCLK, JumpEnable;
 		protected override void Initialize() {
@@ -29,5 +29,5 @@ namespace CirnosCircuits {
 		}
 
 		private void SetCounter(ulong input) => counter = input;
-	}
+    } // Not Implemented
 }

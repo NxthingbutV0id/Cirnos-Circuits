@@ -1,8 +1,5 @@
 ﻿using LogicAPI.Server.Components;
-using System;
 using System.Collections.Generic;
-using System.Numerics;
-using System.Runtime.CompilerServices;
 
 namespace CirnosCircuits {
 	public class Utils {
@@ -23,11 +20,21 @@ namespace CirnosCircuits {
 			}
 		}
 
-		/// <summary>
-		/// Turns the binary value of the Input pins into a number.
-		/// </summary>
-		/// <returns></returns>
-		public ulong GrabValueFromInput(int offset = 0) {
+        /// <summary>
+        /// Clears the Output pins to all 0
+        /// </summary>
+        /// <param name="outputs"></param>
+        public static void ClearOutputs(IReadOnlyList<IOutputPeg> outputs) {
+            for (int i = 0; i < outputs.Count; i++) {
+                outputs[i].On = false;
+            }
+        }
+
+        /// <summary>
+        /// Turns the binary value of the Input pins into a number.
+        /// </summary>
+        /// <returns></returns>
+        public ulong GrabValueFromInput(int offset = 0) {
 			ulong result = 0;
 
 			for (int i = offset; i < inputs.Count; i++) {

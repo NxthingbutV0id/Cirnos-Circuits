@@ -1,7 +1,7 @@
 ﻿using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
-	public class AsciiDisplay : LogicComponent { //Completed
+	public class AsciiDisplay : LogicComponent {
 		public readonly int[,] asciiTable = new int[,] {
 				{0b00000,0b00000,0b00000,0b00000,0b00000,0b00000,0b00000},// space
 				{0b00100,0b00100,0b00100,0b00100,0b00100,0b00000,0b00100},// !
@@ -103,8 +103,8 @@ namespace CirnosCircuits {
 
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
-			var address = utils.GrabValueFromInput(0, 7) - 32;
-			var row = utils.GrabValueFromInput(7, 10) - 1;
+			int address = (int)utils.GrabValueFromInput(0, 7) - 32;
+			int row = (int)utils.GrabValueFromInput(7, 10) - 1;
 
 			if (address < 0 || row < 0) {
 				utils.ClearOutputs();
@@ -128,5 +128,5 @@ namespace CirnosCircuits {
 
 			return result;
 		}
-	}
+    } // Completed
 }
