@@ -5,7 +5,7 @@ namespace CirnosCircuits {
 		protected override void DoLogicUpdate() {
 			//TODO
 		}
-	}
+	} // Not Coded
 
 	public class EdgeDetector : LogicComponent {
 		private bool prevTick;

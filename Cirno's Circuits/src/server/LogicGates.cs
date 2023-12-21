@@ -75,22 +75,23 @@ namespace CirnosCircuits {
 	public class Comparator : LogicComponent { 
 		protected override void DoLogicUpdate() {
 			var utils = new Utils(Inputs, Outputs);
-			dynamic a, b;
+			ulong a, b;
 			bool signed = Inputs[Inputs.Count - 1].On;
 			int bitres = (Inputs.Count - 1) >> 1;
 
-			if (signed) {
-				a = (long) utils.GrabValueFromInput(0, bitres);
-				b = (long) utils.GrabValueFromInput(bitres, bitres << 1);
-			} else {
-				a = utils.GrabValueFromInput(0, bitres);
-				b = utils.GrabValueFromInput(bitres, bitres << 1);
-			}
+			a = utils.GrabValueFromInput(0, bitres);
+			b = utils.GrabValueFromInput(bitres, bitres << 1);
 
-			Outputs[0].On = a > b;
-			Outputs[1].On = a == b;
-			Outputs[2].On = a < b;
-		}
+			if (signed) {
+                Outputs[0].On = (long)a > (long)b;
+                Outputs[1].On = (long)a == (long)b;
+                Outputs[2].On = (long)a < (long)b;
+            } else {
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            }
+        }
 	} // Completed
 
 	public class SRLatch : LogicComponent { 

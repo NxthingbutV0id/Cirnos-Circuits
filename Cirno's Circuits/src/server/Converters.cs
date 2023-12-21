@@ -16,9 +16,9 @@ namespace CirnosCircuits {
 
 			utils.OutputInteger(result);
 		}
-    } // Completed
+	} // Completed
 
-    public class ByteToBCD7Seg : LogicComponent {
+	public class ByteToBCD7Seg : LogicComponent {
 		private readonly bool[][] digits = {
 			new bool[] { true, true, true, true, true, true, false }, // 0
 			new bool[] { false, true, true, false, false, false, false }, // 1
@@ -37,14 +37,12 @@ namespace CirnosCircuits {
 			var utils = new Utils(Inputs, Outputs);
 			bool signed = Inputs[Inputs.Count - 1].On;
 			bool negative, rippleBlank = true;
-			dynamic input; // because I am too lazy to write fast code :^)
+			ulong input = utils.GrabValueFromInput(0, Inputs.Count - 1);
 
 			if (signed) {
-				input = (long)utils.GrabValueFromInput(0, Inputs.Count - 1);
-				negative = input < 0;
-				input = negative ? -input : input; //find abs value
+				negative = (long)input < 0;
+				if (negative) { input = ~input + 1; }
 			} else {
-				input = utils.GrabValueFromInput(0, Inputs.Count - 1);
 				negative = false;
 			}
 
@@ -52,11 +50,11 @@ namespace CirnosCircuits {
 			if (bitCount == 8) { numberOfDigits = 3; }		  // 255 
 			else if (bitCount == 16) { numberOfDigits = 5; }  // 65536
 			else if (bitCount == 32) { numberOfDigits = 10; } // 4294967296
-            else { numberOfDigits = 20; }                     // 18446744073709551616
+			else { numberOfDigits = 20; }                     // 18446744073709551616
 
 			bool[] segments;
 
-            for (int i = numberOfDigits; i < 0; i--) {
+			for (int i = numberOfDigits; i < 0; i--) {
 				int digit = (int) (input / Utils.Pow(10, i)) % 10;
 				(segments, rippleBlank, negative) = SevenSegDriver(digit, i, rippleBlank, negative);
 				utils.OutputBoolArray(segments, i * 9);
@@ -73,9 +71,9 @@ namespace CirnosCircuits {
 			}
 			return (digits[i], false, false);
 		}
-    } // Not Implemented
+	} // Not Implemented
 
-    public class ByteToBCDFractional : LogicComponent {
+	public class ByteToBCDFractional : LogicComponent {
 		private readonly int BitRes = 8;
 
 		protected override void DoLogicUpdate() {
@@ -90,9 +88,9 @@ namespace CirnosCircuits {
 				utils.OutputInteger((i * 4, i * 4 + 4), digit);
 			}
 		}
-    } // Not Implemented
+	} // Not Implemented
 
-    public class WordToBCDFractional : LogicComponent {
+	public class WordToBCDFractional : LogicComponent {
 		private readonly int BitRes = 16;
 
 		protected override void DoLogicUpdate() {
@@ -107,9 +105,9 @@ namespace CirnosCircuits {
 				utils.OutputInteger((i * 4, i * 4 + 4), digit);
 			}
 		}
-    } // Not Implemented
+	} // Not Implemented
 
-    public class DWordToBCDFractional : LogicComponent {
+	public class DWordToBCDFractional : LogicComponent {
 		private readonly int BitRes = 32;
 
 		protected override void DoLogicUpdate() {
@@ -124,9 +122,9 @@ namespace CirnosCircuits {
 				utils.OutputInteger((i * 4, i * 4 + 4), digit);
 			}
 		}
-    } // Not Implemented
+	} // Not Implemented
 
-    public class QWordToBCDFractional : LogicComponent {
+	public class QWordToBCDFractional : LogicComponent {
 		private int DigitRes;
 
 		protected override void Initialize() {
@@ -145,5 +143,5 @@ namespace CirnosCircuits {
 				utils.OutputInteger((i * 4, i * 4 + 4), digit);
 			}
 		}
-    } // Not Implemented
+	} // Not Implemented
 }
