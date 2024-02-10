@@ -1,5 +1,5 @@
 BCDToBinary:
-    column: Cirno's Circuits
+    column: CirnosCircuits
     category: Converters
     prefab:
         blocks:
