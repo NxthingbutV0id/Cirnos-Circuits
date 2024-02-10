@@ -62,7 +62,7 @@ SmallMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Multiplexer
+    logicCode: CirnosCircuits.Multiplexer1BitSelect
     placingRules:
         offsetDimensions:
             x: 2
@@ -186,7 +186,7 @@ MediumMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Multiplexer
+    logicCode: CirnosCircuits.Multiplexer2BitSelect
     placingRules:
         offsetDimensions:
             x: 2
@@ -360,7 +360,7 @@ LargeMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Multiplexer
+    logicCode: CirnosCircuits.Multiplexer3BitSelect
     placingRules:
         offsetDimensions:
             x: 2
@@ -624,7 +624,7 @@ ExtraLargeMux:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Multiplexer
+    logicCode: CirnosCircuits.Multiplexer4BitSelect
     placingRules:
         offsetDimensions:
             x: 2
