@@ -1,5 +1,5 @@
-2 Bit Decoder:
-    column: Cirno's Circuits
+Decoder2Bit:
+    column: CirnosCircuits
     category: Decoders
     prefab:
         blocks:
@@ -112,8 +112,8 @@
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-3 Bit Decoder:
-    column: Cirno's Circuits
+Decoder3Bit:
+    column: CirnosCircuits
     category: Decoders
     prefab:
         blocks:
@@ -276,8 +276,8 @@
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-4 Bit Decoder:
-    column: Cirno's Circuits
+Decoder4Bit:
+    column: CirnosCircuits
     category: Decoders
     prefab:
         blocks:
@@ -530,8 +530,8 @@
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-5 Bit Decoder:
-    column: Cirno's Circuits
+Decoder5Bit:
+    column: CirnosCircuits
     category: Decoders
     prefab:
         blocks:

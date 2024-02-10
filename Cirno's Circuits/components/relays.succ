@@ -1,5 +1,5 @@
-Byte Relay:
-    column: Cirno's Circuits
+ByteRelay:
+    column: CirnosCircuits
     category: Relays
     prefab:
         blocks:
@@ -222,8 +222,8 @@ Byte Relay:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Word Relay:
-    column: Cirno's Circuits
+WordRelay:
+    column: CirnosCircuits
     category: Relays
     prefab:
         blocks:

@@ -1,6 +1,6 @@
-Sideways AND:
-    column: Cirno's Circuits
-    category: Sideways Logic
+SidewaysAND:
+    column: CirnosCircuits
+    category: SidewaysLogic
     prefab:
         blocks:
             -
@@ -82,9 +82,9 @@ Sideways AND:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Sideways OR:
-    column: Cirno's Circuits
-    category: Sideways Logic
+SidewaysOR:
+    column: CirnosCircuits
+    category: SidewaysLogic
     prefab:
         blocks:
             -
@@ -166,9 +166,9 @@ Sideways OR:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Sideways XOR:
-    column: Cirno's Circuits
-    category: Sideways Logic
+SidewaysXOR:
+    column: CirnosCircuits
+    category: SidewaysLogic
     prefab:
         blocks:
             -
@@ -250,9 +250,9 @@ Sideways XOR:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Sideways NAND:
-    column: Cirno's Circuits
-    category: Sideways Logic
+SidewaysNAND:
+    column: CirnosCircuits
+    category: SidewaysLogic
     prefab:
         blocks:
             -
@@ -334,9 +334,9 @@ Sideways NAND:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Sideways NOR:
-    column: Cirno's Circuits
-    category: Sideways Logic
+SidewaysNOR:
+    column: CirnosCircuits
+    category: SidewaysLogic
     prefab:
         blocks:
             -
@@ -418,9 +418,9 @@ Sideways NOR:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Sideways XNOR:
-    column: Cirno's Circuits
-    category: Sideways Logic
+SidewaysXNOR:
+    column: CirnosCircuits
+    category: SidewaysLogic
     prefab:
         blocks:
             -

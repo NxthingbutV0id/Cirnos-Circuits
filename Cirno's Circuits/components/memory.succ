@@ -1,5 +1,5 @@
-Byte D Latch:
-    column: Cirno's Circuits
+ByteDLatch:
+    column: CirnosCircuits
     category: Memory
     prefab:
         blocks:
@@ -222,8 +222,8 @@ Byte D Latch:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-D Flip-Flop:
-    column: Cirno's Circuits
+DFlipFlop:
+    column: CirnosCircuits
     category: Memory
     prefab:
         blocks:
@@ -306,8 +306,8 @@ D Flip-Flop:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Byte D Flip-Flop:
-    column: Cirno's Circuits
+ByteDFlipFlop:
+    column: CirnosCircuits
     category: Memory
     prefab:
         blocks:
@@ -530,8 +530,8 @@ Byte D Flip-Flop:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Word D Flip-Flop:
-    column: Cirno's Circuits
+WordDFlipFlop:
+    column: CirnosCircuits
     category: Memory
     prefab:
         blocks:
@@ -914,8 +914,8 @@ Word D Flip-Flop:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-JK Flip-Flop:
-    column: Cirno's Circuits
+JKFlipFlop:
+    column: CirnosCircuits
     category: Memory
     prefab:
         blocks:
@@ -1018,8 +1018,8 @@ JK Flip-Flop:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-SR Latch:
-    column: Cirno's Circuits
+SRLatch:
+    column: CirnosCircuits
     category: Memory
     prefab:
         blocks:

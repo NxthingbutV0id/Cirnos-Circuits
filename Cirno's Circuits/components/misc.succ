@@ -1,5 +1,5 @@
-5x7 Display Rom:
-    column: Cirno's Circuits
+AsciiDisplay:
+    column: CirnosCircuits
     category: Misc
     prefab:
         blocks:
@@ -202,8 +202,8 @@
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Edge Detector:
-    column: Cirno's Circuits
+EdgeDetector:
+    column: CirnosCircuits
     category: Misc
     prefab:
         blocks:

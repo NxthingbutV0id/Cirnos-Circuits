@@ -1,4 +1,4 @@
-Byte Comparator:
+ByteComparator:
     column: CirnosCircuits
     category: Comparators
     prefab:
@@ -252,8 +252,8 @@ Byte Comparator:
         secondaryGridPositions:
         primaryEdgePositions:
         secondaryEdgePositions:
-Word Comparator:
-    column: Cirno's Circuits
+WordComparator:
+    column: CirnosCircuits
     category: Comparators
     prefab:
         blocks:

@@ -1,5 +1,5 @@
 SmallMux:
-    column: Cirno's Circuits
+    column: CirnosCircuits
     category: Multiplexers
     prefab:
         blocks:
@@ -93,7 +93,7 @@ SmallMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 MediumMux:
-    column: Cirno's Circuits
+    column: CirnosCircuits
     category: Multiplexers
     prefab:
         blocks:
@@ -217,7 +217,7 @@ MediumMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 LargeMux:
-    column: Cirno's Circuits
+    column: CirnosCircuits
     category: Multiplexers
     prefab:
         blocks:
@@ -391,7 +391,7 @@ LargeMux:
         primaryEdgePositions:
         secondaryEdgePositions:
 ExtraLargeMux:
-    column: Cirno's Circuits
+    column: CirnosCircuits
     category: Multiplexers
     prefab:
         blocks:
