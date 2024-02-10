@@ -102,12 +102,12 @@ namespace CirnosCircuits {
 			};
 
 		protected override void DoLogicUpdate() {
-			var utils = new Utils(Inputs, Outputs);
-			int address = (int)utils.GrabValueFromInput(0, 7) - 32;
-			int row = (int)utils.GrabValueFromInput(7, 10) - 1;
+			var io = new IOHandler(Inputs, Outputs);
+			int address = (int)io.GrabValueFromInput(0, 7) - 32;
+			int row = (int)io.GrabValueFromInput(7, 10) - 1;
 
 			if (address < 0 || row < 0) {
-				utils.ClearOutputs();
+				io.ClearOutputs();
 				return;
 			}
 

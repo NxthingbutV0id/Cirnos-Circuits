@@ -1,5 +1,5 @@
 Byte Comparator:
-    column: Cirno's Circuits
+    column: CirnosCircuits
     category: Comparators
     prefab:
         blocks:
@@ -222,7 +222,7 @@ Byte Comparator:
                     x: 0
                     y: 0
                     z: 270
-    logicCode: CirnosCircuits.Comparator
+    logicCode: CirnosCircuits.ByteComparator
     placingRules:
         offsetDimensions:
             x: 2
@@ -636,7 +636,7 @@ Word Comparator:
                     x: 0
                     y: 0
                     z: 270
-    logicCode: CirnosCircuits.Comparator
+    logicCode: CirnosCircuits.WordComparator
     placingRules:
         offsetDimensions:
             x: 2

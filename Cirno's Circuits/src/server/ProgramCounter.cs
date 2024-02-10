@@ -10,13 +10,13 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
-			var utils = new Utils(Inputs, Outputs);
+			var io = new IOHandler(Inputs, Outputs);
 			CLK = Inputs[Inputs.Count - 1].On;
 			JumpEnable = Inputs[Inputs.Count - 2].On;
 
 			if (!prevCLK && CLK) {
 				if (JumpEnable) {
-					SetCounter(utils.GrabValueFromInput(0, 32));
+					SetCounter(io.GrabValueFromInput(0, 32));
 				} else {
 					if (counter == ulong.MaxValue) {
 						counter = 0;
