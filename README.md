@@ -3,9 +3,9 @@
 A mod for Logic World (v0.91.3).
 A random assortment of parts and logic.
 
-![image](2024-05-21@21-43-35 (2560x1372).jpg)
+![image](imageA.jpg)
 
-![image](2024-05-21@21-46-06 (2560x1372).jpg)
+![image](imageB.jpg)
 
 ## Includes:
 
