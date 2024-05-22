@@ -1,39 +1,88 @@
-﻿using LogicAPI.Server.Components;
+using LogicAPI.Server.Components;
 
-namespace CirnosCircuits {
-    public abstract class BaseAdder : LogicComponent {
-        public abstract int Bits { get; }
-        protected override void DoLogicUpdate() {
-            var io = new IOHandler(Inputs, Outputs);
+namespace CirnosCircuits
+{
+    public class ByteAdder : LogicComponent
+    {
+        private IOHandler _ioHandler;
 
-            ulong a, b;
-            bool carryIn;
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
 
-            a = io.GrabValueFromInput(0, Bits);
-            b = io.GrabValueFromInput(Bits, Bits << 1);
-            carryIn = Inputs[Bits << 1].On;
+        protected override void DoLogicUpdate() 
+        {
+            var carryIn = Inputs[16].On;
 
-            ulong result = carryIn ? a + b + 1 : a + b;
-
-            io.OutputInteger(result);
+            var a = _ioHandler.GetInputAsU8();
+            var b = _ioHandler.GetInputAsU8(8);
+            var result = carryIn ? a + b + 1 : a + b;
+            
+            _ioHandler.OutputNumber(result);
         }
     }
+    
+    public class WordAdder : LogicComponent 
+    {
+        private IOHandler _ioHandler;
 
-    public abstract class BaseSubtractor : LogicComponent {
-        public abstract int Bits { get; }
-        protected override void DoLogicUpdate() {
-            var io = new IOHandler(Inputs, Outputs);
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() 
+        {
+            var carryIn = Inputs[32].On;
 
-            long a, b;
-            bool BorrowIn;
-
-            a = io.GrabValueFromInput(0, Bits, true);
-            b = io.GrabValueFromInput(Bits, Bits << 1, true);
-            BorrowIn = Inputs[Bits << 1].On;
-
-            long result = BorrowIn ? a - b - 1 : a - b;
-
-            io.OutputInteger(result);
+            var a = _ioHandler.GetInputAsI16();
+            var b = _ioHandler.GetInputAsI16(16);
+            var result = carryIn ? a + b + 1 : a + b;
+            
+            _ioHandler.OutputNumber(result);
         }
     }
-}
+    
+    public class ByteSubtract : LogicComponent 
+    {
+        private IOHandler _ioHandler;
+
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() 
+        {
+            var borrowIn = Inputs[16].On;
+
+            var a = _ioHandler.GetInputAsI8();
+            var b = _ioHandler.GetInputAsI8(8);
+            var result = borrowIn ? a - b - 1 : a - b;
+            
+            _ioHandler.OutputNumber(result);
+        }
+    }
+    
+    public class WordSubtract : LogicComponent 
+    {
+        private IOHandler _ioHandler;
+
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
+
+        protected override void DoLogicUpdate() 
+        {
+            var borrowIn = Inputs[32].On;
+
+            var a = _ioHandler.GetInputAsI16();
+            var b = _ioHandler.GetInputAsI16(16);
+            var result = borrowIn ? a - b - 1 : a - b;
+            
+            _ioHandler.OutputNumber(result);
+        }
+    }
+};

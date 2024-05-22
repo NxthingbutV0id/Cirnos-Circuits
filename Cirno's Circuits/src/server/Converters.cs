@@ -1,35 +1,52 @@
-﻿using LogicAPI.Server.Components;
+﻿using System;
+using System.Collections.Generic;
+using LogicAPI.Server.Components;
 
-namespace CirnosCircuits {
-	public class BCDToBinary : LogicComponent {
-		protected override void DoLogicUpdate() {
-			var io = new IOHandler(Inputs, Outputs);
-			ulong result = 0;
+namespace CirnosCircuits 
+{
+	public class BCDToBinary : LogicComponent 
+    {
+	    private IOHandler _ioHandler;
 
-			for (int i = 0; i < 76; i += 4) {
-				var input = io.GrabValueFromInput(i, i + 4);
-				if (input > 9) { input = 9; }
+	    protected override void Initialize()
+	    {
+		    _ioHandler = new IOHandler(Inputs, Outputs);
+	    }
 
-				result += input * IOHandler.Pow(10, i >> 2);
+		protected override void DoLogicUpdate() 
+		{
+			var result = 0ul;
+			var temp = new byte[10];
+			
+			for (var i = 0; i < 10; i++)
+			{
+				temp[i] = _ioHandler.GetInputAsU8(8 * i);
 			}
 
-			io.OutputInteger(result);
+			var power = 0;
+			for (var i = 0; i < 10; i++)
+			{
+				var num = (ulong)temp[i] & 0xf;
+				if (num > 9)
+					num = 9;
+				
+				result += num * Pow(10, power);
+
+				num = (ulong)(temp[i] >> 4) & 0xf;
+				if (num > 9)
+					num = 9;
+				
+				result += num * Pow(10, power + 1);
+
+				power += 2;
+			}
+
+			_ioHandler.OutputNumber(result);
 		}
-	} // Completed
 
-    public class ByteToBCDFractional : BaseBCDFractional {
-		public override int Bits => 8;
-	} // Not Implemented
-
-	public class WordToBCDFractional : BaseBCDFractional {
-        public override int Bits => 16;
-    } // Not Implemented
-
-	public class DWordToBCDFractional : BaseBCDFractional {
-        public override int Bits => 32;
-    } // Not Implemented
-
-	public class QWordToBCDFractional : BaseBCDFractional {
-        public override int Bits => 64;
-    } // Not Implemented
+		private static ulong Pow(int n, int p)
+		{
+			return (ulong)Math.Pow(n, p);
+		}
+    } // Completed
 }

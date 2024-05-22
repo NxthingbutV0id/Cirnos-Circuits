@@ -1,33 +1,42 @@
 ﻿using LogicAPI.Server.Components;
 
-namespace CirnosCircuits {
-	public class ProgramCounter : LogicComponent { 
-        private ulong counter;
-		private bool CLK, prevCLK, JumpEnable;
-		protected override void Initialize() {
-			counter = 0;
-			prevCLK = false;
+namespace CirnosCircuits 
+{
+	public class ProgramCounter : LogicComponent 
+    { 
+        private uint _counter;
+        private bool _clk;
+        private bool _prevClk;
+        private bool _jumpEnable;
+        private IOHandler _ioHandler;
+
+        protected override void Initialize()
+        {
+	        _ioHandler = new IOHandler(Inputs, Outputs);
+			_counter = 0;
+			_prevClk = false;
 		}
 
-		protected override void DoLogicUpdate() {
-			var io = new IOHandler(Inputs, Outputs);
-			CLK = Inputs[Inputs.Count - 1].On;
-			JumpEnable = Inputs[Inputs.Count - 2].On;
+		protected override void DoLogicUpdate() 
+        {
+			_clk = Inputs[Inputs.Count - 1].On;
+			_jumpEnable = Inputs[Inputs.Count - 2].On;
 
-			if (!prevCLK && CLK) {
-				if (JumpEnable) {
-					SetCounter(io.GrabValueFromInput(0, 32));
-				} else {
-					if (counter == ulong.MaxValue) {
-						counter = 0;
-					} else {  
-						counter++; 
-					}
+			if (!_prevClk && _clk) 
+            {
+				if (_jumpEnable) 
+					SetCounter(_ioHandler.GetInputAsU32());
+                else 
+                {
+					if (_counter == uint.MaxValue)
+						_counter = 0;
+					else 
+						_counter++; 
 				}
 			}
-			prevCLK = CLK;
+			_prevClk = _clk;
 		}
 
-		private void SetCounter(ulong input) => counter = input;
+		private void SetCounter(uint input) => _counter = input;
     } // Not Implemented
 }

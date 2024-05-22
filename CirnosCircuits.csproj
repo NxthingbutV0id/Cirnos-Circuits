@@ -8,23 +8,116 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="JimmysUnityUtilities">
+      <HintPath>LW libs\JimmysUnityUtilities.dll</HintPath>
+    </Reference>
     <Reference Include="LogicAPI">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicAPI.dll</HintPath>
+      <HintPath>..\steamapps\common\Logic World\Logic_World_Data\Managed\LogicAPI.dll</HintPath>
     </Reference>
     <Reference Include="LogicAPI.Server">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Server\LogicAPI.Server.dll</HintPath>
+      <HintPath>..\steamapps\common\Logic World\Server\LogicAPI.Server.dll</HintPath>
     </Reference>
     <Reference Include="LogicLog">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicLog.dll</HintPath>
+      <HintPath>..\steamapps\common\Logic World\Logic_World_Data\Managed\LogicLog.dll</HintPath>
     </Reference>
     <Reference Include="LogicWorld">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicWorld.dll</HintPath>
+      <HintPath>..\steamapps\common\Logic World\Logic_World_Data\Managed\LogicWorld.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Audio">
+      <HintPath>LW libs\LogicWorld.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Building">
+      <HintPath>LW libs\LogicWorld.Building.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.BuildingManagement">
+      <HintPath>LW libs\LogicWorld.BuildingManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.CameraCode">
+      <HintPath>LW libs\LogicWorld.CameraCode.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Chat">
+      <HintPath>LW libs\LogicWorld.Chat.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.CheatCodes">
+      <HintPath>LW libs\LogicWorld.CheatCodes.dll</HintPath>
     </Reference>
     <Reference Include="LogicWorld.ClientCode">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Logic_World_Data\Managed\LogicWorld.ClientCode.dll</HintPath>
+      <HintPath>..\steamapps\common\Logic World\Logic_World_Data\Managed\LogicWorld.ClientCode.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.ClientWorldStuff">
+      <HintPath>LW libs\LogicWorld.ClientWorldStuff.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Environments">
+      <HintPath>LW libs\LogicWorld.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.GameStates">
+      <HintPath>LW libs\LogicWorld.GameStates.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Graphics">
+      <HintPath>LW libs\LogicWorld.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Input">
+      <HintPath>LW libs\LogicWorld.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Interfaces">
+      <HintPath>LW libs\LogicWorld.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Messages">
+      <HintPath>LW libs\LogicWorld.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Modding">
+      <HintPath>LW libs\LogicWorld.Modding.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Modding.Assets">
+      <HintPath>LW libs\LogicWorld.Modding.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Modding.Compilation">
+      <HintPath>LW libs\LogicWorld.Modding.Compilation.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Models">
+      <HintPath>LW libs\LogicWorld.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Networking">
+      <HintPath>LW libs\LogicWorld.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Online">
+      <HintPath>LW libs\LogicWorld.Online.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Outlines">
+      <HintPath>LW libs\LogicWorld.Outlines.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Physics">
+      <HintPath>LW libs\LogicWorld.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Players">
+      <HintPath>LW libs\LogicWorld.Players.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.References">
+      <HintPath>LW libs\LogicWorld.References.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Rendering">
+      <HintPath>LW libs\LogicWorld.Rendering.dll</HintPath>
     </Reference>
     <Reference Include="LogicWorld.SharedCode">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Logic World\Server\LogicWorld.SharedCode.dll</HintPath>
+      <HintPath>..\steamapps\common\Logic World\Server\LogicWorld.SharedCode.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Subassemblies">
+      <HintPath>LW libs\LogicWorld.Subassemblies.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.UI">
+      <HintPath>LW libs\LogicWorld.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.UnityHacksAndExtensions">
+      <HintPath>LW libs\LogicWorld.UnityHacksAndExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Utilities">
+      <HintPath>LW libs\LogicWorld.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="LogicWorld.Worlds">
+      <HintPath>LW libs\LogicWorld.Worlds.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>LW libs\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
 

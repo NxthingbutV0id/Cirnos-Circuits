@@ -1,17 +1,41 @@
-﻿namespace CirnosCircuits {
-    public class Multiplexer1BitSelect : BaseMultiplexer {
-        public override int InputBits => 2;
-    } // Needs Testing
+﻿using LogicAPI.Server.Components;
 
-    public class Multiplexer2BitSelect : BaseMultiplexer {
-        public override int InputBits => 4;
-    } // Needs Testing
+namespace CirnosCircuits 
+{
+    public abstract class BaseMultiplexer : LogicComponent 
+    {
+        private IOHandler _ioHandler;
+        protected abstract int Bits { get; }
 
-    public class Multiplexer3BitSelect : BaseMultiplexer {
-        public override int InputBits => 8;
-    } // Needs Testing
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
 
-    public class Multiplexer4BitSelect : BaseMultiplexer {
-        public override int InputBits => 16;
-    } // Needs Testing
+        protected override void DoLogicUpdate() 
+        {
+            var selector = _ioHandler.GetInputAsI32(Bits);
+            Outputs[0].On = Inputs[selector].On;
+        }
+    }
+
+    public class Multiplexer2Bit : BaseMultiplexer
+    {
+        protected override int Bits => 2;
+    }
+    
+    public class Multiplexer3Bit : BaseMultiplexer
+    {
+        protected override int Bits => 3;
+    }
+    
+    public class Multiplexer4Bit : BaseMultiplexer
+    {
+        protected override int Bits => 4;
+    }
+    
+    public class Multiplexer5Bit : BaseMultiplexer
+    {
+        protected override int Bits => 5;
+    }
 }

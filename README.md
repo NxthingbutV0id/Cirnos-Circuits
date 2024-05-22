@@ -1,7 +1,10 @@
-# Cirno's Circuits (V0.2.6)
+# Cirno's Circuits (V0.3.0)
 
-A mod for Logic World. (v0.91.2)
-A random asortment of parts and logic.
+A mod for Logic World (v0.91.3).
+A random assortment of parts and logic.
+
+![image](./images/2024-05-21@21-43-35 (2560x1372).jpg)
+![image](./images/2024-05-21@21-46-06 (2560x1372).jpg)
 
 ## Includes:
 
@@ -13,29 +16,29 @@ A random asortment of parts and logic.
 	- 3 bit row selector (runs top down, 1 to 7, 0 is always blank)
 
 - Sideways Logic Gates!
-	- And, Or, Xor, Nand, Nor, and Xnor BUT ON THEIR SIDES!!!!
-
-- Byte and Word Relays
-- Byte D-Latch
-- Bit, Byte, and Word D-Flip Flops
-- Byte and Word Comparators
-- BCD to binary Converter (19 digits to QWord)
-- Edge Detecter (Rising and Falling)
-- JK FlipFlop
-- SR Latch
+- 8, 16, 32, and 64 bit Relays
+- 8, 16, and 32 bit D-Latch
+- 1, 8, 16, and 32 bit D-Flip Flops
+- 8, 16, 32, and 64 bit Comparators
+- BCD to binary Converter (19 digits to 64 bits)
+- Edge Detector (Rising and Falling)
+- JK Flip-Flop
+- SR-Latch
+- (*New!*) 8, 16, 32, and 64 bit Printers
+- (*New!*) Half, Single, and Double Precision Float Printers
+- (*New!*) 8 Bit Adder
 
 ## Future Plans:
 
-### Coded, Not Implemented
-
-- Dword and QWord Comparators
 - Binary to BCD 7 segment with ripple blanking and negative support
 - Binary to Fractional BCD (fixed point values from 0.0000... to 0.9999...)
 - Program Counter
-
-### Not Coded
-
+- 16 and 32 bit Adder
+- Subtracters
+- Multipliers
+- Dividers
 - Pulse Extender
+- Thinner switches
 - 14 and 16 segment displays
 - Text input to Binary (type in "42", output 101010)
 - Stack

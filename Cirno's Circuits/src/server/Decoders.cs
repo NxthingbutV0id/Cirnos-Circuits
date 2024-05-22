@@ -1,17 +1,21 @@
-﻿namespace CirnosCircuits {
-    public class Decoder2Bit : BaseDecoder {
-        public override int Bits => 2;
-    } // Needs Testing
+﻿using LogicAPI.Server.Components;
 
-    public class Decoder3Bit : BaseDecoder {
-        public override int Bits => 3;
-    } // Needs Testing
+namespace CirnosCircuits 
+{
+    public class Decoder : LogicComponent 
+    {
+        private IOHandler _ioHandler;
 
-    public class Decoder4Bit : BaseDecoder {
-        public override int Bits => 4;
-    } // Needs Testing
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
 
-    public class Decoder5Bit : BaseDecoder {
-        public override int Bits => 5;
-    } // Needs Testing
+        protected override void DoLogicUpdate() 
+        {
+            _ioHandler.ClearOutputs();
+            var index = _ioHandler.GetInputAsI32();
+            Outputs[index].On = true;
+        }
+    }
 }

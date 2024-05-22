@@ -82,7 +82,7 @@ Decoder2Bit:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Decoder2Bit
+    logicCode: CirnosCircuits.Decoder
     placingRules:
         offsetDimensions:
             x: 2
@@ -246,7 +246,7 @@ Decoder3Bit:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Decoder3Bit
+    logicCode: CirnosCircuits.Decoder
     placingRules:
         offsetDimensions:
             x: 2
@@ -500,7 +500,7 @@ Decoder4Bit:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Decoder4Bit
+    logicCode: CirnosCircuits.Decoder
     placingRules:
         offsetDimensions:
             x: 2
@@ -924,7 +924,7 @@ Decoder5Bit:
                     x: 270
                     y: 0
                     z: 0
-    logicCode: CirnosCircuits.Decoder5Bit
+    logicCode: CirnosCircuits.Decoder
     placingRules:
         offsetDimensions:
             x: 2

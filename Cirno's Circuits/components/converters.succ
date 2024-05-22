@@ -11,11 +11,11 @@ BCDToBinary:
                 scale:
                     x: 1
                     y: 2
-                    z: 16
+                    z: 32
                 position:
                     x: 0
                     y: 0
-                    z: 0.5
+                    z: -0.5
                 rotation:
                     x: 0
                     y: 0
@@ -787,6 +787,186 @@ BCDToBinary:
                 position:
                     x: 0.5
                     y: 0.5
+                    z: -16.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -15.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -15.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -14.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -14.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -13.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -13.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -12.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -12.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -11.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -11.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -10.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -10.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -9.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -9.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -8.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -8.25
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
+                    z: -7.75
+                rotation:
+                    x: 0
+                    y: 0
+                    z: 270
+            -
+                startOn: false
+                position:
+                    x: 0.5
+                    y: 0.5
                     z: -7.25
                 rotation:
                     x: 0
@@ -1106,8 +1286,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -7.25
+                    y: 0.5
+                    z: 8.75
                 rotation:
                     x: 0
                     y: 0
@@ -1116,8 +1296,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -6.75
+                    y: 0.5
+                    z: 9.25
                 rotation:
                     x: 0
                     y: 0
@@ -1126,8 +1306,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -6.25
+                    y: 0.5
+                    z: 9.75
                 rotation:
                     x: 0
                     y: 0
@@ -1136,8 +1316,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -5.75
+                    y: 0.5
+                    z: 10.25
                 rotation:
                     x: 0
                     y: 0
@@ -1146,8 +1326,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -5.25
+                    y: 0.5
+                    z: 10.75
                 rotation:
                     x: 0
                     y: 0
@@ -1156,8 +1336,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -4.75
+                    y: 0.5
+                    z: 11.25
                 rotation:
                     x: 0
                     y: 0
@@ -1166,8 +1346,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -4.25
+                    y: 0.5
+                    z: 11.75
                 rotation:
                     x: 0
                     y: 0
@@ -1176,8 +1356,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -3.75
+                    y: 0.5
+                    z: 12.25
                 rotation:
                     x: 0
                     y: 0
@@ -1186,8 +1366,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -3.25
+                    y: 0.5
+                    z: 12.75
                 rotation:
                     x: 0
                     y: 0
@@ -1196,8 +1376,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -2.75
+                    y: 0.5
+                    z: 13.25
                 rotation:
                     x: 0
                     y: 0
@@ -1206,8 +1386,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -2.25
+                    y: 0.5
+                    z: 13.75
                 rotation:
                     x: 0
                     y: 0
@@ -1216,8 +1396,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -1.75
+                    y: 0.5
+                    z: 14.25
                 rotation:
                     x: 0
                     y: 0
@@ -1226,8 +1406,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -1.25
+                    y: 0.5
+                    z: 14.75
                 rotation:
                     x: 0
                     y: 0
@@ -1236,188 +1416,8 @@ BCDToBinary:
                 startOn: false
                 position:
                     x: 0.5
-                    y: 1.25
-                    z: -0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 1.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 1.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 2.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 2.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 3.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 3.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 5.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 5.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 6.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 6.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 7.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 7.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
-            -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 1.25
-                    z: 8.25
+                    y: 0.5
+                    z: 15.25
                 rotation:
                     x: 0
                     y: 0

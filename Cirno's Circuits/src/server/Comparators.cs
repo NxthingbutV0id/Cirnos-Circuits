@@ -1,17 +1,140 @@
-﻿namespace CirnosCircuits {
-    public class ByteComparator : BaseComparator {
-        public override int Bits => 8;
-    } // Needs Testing
+﻿using LogicAPI.Server.Components;
 
-    public class WordComparator : BaseComparator {
-        public override int Bits => 16;
-    } // Needs Testing
+namespace CirnosCircuits 
+{
+    public class ByteComparator : LogicComponent 
+    {
+        private IOHandler _ioHandler;
 
-    public class DWordComparator : BaseComparator {
-        public override int Bits => 32;
-    } // Not Implemented
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
 
-    public class QWordComparator : BaseComparator {
-        public override int Bits => 64;
-    } // Not Implemented
+        protected override void DoLogicUpdate() 
+        {
+            var signed = Inputs[16].On;
+
+            if (signed)
+            {
+                var a = _ioHandler.GetInputAsI8();
+                var b = _ioHandler.GetInputAsI8(8);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            } 
+            else 
+            {
+                var a = _ioHandler.GetInputAsU8();
+                var b = _ioHandler.GetInputAsU8(8);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            }
+        }
+    }
+    
+    public class WordComparator : LogicComponent 
+    {
+        private IOHandler _ioHandler;
+
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
+
+        protected override void DoLogicUpdate() 
+        {
+            var signed = Inputs[32].On;
+
+            if (signed)
+            {
+                var a = _ioHandler.GetInputAsI16();
+                var b = _ioHandler.GetInputAsI16(16);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            } 
+            else 
+            {
+                var a = _ioHandler.GetInputAsU16();
+                var b = _ioHandler.GetInputAsU16(16);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            }
+        }
+    }
+    
+    public class DWordComparator : LogicComponent 
+    {
+        private IOHandler _ioHandler;
+
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
+
+        protected override void DoLogicUpdate() 
+        {
+            var signed = Inputs[64].On;
+
+            if (signed)
+            {
+                var a = _ioHandler.GetInputAsI32();
+                var b = _ioHandler.GetInputAsI32(32);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            } 
+            else 
+            {
+                var a = _ioHandler.GetInputAsU32();
+                var b = _ioHandler.GetInputAsU32(32);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            }
+        }
+    }
+    
+    public class QWordComparator : LogicComponent 
+    {
+        private IOHandler _ioHandler;
+
+        protected override void Initialize()
+        {
+            _ioHandler = new IOHandler(Inputs, Outputs);
+        }
+
+        protected override void DoLogicUpdate() 
+        {
+            var signed = Inputs[128].On;
+
+            if (signed)
+            {
+                var a = _ioHandler.GetInputAsI64();
+                var b = _ioHandler.GetInputAsI64(64);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            } 
+            else 
+            {
+                var a = _ioHandler.GetInputAsU64(0);
+                var b = _ioHandler.GetInputAsU64(64);
+                
+                Outputs[0].On = a > b;
+                Outputs[1].On = a == b;
+                Outputs[2].On = a < b;
+            }
+        }
+    }
 }
