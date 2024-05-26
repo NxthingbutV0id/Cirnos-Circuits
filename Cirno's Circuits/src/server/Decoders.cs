@@ -1,20 +1,16 @@
 ﻿using LogicAPI.Server.Components;
 
-namespace CirnosCircuits 
-{
-    public class Decoder : LogicComponent 
-    {
-        private IOHandler _ioHandler;
+namespace CirnosCircuits {
+    public class Decoder: LogicComponent {
+        private IOHandler ioHandler;
 
-        protected override void Initialize()
-        {
-            _ioHandler = new IOHandler(Inputs, Outputs);
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
         }
 
-        protected override void DoLogicUpdate() 
-        {
-            _ioHandler.ClearOutputs();
-            var index = _ioHandler.GetInputAsI32();
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            int index = ioHandler.GetInputAsI32();
             Outputs[index].On = true;
         }
     }

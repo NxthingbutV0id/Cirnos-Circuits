@@ -2,28 +2,24 @@ using System;
 using System.Globalization;
 using LogicAPI.Server.Components;
 
-namespace CirnosCircuits
-{
-	public class BytePrinter : LogicComponent
-	{
-		private bool _prevClk;
-		private bool _clk;
-		private IOHandler _ioHandler;
+namespace CirnosCircuits {
+	public class BytePrinter: LogicComponent {
+		private bool prevClk;
+		private bool clk;
+		private IOHandler ioHandler;
 
-		protected override void Initialize()
-		{
-			_prevClk = false;
-			_ioHandler = new IOHandler(Inputs, Outputs);
+		protected override void Initialize() {
+			prevClk = false;
+			ioHandler = new IOHandler(Inputs, Outputs);
 		}
 
-		protected override void DoLogicUpdate()
-		{
-			var s = _ioHandler.GetInputAsI8();
-			var u = _ioHandler.GetInputAsU8();
-			_clk = Inputs[8].On;
+		protected override void DoLogicUpdate() {
+			sbyte s = ioHandler.GetInputAsI8();
+			byte u = ioHandler.GetInputAsU8();
+			clk = Inputs[8].On;
 
-			if (_clk && !_prevClk)
-			{
+			if (clk && !prevClk)
+			{ //TODO: this
 				var usb = Convert.ToString(u, 2).PadLeft(8, '0');
 				var usd = u.ToString(CultureInfo.CurrentCulture);
 				var ssd = s.ToString(CultureInfo.CurrentCulture);
@@ -41,7 +37,7 @@ namespace CirnosCircuits
 				Logger.Info(msg);
 			}
 
-			_prevClk = _clk;
+			prevClk = clk;
 		}
 	}
 	

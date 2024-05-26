@@ -1,51 +1,41 @@
 using LogicAPI.Server.Components;
 
-namespace CirnosCircuits
-{
-    public abstract class BaseRelay : LogicComponent 
-    {
+namespace CirnosCircuits {
+    public abstract class BaseRelay: LogicComponent {
         protected abstract int Bits { get; }
-        private IInputPeg[] _inputsA;
-        private IInputPeg[] _inputsB;
-        private bool _wasOpen;
+        private IInputPeg[] inputsA;
+        private IInputPeg[] inputsB;
+        private bool wasOpen;
 
-        protected override void Initialize() 
-        {
-            _inputsA = new IInputPeg[Bits];
-            _inputsB = new IInputPeg[Bits];
+        protected override void Initialize() {
+            inputsA = new IInputPeg[Bits];
+            inputsB = new IInputPeg[Bits];
 
-            for (var i = 0; i < Bits; i++) 
-            {
-                _inputsA[i] = Inputs[i];
-                _inputsB[i] = Inputs[i + Bits];
+            for (int i = 0; i < Bits; i++) {
+                inputsA[i] = Inputs[i];
+                inputsB[i] = Inputs[i + Bits];
             }
         }
 
-        protected override void DoLogicUpdate() 
-        {
-            var isOpen = Inputs[Bits << 1].On;
+        protected override void DoLogicUpdate() {
+            bool isOpen = Inputs[Bits << 1].On;
             
-            if (_wasOpen == isOpen)
-                return;
+            if (wasOpen == isOpen) return;
+            if (inputsA == null || inputsB == null) return;
             
-            if (_inputsA == null || _inputsB == null)
-                return;
-            
-            if (isOpen) 
-            {
-                for (var i = 0; i < Bits; i++)
-                    _inputsA[i].AddPhasicLinkWith(_inputsB[i]);
-            } 
-            else 
-            {
-                for (var i = 0; i < Bits; i++)
-                    _inputsA[i].RemovePhasicLinkWith(_inputsB[i]);
+            if (isOpen) {
+                for (int i = 0; i < Bits; i++) {
+                    inputsA[i].AddPhasicLinkWith(inputsB[i]);
+                }
+            } else {
+                for (int i = 0; i < Bits; i++) {
+                    inputsA[i].RemovePhasicLinkWith(inputsB[i]);
+                }
             }
-            _wasOpen = isOpen;
+            wasOpen = isOpen;
         }
 
-        public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) 
-        {
+        public override bool InputAtIndexShouldTriggerComponentLogicUpdates(int inputIndex) {
             return inputIndex == (Bits << 1);
         }
     }

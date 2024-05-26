@@ -1,10 +1,8 @@
 ﻿using LogicAPI.Server.Components;
 
-namespace CirnosCircuits 
-{
-	public class AsciiDisplay : LogicComponent {
-		private readonly int[,] _asciiTable = 
-        {
+namespace CirnosCircuits {
+	public class AsciiDisplay: LogicComponent {
+		private readonly int[,] asciiTable = {
 				{ 0b00000,0b00000,0b00000,0b00000,0b00000,0b00000,0b00000 },// space
 				{ 0b00100,0b00100,0b00100,0b00100,0b00100,0b00000,0b00100 },// !
 				{ 0b01010,0b01010,0b01010,0b00000,0b00000,0b00000,0b00000 },// "
@@ -103,37 +101,35 @@ namespace CirnosCircuits
 				{ 0b11111,0b11111,0b11111,0b11111,0b11111,0b11111,0b11111 } // Full White
 			};
 
-		private IOHandler _ioHandler;
+		private IOHandler ioHandler;
 
-		protected override void Initialize()
-		{
-			_ioHandler = new IOHandler(Inputs, Outputs);
+		protected override void Initialize() {
+			ioHandler = new IOHandler(Inputs, Outputs);
 		}
 		
-		protected override void DoLogicUpdate() 
-        {
-			var address = (_ioHandler.GetInputAsI32() & 127) - 32;
-			var row = _ioHandler.GetInputAsI32(7) - 1;
+		protected override void DoLogicUpdate() {
+			int address = (ioHandler.GetInputAsI32() & 127) - 32;
+			int row = ioHandler.GetInputAsI32(7) - 1;
 
-			if (address < 0 || row < 0) 
-            {
-				_ioHandler.ClearOutputs();
+			if (address < 0 || row < 0) {
+				ioHandler.ClearOutputs();
 				return;
 			}
 
-			var outer = IntToBoolArray(_asciiTable[address, row]);
+			bool[] outer = IntToBoolArray(asciiTable[address, row]);
 
 
-			for (var i = 0; i < Outputs.Count; i++) 
+			for (int i = 0; i < Outputs.Count; i++) {
 				Outputs[i].On = outer[i];
+			}
 		}
 
-		private static bool[] IntToBoolArray(int num) 
-        {
-			var result = new bool[5];
+		private static bool[] IntToBoolArray(int num) {
+			bool[] result = new bool[5];
 
-			for (var i = 0; i < 5; i++)
+			for (int i = 0; i < 5; i++) {
 				result[i] = (num & (1 << i)) == 1;
+			}
 
 			return result;
 		}

@@ -1,33 +1,26 @@
 ﻿using LogicAPI.Server.Components;
 
-namespace CirnosCircuits 
-{
-    public class ByteComparator : LogicComponent 
-    {
-        private IOHandler _ioHandler;
+namespace CirnosCircuits {
+    public class ByteComparator: LogicComponent {
+        private IOHandler ioHandler;
 
-        protected override void Initialize()
-        {
-            _ioHandler = new IOHandler(Inputs, Outputs);
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
         }
 
-        protected override void DoLogicUpdate() 
-        {
-            var signed = Inputs[16].On;
+        protected override void DoLogicUpdate() {
+            bool signed = Inputs[16].On;
 
-            if (signed)
-            {
-                var a = _ioHandler.GetInputAsI8();
-                var b = _ioHandler.GetInputAsI8(8);
+            if (signed) {
+                sbyte a = ioHandler.GetInputAsI8();
+                sbyte b = ioHandler.GetInputAsI8(8);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
-            } 
-            else 
-            {
-                var a = _ioHandler.GetInputAsU8();
-                var b = _ioHandler.GetInputAsU8(8);
+            } else {
+                byte a = ioHandler.GetInputAsU8();
+                byte b = ioHandler.GetInputAsU8(8);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
@@ -36,32 +29,26 @@ namespace CirnosCircuits
         }
     }
     
-    public class WordComparator : LogicComponent 
-    {
-        private IOHandler _ioHandler;
+    public class WordComparator: LogicComponent {
+        private IOHandler ioHandler;
 
-        protected override void Initialize()
-        {
-            _ioHandler = new IOHandler(Inputs, Outputs);
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
         }
 
-        protected override void DoLogicUpdate() 
-        {
-            var signed = Inputs[32].On;
+        protected override void DoLogicUpdate() {
+            bool signed = Inputs[32].On;
 
-            if (signed)
-            {
-                var a = _ioHandler.GetInputAsI16();
-                var b = _ioHandler.GetInputAsI16(16);
+            if (signed) {
+                short a = ioHandler.GetInputAsI16();
+                short b = ioHandler.GetInputAsI16(16);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
-            } 
-            else 
-            {
-                var a = _ioHandler.GetInputAsU16();
-                var b = _ioHandler.GetInputAsU16(16);
+            } else {
+                ushort a = ioHandler.GetInputAsU16();
+                ushort b = ioHandler.GetInputAsU16(16);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
@@ -70,32 +57,26 @@ namespace CirnosCircuits
         }
     }
     
-    public class DWordComparator : LogicComponent 
-    {
-        private IOHandler _ioHandler;
+    public class DWordComparator: LogicComponent {
+        private IOHandler ioHandler;
 
-        protected override void Initialize()
-        {
-            _ioHandler = new IOHandler(Inputs, Outputs);
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
         }
 
-        protected override void DoLogicUpdate() 
-        {
-            var signed = Inputs[64].On;
+        protected override void DoLogicUpdate() {
+            bool signed = Inputs[64].On;
 
-            if (signed)
-            {
-                var a = _ioHandler.GetInputAsI32();
-                var b = _ioHandler.GetInputAsI32(32);
+            if (signed) {
+                int a = ioHandler.GetInputAsI32();
+                int b = ioHandler.GetInputAsI32(32);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
-            } 
-            else 
-            {
-                var a = _ioHandler.GetInputAsU32();
-                var b = _ioHandler.GetInputAsU32(32);
+            } else {
+                uint a = ioHandler.GetInputAsU32();
+                uint b = ioHandler.GetInputAsU32(32);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
@@ -104,32 +85,26 @@ namespace CirnosCircuits
         }
     }
     
-    public class QWordComparator : LogicComponent 
-    {
-        private IOHandler _ioHandler;
+    public class QWordComparator: LogicComponent {
+        private IOHandler ioHandler;
 
-        protected override void Initialize()
-        {
-            _ioHandler = new IOHandler(Inputs, Outputs);
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
         }
 
-        protected override void DoLogicUpdate() 
-        {
-            var signed = Inputs[128].On;
+        protected override void DoLogicUpdate() {
+            bool signed = Inputs[128].On;
 
-            if (signed)
-            {
-                var a = _ioHandler.GetInputAsI64();
-                var b = _ioHandler.GetInputAsI64(64);
+            if (signed) {
+                long a = ioHandler.GetInputAsI64();
+                long b = ioHandler.GetInputAsI64(64);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
-            } 
-            else 
-            {
-                var a = _ioHandler.GetInputAsU64(0);
-                var b = _ioHandler.GetInputAsU64(64);
+            } else {
+                ulong a = ioHandler.GetInputAsU64();
+                ulong b = ioHandler.GetInputAsU64(64);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
