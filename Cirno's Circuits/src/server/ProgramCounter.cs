@@ -1,42 +1,37 @@
 ﻿using LogicAPI.Server.Components;
 
-namespace CirnosCircuits 
-{
-	public class ProgramCounter : LogicComponent 
-    { 
-        private uint _counter;
-        private bool _clk;
-        private bool _prevClk;
-        private bool _jumpEnable;
-        private IOHandler _ioHandler;
+namespace CirnosCircuits {
+	public class ProgramCounter: LogicComponent { 
+        private uint counter;
+        private bool clk;
+        private bool prevClk;
+        private bool jumpEnable;
+        private IOHandler ioHandler;
 
-        protected override void Initialize()
-        {
-	        _ioHandler = new IOHandler(Inputs, Outputs);
-			_counter = 0;
-			_prevClk = false;
+        protected override void Initialize() {
+	        ioHandler = new IOHandler(Inputs, Outputs);
+			counter = 0;
+			prevClk = false;
 		}
 
-		protected override void DoLogicUpdate() 
-        {
-			_clk = Inputs[Inputs.Count - 1].On;
-			_jumpEnable = Inputs[Inputs.Count - 2].On;
+		protected override void DoLogicUpdate() {
+			clk = Inputs[Inputs.Count - 1].On;
+			jumpEnable = Inputs[Inputs.Count - 2].On;
 
-			if (!_prevClk && _clk) 
-            {
-				if (_jumpEnable) 
-					SetCounter(_ioHandler.GetInputAsU32());
-                else 
-                {
-					if (_counter == uint.MaxValue)
-						_counter = 0;
-					else 
-						_counter++; 
+			if (!prevClk && clk) {
+				if (jumpEnable) {
+					SetCounter(ioHandler.GetInputAsU32());
+				} else {
+					if (counter == uint.MaxValue) {
+						counter = 0;
+					} else {
+						counter++;
+					}
 				}
 			}
-			_prevClk = _clk;
+			prevClk = clk;
 		}
 
-		private void SetCounter(uint input) => _counter = input;
+		private void SetCounter(uint input) => counter = input;
     } // Not Implemented
 }
