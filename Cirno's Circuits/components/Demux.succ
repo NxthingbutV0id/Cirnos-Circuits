@@ -1,192 +1,102 @@
-SmallMux:
+Demux1bit:
     column: CirnosCircuits
     category: Multiplexers
     prefab:
         blocks:
             -
-              color: 006964
-              scale: (1, 1, 1)
+              color: 008982
+              scale: (1, 1.75, 1)
               position: (0, 0, 0)
               rotation: (0, 0, 0)
         inputs:
             -
               length: 0.6
-              position: (0, 0.25, 0.5)
+              position: (0, 0.5, 0.5)
               rotation: (90, 0, 0)
             -
               length: 0.6
-              position: (0, 0.75, 0.5)
+              position: (0, 1.75, 0)
+              rotation: (0, 0, 0)
+        outputs:
+            -
+              startOn: false
+              position: (0, 0.5, -0.5)
+              rotation: (270, 1, 0)
+            -
+              startOn: false
+              position: (0, 1.25, -0.5)
+              rotation: (270, 1, 0)
+    logicCode: CirnosCircuits.DeMux1Bit
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: false
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
+Demux2bit:
+    column: CirnosCircuits
+    category: Multiplexers
+    prefab:
+        blocks:
+            -
+              color: 008982
+              scale: (1, 3.25, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.6
+              position: (0, 0.5, 0.5)
               rotation: (90, 0, 0)
             -
               length: 0.6
-              position: (0, 1, 0)
+              position: (0, 3.25, -0.25)
+              rotation: (0, 0, 0)
+            -
+              length: 0.6
+              position: (0, 3.25, 0.25)
               rotation: (0, 0, 0)
         outputs:
             -
               startOn: false
               position: (0, 0.5, -0.5)
               rotation: (270, 0, 0)
-    logicCode: CirnosCircuits.Multiplexer2Bit
-    placingRules:
-        offsetDimensions:
-            x: 2
-            y: 1
-        defaultOffset:
-            x: 0
-            y: 0
-        offsetScale:
-            x: 1
-            y: 1
-        cornerMidpoint:
-            x: 0
-            y: 0
-        gridPlacingDimensions:
-            x: 1
-            y: 1
-        allowWorldRotation: true
-        allowFineRotation: true
-        canBeFlipped: false
-        flippingPointHeight: -0.25
-        gridPositionsAreRelative: false
-        enableEdgeExtensions: false
-        primaryGridPositions:
-            -
-              x: 0.5
-              y: 0.5
-        secondaryGridPositions: null
-        primaryEdgePositions: null
-        secondaryEdgePositions: null
-MediumMux:
-    column: CirnosCircuits
-    category: Multiplexers
-    prefab:
-        blocks:
-            -
-              color: 006964
-              scale: (1, 2, 1)
-              position: (0, 0, 0)
-              rotation: (0, 0, 0)
-        inputs:
-            -
-              length: 0.6
-              position: (0, 0.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 0.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 1.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 1.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 2, 0.25)
-              rotation: (0, 0, 0)
-            -
-              length: 0.6
-              position: (0, 2, -0.25)
-              rotation: (0, 0, 0)
-        outputs:
             -
               startOn: false
-              position: (0, 0.5, -0.5)
+              position: (0, 1.25, -0.5)
               rotation: (270, 0, 0)
-    logicCode: CirnosCircuits.Multiplexer3Bit
-    placingRules:
-        offsetDimensions:
-            x: 2
-            y: 1
-        defaultOffset:
-            x: 0
-            y: 0
-        offsetScale:
-            x: 1
-            y: 1
-        cornerMidpoint:
-            x: 0
-            y: 0
-        gridPlacingDimensions:
-            x: 1
-            y: 1
-        allowWorldRotation: true
-        allowFineRotation: true
-        canBeFlipped: false
-        flippingPointHeight: -0.25
-        gridPositionsAreRelative: false
-        enableEdgeExtensions: false
-        primaryGridPositions:
-            -
-              x: 0.5
-              y: 0.5
-        secondaryGridPositions: null
-        primaryEdgePositions: null
-        secondaryEdgePositions: null
-LargeMux:
-    column: CirnosCircuits
-    category: Multiplexers
-    prefab:
-        blocks:
-            -
-              color: 006964
-              scale: (1, 4, 2)
-              position: (0, 0, -0.5)
-              rotation: (0, 0, 0)
-        inputs:
-            -
-              length: 0.6
-              position: (0, 0.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 0.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 1.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 1.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 2.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 2.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 3.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 3.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 4, 0)
-              rotation: (0, 0, 0)
-            -
-              length: 0.6
-              position: (0, 4, -0.5)
-              rotation: (0, 0, 0)
-            -
-              length: 0.6
-              position: (0, 4, -1)
-              rotation: (0, 0, 0)
-        outputs:
             -
               startOn: false
-              position: (0, 0.5, -1.5)
+              position: (0, 2, -0.5)
               rotation: (270, 0, 0)
-    logicCode: CirnosCircuits.Multiplexer4Bit
+            -
+              startOn: false
+              position: (0, 2.75, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.DeMux2Bit
     placingRules:
         offsetDimensions:
             x: 2
@@ -204,7 +114,7 @@ LargeMux:
             x: 1
             y: 1
         allowWorldRotation: true
-        allowFineRotation: true
+        allowFineRotation: false
         canBeFlipped: false
         flippingPointHeight: -0.25
         gridPositionsAreRelative: false
@@ -216,103 +126,67 @@ LargeMux:
         secondaryGridPositions: null
         primaryEdgePositions: null
         secondaryEdgePositions: null
-ExtraLargeMux:
+Demux3bit:
     column: CirnosCircuits
     category: Multiplexers
     prefab:
         blocks:
             -
-              color: 006964
-              scale: (1, 8, 2)
-              position: (0, 0, -0.5)
+              color: 008982
+              scale: (1, 6.25, 2)
+              position: (0, 0, 0.5)
               rotation: (0, 0, 0)
         inputs:
             -
               length: 0.6
-              position: (0, 0.25, 0.5)
+              position: (0, 0.5, 1.5)
               rotation: (90, 0, 0)
             -
               length: 0.6
-              position: (0, 0.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 1.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 1.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 2.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 2.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 3.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 3.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 4.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 4.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 5.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 5.75, 0.5)
-              rotation: (90, 0, 0)
+              position: (0, 6.25, 0)
+              rotation: (0, 0, 0)
             -
               length: 0.6
               position: (0, 6.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 6.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 7.25, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 7.75, 0.5)
-              rotation: (90, 0, 0)
-            -
-              length: 0.6
-              position: (0, 8, 0.25)
               rotation: (0, 0, 0)
             -
               length: 0.6
-              position: (0, 8, -0.25)
-              rotation: (0, 0, 0)
-            -
-              length: 0.6
-              position: (0, 8, -0.75)
-              rotation: (0, 0, 0)
-            -
-              length: 0.6
-              position: (0, 8, -1.25)
+              position: (0, 6.25, 1)
               rotation: (0, 0, 0)
         outputs:
             -
               startOn: false
-              position: (0, 0.5, -1.5)
+              position: (0, 0.5, -0.5)
               rotation: (270, 0, 0)
-    logicCode: CirnosCircuits.Multiplexer5Bit
+            -
+              startOn: false
+              position: (0, 1.25, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 2, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 2.75, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 3.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 4.25, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 5.75, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.DeMux3Bit
     placingRules:
         offsetDimensions:
             x: 2
@@ -330,7 +204,133 @@ ExtraLargeMux:
             x: 1
             y: 1
         allowWorldRotation: true
-        allowFineRotation: true
+        allowFineRotation: false
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
+Demux4bit:
+    column: CirnosCircuits
+    category: Multiplexers
+    prefab:
+        blocks:
+            -
+              color: 008982
+              scale: (1, 12.25, 2)
+              position: (0, 0, 0.5)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.6
+              position: (0, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (0, 12.25, -0.25)
+              rotation: (0, 0, 0)
+            -
+              length: 0.6
+              position: (0, 12.25, 0.25)
+              rotation: (0, 0, 0)
+            -
+              length: 0.6
+              position: (0, 12.25, 0.75)
+              rotation: (0, 0, 0)
+            -
+              length: 0.6
+              position: (0, 12.25, 1.25)
+              rotation: (0, 0, 0)
+        outputs:
+            -
+              startOn: false
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 1.25, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 2, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 2.75, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 3.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 4.25, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 5.75, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 6.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 7.25, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 8, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 8.75, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 9.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 10.25, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 11, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0, 11.75, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.DeMux4Bit
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: false
         canBeFlipped: false
         flippingPointHeight: -0.25
         gridPositionsAreRelative: false

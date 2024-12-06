@@ -12,15 +12,15 @@ namespace CirnosCircuits {
             bool signed = Inputs[16].On;
 
             if (signed) {
-                sbyte a = ioHandler.GetInputAsI8();
-                sbyte b = ioHandler.GetInputAsI8(8);
+                sbyte a = ioHandler.GetInputAs<sbyte>();
+                sbyte b = ioHandler.GetInputAs<sbyte>(8);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
             } else {
-                byte a = ioHandler.GetInputAsU8();
-                byte b = ioHandler.GetInputAsU8(8);
+                byte a = ioHandler.GetInputAs<byte>();
+                byte b = ioHandler.GetInputAs<byte>(8);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
@@ -40,15 +40,15 @@ namespace CirnosCircuits {
             bool signed = Inputs[32].On;
 
             if (signed) {
-                short a = ioHandler.GetInputAsI16();
-                short b = ioHandler.GetInputAsI16(16);
+                short a = ioHandler.GetInputAs<short>();
+                short b = ioHandler.GetInputAs<short>(16);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
             } else {
-                ushort a = ioHandler.GetInputAsU16();
-                ushort b = ioHandler.GetInputAsU16(16);
+                ushort a = ioHandler.GetInputAs<ushort>();
+                ushort b = ioHandler.GetInputAs<ushort>(16);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
@@ -68,15 +68,15 @@ namespace CirnosCircuits {
             bool signed = Inputs[64].On;
 
             if (signed) {
-                int a = ioHandler.GetInputAsI32();
-                int b = ioHandler.GetInputAsI32(32);
+                int a = ioHandler.GetInputAs<int>();
+                int b = ioHandler.GetInputAs<int>(32);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
             } else {
-                uint a = ioHandler.GetInputAsU32();
-                uint b = ioHandler.GetInputAsU32(32);
+                uint a = ioHandler.GetInputAs<uint>();
+                uint b = ioHandler.GetInputAs<uint>(32);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
@@ -96,15 +96,15 @@ namespace CirnosCircuits {
             bool signed = Inputs[128].On;
 
             if (signed) {
-                long a = ioHandler.GetInputAsI64();
-                long b = ioHandler.GetInputAsI64(64);
+                long a = ioHandler.GetInputAs<long>();
+                long b = ioHandler.GetInputAs<long>(64);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;
                 Outputs[2].On = a < b;
             } else {
-                ulong a = ioHandler.GetInputAsU64();
-                ulong b = ioHandler.GetInputAsU64(64);
+                ulong a = ioHandler.GetInputAs<ulong>();
+                ulong b = ioHandler.GetInputAs<ulong>(64);
                 
                 Outputs[0].On = a > b;
                 Outputs[1].On = a == b;

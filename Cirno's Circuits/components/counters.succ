@@ -1,0 +1,1052 @@
+ByteCounter:
+  column: CirnosCircuits
+  category: Counters
+  prefab:
+    blocks:
+      -
+        color: 826c30
+        scale: (8, 1, 1)
+        position: (-0.5, 0, 0)
+        rotation: (0, 0, 0)
+    inputs:
+      - # Input pin 0
+        length: 0.6
+        position: (-4, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 1
+        length: 0.6
+        position: (-3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 2
+        length: 0.6
+        position: (-2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 3
+        length: 0.6
+        position: (-1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 4
+        length: 0.6
+        position: (0, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 5
+        length: 0.6
+        position: (1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 6
+        length: 0.6
+        position: (2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 7
+        length: 0.6
+        position: (3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Jump_Enable
+        length: 0.6
+        position: (-4, 1, 0)
+        rotation: (0, 0, 0)
+      - # Clock_In
+        length: 0.6
+        position: (-4.5, 0.5, 0)
+        rotation: (0, 0, 90)
+    outputs:
+      - # Output pin 0
+        startOn: false
+        position: (-4, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 1
+        startOn: false
+        position: (-3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 2
+        startOn: false
+        position: (-2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 3
+        startOn: false
+        position: (-1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 4
+        startOn: false
+        position: (0, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 5
+        startOn: false
+        position: (1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 6
+        startOn: false
+        position: (2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 7
+        startOn: false
+        position: (3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+  logicCode: CirnosCircuits.ByteCounter
+  placingRules:
+    allowFineRotation: false
+WordCounter:
+  column: CirnosCircuits
+  category: Counters
+  prefab:
+    blocks:
+      -
+        color: 826c30
+        scale: (16, 1, 1)
+        position: (-0.5, 0, 0)
+        rotation: (0, 0, 0)
+    inputs:
+      - # Input pin 0
+        length: 0.6
+        position: (-8, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 1
+        length: 0.6
+        position: (-7, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 2
+        length: 0.6
+        position: (-6, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 3
+        length: 0.6
+        position: (-5, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 4
+        length: 0.6
+        position: (-4, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 5
+        length: 0.6
+        position: (-3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 6
+        length: 0.6
+        position: (-2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 7
+        length: 0.6
+        position: (-1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 8
+        length: 0.6
+        position: (0, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 9
+        length: 0.6
+        position: (1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 10
+        length: 0.6
+        position: (2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 11
+        length: 0.6
+        position: (3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 12
+        length: 0.6
+        position: (4, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 13
+        length: 0.6
+        position: (5, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 14
+        length: 0.6
+        position: (6, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 15
+        length: 0.6
+        position: (7, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Jump_Enable
+        length: 0.6
+        position: (-8, 1, 0)
+        rotation: (0, 0, 0)
+      - # Clock_In
+        length: 0.6
+        position: (-8.5, 0.5, 0)
+        rotation: (0, 0, 90)
+    outputs:
+      - # Output pin 0
+        startOn: false
+        position: (-8, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 1
+        startOn: false
+        position: (-7, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 2
+        startOn: false
+        position: (-6, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 3
+        startOn: false
+        position: (-5, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 4
+        startOn: false
+        position: (-4, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 5
+        startOn: false
+        position: (-3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 6
+        startOn: false
+        position: (-2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 7
+        startOn: false
+        position: (-1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 8
+        startOn: false
+        position: (0, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 9
+        startOn: false
+        position: (1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 10
+        startOn: false
+        position: (2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 11
+        startOn: false
+        position: (3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 12
+        startOn: false
+        position: (4, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 13
+        startOn: false
+        position: (5, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 14
+        startOn: false
+        position: (6, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 15
+        startOn: false
+        position: (7, 0.5, -0.5)
+        rotation: (270, 0, 0)
+  logicCode: CirnosCircuits.WordCounter
+  placingRules:
+    allowFineRotation: false
+DWordCounter:
+  column: CirnosCircuits
+  category: Counters
+  prefab:
+    blocks:
+      -
+        color: 826c30
+        scale: (32, 1, 1)
+        position: (-0.5, 0, 0)
+        rotation: (0, 0, 0)
+    inputs:
+      - # Input pin 0
+        length: 0.6
+        position: (-16, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 1
+        length: 0.6
+        position: (-15, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 2
+        length: 0.6
+        position: (-14, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 3
+        length: 0.6
+        position: (-13, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 4
+        length: 0.6
+        position: (-12, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 5
+        length: 0.6
+        position: (-11, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 6
+        length: 0.6
+        position: (-10, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 7
+        length: 0.6
+        position: (-9, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 8
+        length: 0.6
+        position: (-8, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 9
+        length: 0.6
+        position: (-7, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 10
+        length: 0.6
+        position: (-6, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 11
+        length: 0.6
+        position: (-5, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 12
+        length: 0.6
+        position: (-4, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 13
+        length: 0.6
+        position: (-3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 14
+        length: 0.6
+        position: (-2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 15
+        length: 0.6
+        position: (-1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 16
+        length: 0.6
+        position: (0, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 17
+        length: 0.6
+        position: (1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 18
+        length: 0.6
+        position: (2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 19
+        length: 0.6
+        position: (3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 20
+        length: 0.6
+        position: (4, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 21
+        length: 0.6
+        position: (5, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 22
+        length: 0.6
+        position: (6, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 23
+        length: 0.6
+        position: (7, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 24
+        length: 0.6
+        position: (8, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 25
+        length: 0.6
+        position: (9, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 26
+        length: 0.6
+        position: (10, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 27
+        length: 0.6
+        position: (11, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 28
+        length: 0.6
+        position: (12, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 29
+        length: 0.6
+        position: (13, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 30
+        length: 0.6
+        position: (14, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 31
+        length: 0.6
+        position: (15, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Jump_Enable
+        length: 0.6
+        position: (-16, 1, 0)
+        rotation: (0, 0, 0)
+      - # Clock_In
+        length: 0.6
+        position: (-16.5, 0.5, 0)
+        rotation: (0, 0, 90)
+    outputs:
+      - # Output pin 0
+        startOn: false
+        position: (-16, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 1
+        startOn: false
+        position: (-15, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 2
+        startOn: false
+        position: (-14, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 3
+        startOn: false
+        position: (-13, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 4
+        startOn: false
+        position: (-12, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 5
+        startOn: false
+        position: (-11, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 6
+        startOn: false
+        position: (-10, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 7
+        startOn: false
+        position: (-9, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 8
+        startOn: false
+        position: (-8, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 9
+        startOn: false
+        position: (-7, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 10
+        startOn: false
+        position: (-6, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 11
+        startOn: false
+        position: (-5, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 12
+        startOn: false
+        position: (-4, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 13
+        startOn: false
+        position: (-3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 14
+        startOn: false
+        position: (-2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 15
+        startOn: false
+        position: (-1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 16
+        startOn: false
+        position: (0, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 17
+        startOn: false
+        position: (1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 18
+        startOn: false
+        position: (2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 19
+        startOn: false
+        position: (3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 20
+        startOn: false
+        position: (4, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 21
+        startOn: false
+        position: (5, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 22
+        startOn: false
+        position: (6, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 23
+        startOn: false
+        position: (7, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 24
+        startOn: false
+        position: (8, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 25
+        startOn: false
+        position: (9, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 26
+        startOn: false
+        position: (10, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 27
+        startOn: false
+        position: (11, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 28
+        startOn: false
+        position: (12, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 29
+        startOn: false
+        position: (13, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 30
+        startOn: false
+        position: (14, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 31
+        startOn: false
+        position: (15, 0.5, -0.5)
+        rotation: (270, 0, 0)
+  logicCode: CirnosCircuits.DWordCounter
+  placingRules:
+    allowFineRotation: false
+QWordCounter:
+  column: CirnosCircuits
+  category: Counters
+  prefab:
+    blocks:
+      -
+        color: 826c30
+        scale: (64, 1, 1)
+        position: (-0.5, 0, 0)
+        rotation: (0, 0, 0)
+    inputs:
+      - # Input pin 0
+        length: 0.6
+        position: (-32, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 1
+        length: 0.6
+        position: (-31, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 2
+        length: 0.6
+        position: (-30, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 3
+        length: 0.6
+        position: (-29, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 4
+        length: 0.6
+        position: (-28, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 5
+        length: 0.6
+        position: (-27, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 6
+        length: 0.6
+        position: (-26, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 7
+        length: 0.6
+        position: (-25, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 8
+        length: 0.6
+        position: (-24, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 9
+        length: 0.6
+        position: (-23, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 10
+        length: 0.6
+        position: (-22, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 11
+        length: 0.6
+        position: (-21, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 12
+        length: 0.6
+        position: (-20, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 13
+        length: 0.6
+        position: (-19, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 14
+        length: 0.6
+        position: (-18, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 15
+        length: 0.6
+        position: (-17, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 16
+        length: 0.6
+        position: (-16, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 17
+        length: 0.6
+        position: (-15, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 18
+        length: 0.6
+        position: (-14, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 19
+        length: 0.6
+        position: (-13, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 20
+        length: 0.6
+        position: (-12, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 21
+        length: 0.6
+        position: (-11, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 22
+        length: 0.6
+        position: (-10, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 23
+        length: 0.6
+        position: (-9, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 24
+        length: 0.6
+        position: (-8, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 25
+        length: 0.6
+        position: (-7, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 26
+        length: 0.6
+        position: (-6, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 27
+        length: 0.6
+        position: (-5, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 28
+        length: 0.6
+        position: (-4, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 29
+        length: 0.6
+        position: (-3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 30
+        length: 0.6
+        position: (-2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 31
+        length: 0.6
+        position: (-1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 32
+        length: 0.6
+        position: (0, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 33
+        length: 0.6
+        position: (1, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 34
+        length: 0.6
+        position: (2, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 35
+        length: 0.6
+        position: (3, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 36
+        length: 0.6
+        position: (4, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 37
+        length: 0.6
+        position: (5, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 38
+        length: 0.6
+        position: (6, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 39
+        length: 0.6
+        position: (7, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 40
+        length: 0.6
+        position: (8, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 41
+        length: 0.6
+        position: (9, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 42
+        length: 0.6
+        position: (10, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 43
+        length: 0.6
+        position: (11, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 44
+        length: 0.6
+        position: (12, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 45
+        length: 0.6
+        position: (13, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 46
+        length: 0.6
+        position: (14, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 47
+        length: 0.6
+        position: (15, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 48
+        length: 0.6
+        position: (16, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 49
+        length: 0.6
+        position: (17, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 50
+        length: 0.6
+        position: (18, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 51
+        length: 0.6
+        position: (19, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 52
+        length: 0.6
+        position: (20, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 53
+        length: 0.6
+        position: (21, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 54
+        length: 0.6
+        position: (22, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 55
+        length: 0.6
+        position: (23, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 56
+        length: 0.6
+        position: (24, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 57
+        length: 0.6
+        position: (25, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 58
+        length: 0.6
+        position: (26, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 59
+        length: 0.6
+        position: (27, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 60
+        length: 0.6
+        position: (28, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 61
+        length: 0.6
+        position: (29, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 62
+        length: 0.6
+        position: (30, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Input pin 63
+        length: 0.6
+        position: (31, 0.5, 0.5)
+        rotation: (90, 0, 0)
+      - # Jump_Enable
+        length: 0.6
+        position: (-32, 1, 0)
+        rotation: (0, 0, 0)
+      - # Clock_In
+        length: 0.6
+        position: (-32.5, 0.5, 0)
+        rotation: (0, 0, 90)
+    outputs:
+      - # Output pin 0
+        startOn: false
+        position: (-32, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 1
+        startOn: false
+        position: (-31, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 2
+        startOn: false
+        position: (-30, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 3
+        startOn: false
+        position: (-29, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 4
+        startOn: false
+        position: (-28, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 5
+        startOn: false
+        position: (-27, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 6
+        startOn: false
+        position: (-26, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 7
+        startOn: false
+        position: (-25, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 8
+        startOn: false
+        position: (-24, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 9
+        startOn: false
+        position: (-23, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 10
+        startOn: false
+        position: (-22, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 11
+        startOn: false
+        position: (-21, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 12
+        startOn: false
+        position: (-20, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 13
+        startOn: false
+        position: (-19, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 14
+        startOn: false
+        position: (-18, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 15
+        startOn: false
+        position: (-17, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 16
+        startOn: false
+        position: (-16, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 17
+        startOn: false
+        position: (-15, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 18
+        startOn: false
+        position: (-14, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 19
+        startOn: false
+        position: (-13, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 20
+        startOn: false
+        position: (-12, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 21
+        startOn: false
+        position: (-11, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 22
+        startOn: false
+        position: (-10, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 23
+        startOn: false
+        position: (-9, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 24
+        startOn: false
+        position: (-8, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 25
+        startOn: false
+        position: (-7, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 26
+        startOn: false
+        position: (-6, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 27
+        startOn: false
+        position: (-5, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 28
+        startOn: false
+        position: (-4, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 29
+        startOn: false
+        position: (-3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 30
+        startOn: false
+        position: (-2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 31
+        startOn: false
+        position: (-1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 32
+        startOn: false
+        position: (0, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 33
+        startOn: false
+        position: (1, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 34
+        startOn: false
+        position: (2, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 35
+        startOn: false
+        position: (3, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 36
+        startOn: false
+        position: (4, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 37
+        startOn: false
+        position: (5, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 38
+        startOn: false
+        position: (6, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 39
+        startOn: false
+        position: (7, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 40
+        startOn: false
+        position: (8, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 41
+        startOn: false
+        position: (9, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 42
+        startOn: false
+        position: (10, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 43
+        startOn: false
+        position: (11, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 44
+        startOn: false
+        position: (12, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 45
+        startOn: false
+        position: (13, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 46
+        startOn: false
+        position: (14, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 47
+        startOn: false
+        position: (15, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 48
+        startOn: false
+        position: (16, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 49
+        startOn: false
+        position: (17, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 50
+        startOn: false
+        position: (18, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 51
+        startOn: false
+        position: (19, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 52
+        startOn: false
+        position: (20, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 53
+        startOn: false
+        position: (21, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 54
+        startOn: false
+        position: (22, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 55
+        startOn: false
+        position: (23, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 56
+        startOn: false
+        position: (24, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 57
+        startOn: false
+        position: (25, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 58
+        startOn: false
+        position: (26, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 59
+        startOn: false
+        position: (27, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 60
+        startOn: false
+        position: (28, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 61
+        startOn: false
+        position: (29, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 62
+        startOn: false
+        position: (30, 0.5, -0.5)
+        rotation: (270, 0, 0)
+      - # Output pin 63
+        startOn: false
+        position: (31, 0.5, -0.5)
+        rotation: (270, 0, 0)
+  logicCode: CirnosCircuits.QWordCounter
+  placingRules:
+    allowFineRotation: false

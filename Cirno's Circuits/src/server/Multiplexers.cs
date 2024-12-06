@@ -10,7 +10,7 @@ namespace CirnosCircuits {
         }
 
         protected override void DoLogicUpdate() {
-            int selector = ioHandler.GetInputAsI32(NumberOfInputs);
+            int selector = ioHandler.GetInputAs<int>(NumberOfInputs);
             Outputs[0].On = Inputs[selector].On;
         }
     }
@@ -25,5 +25,9 @@ namespace CirnosCircuits {
     
     public class Multiplexer4Bit: BaseMultiplexer {
         protected override int NumberOfInputs => 8;
+    }
+    
+    public class Multiplexer5Bit: BaseMultiplexer {
+        protected override int NumberOfInputs => 16;
     }
 }

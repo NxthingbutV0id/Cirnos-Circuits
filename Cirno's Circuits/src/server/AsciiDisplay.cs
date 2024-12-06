@@ -108,8 +108,8 @@ namespace CirnosCircuits {
 		}
 		
 		protected override void DoLogicUpdate() {
-			int address = (ioHandler.GetInputAsI32() & 127) - 32;
-			int row = ioHandler.GetInputAsI32(7) - 1;
+			int address = (ioHandler.GetInputAs<int>() & 127) - 32;
+			int row = ioHandler.GetInputAs<int>(7) - 1;
 
 			if (address < 0 || row < 0) {
 				ioHandler.ClearOutputs();

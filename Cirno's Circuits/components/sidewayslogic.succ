@@ -4,54 +4,24 @@ SidewaysAND:
     prefab:
         blocks:
             -
-                color:
-                    r: 151
-                    g: 0
-                    b: 0
-                scale:
-                    x: 1
-                    y: 1
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 970000
+              scale: (1, 1, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.25, 0.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.75, 0.5)
+              rotation: (90, 0, 0)
         outputs:
             -
-                startOn: false
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
     logicCode: CirnosCircuits.SidewaysAND
     placingRules:
         offsetDimensions:
@@ -77,65 +47,35 @@ SidewaysAND:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
 SidewaysOR:
     column: CirnosCircuits
     category: SidewaysLogic
     prefab:
         blocks:
             -
-                color:
-                    r: 0
-                    g: 151
-                    b: 0
-                scale:
-                    x: 1
-                    y: 1
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 009700
+              scale: (1, 1, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.25, 0.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.75, 0.5)
+              rotation: (90, 0, 0)
         outputs:
             -
-                startOn: false
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
     logicCode: CirnosCircuits.SidewaysOR
     placingRules:
         offsetDimensions:
@@ -161,65 +101,35 @@ SidewaysOR:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
 SidewaysXOR:
     column: CirnosCircuits
     category: SidewaysLogic
     prefab:
         blocks:
             -
-                color:
-                    r: 0
-                    g: 0
-                    b: 151
-                scale:
-                    x: 1
-                    y: 1
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 000097
+              scale: (1, 1, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.25, 0.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.75, 0.5)
+              rotation: (90, 0, 0)
         outputs:
             -
-                startOn: false
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
     logicCode: CirnosCircuits.SidewaysXOR
     placingRules:
         offsetDimensions:
@@ -245,65 +155,35 @@ SidewaysXOR:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
 SidewaysNAND:
     column: CirnosCircuits
     category: SidewaysLogic
     prefab:
         blocks:
             -
-                color:
-                    r: 0
-                    g: 151
-                    b: 151
-                scale:
-                    x: 1
-                    y: 1
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 009797
+              scale: (1, 1, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.25, 0.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.75, 0.5)
+              rotation: (90, 0, 0)
         outputs:
             -
-                startOn: true
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: true
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
     logicCode: CirnosCircuits.SidewaysNAND
     placingRules:
         offsetDimensions:
@@ -329,65 +209,35 @@ SidewaysNAND:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
 SidewaysNOR:
     column: CirnosCircuits
     category: SidewaysLogic
     prefab:
         blocks:
             -
-                color:
-                    r: 151
-                    g: 0
-                    b: 151
-                scale:
-                    x: 1
-                    y: 1
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 970097
+              scale: (1, 1, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.25, 0.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.75, 0.5)
+              rotation: (90, 0, 0)
         outputs:
             -
-                startOn: true
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: true
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
     logicCode: CirnosCircuits.SidewaysNOR
     placingRules:
         offsetDimensions:
@@ -413,65 +263,35 @@ SidewaysNOR:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
 SidewaysXNOR:
     column: CirnosCircuits
     category: SidewaysLogic
     prefab:
         blocks:
             -
-                color:
-                    r: 151
-                    g: 151
-                    b: 0
-                scale:
-                    x: 1
-                    y: 1
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 979700
+              scale: (1, 1, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.25, 0.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.75, 0.5)
+              rotation: (90, 0, 0)
         outputs:
             -
-                startOn: true
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: true
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
     logicCode: CirnosCircuits.SidewaysXNOR
     placingRules:
         offsetDimensions:
@@ -497,8 +317,8 @@ SidewaysXNOR:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null

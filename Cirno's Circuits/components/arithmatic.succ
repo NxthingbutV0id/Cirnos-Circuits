@@ -4,311 +4,107 @@ ByteAdder:
     prefab:
         blocks:
             -
-                color:
-                    r: 127
-                    g: 0
-                    b: 0
-                scale:
-                    x: 4
-                    y: 1
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+                color: 7f0000
+                scale: (4, 1, 1)
+                position: (0, 0, 0)
+                rotation: (0, 0, 0)
         inputs:
-            -
+            - # B input bit 0
                 length: 0.6
-                position:
-                    x: -1.75
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # B input bit 1
                 length: 0.6
-                position:
-                    x: -1.25
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # B input bit 2
                 length: 0.6
-                position:
-                    x: -0.75
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # B input bit 3
                 length: 0.6
-                position:
-                    x: -0.25
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # B input bit 4
                 length: 0.6
-                position:
-                    x: 0.25
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # B input bit 5
                 length: 0.6
-                position:
-                    x: 0.75
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # B input bit 6
                 length: 0.6
-                position:
-                    x: 1.25
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # B input bit 7
                 length: 0.6
-                position:
-                    x: 1.75
-                    y: 0.25
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 0
                 length: 0.6
-                position:
-                    x: -1.75
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-1.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 1
                 length: 0.6
-                position:
-                    x: -1.25
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-1.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 2
                 length: 0.6
-                position:
-                    x: -0.75
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-0.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 3
                 length: 0.6
-                position:
-                    x: -0.25
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (-0.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 4
                 length: 0.6
-                position:
-                    x: 0.25
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (0.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 5
                 length: 0.6
-                position:
-                    x: 0.75
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (0.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 6
                 length: 0.6
-                position:
-                    x: 1.25
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (1.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input bit 7
                 length: 0.6
-                position:
-                    x: 1.75
-                    y: 0.75
-                    z: 0.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
-            -
+                position: (1.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # Carry_In
                 length: 0.6
-                position:
-                    x: -2
-                    y: 0.5
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
+                position: (-2, 0.75, 0)
+                rotation: (0, 0, 90)
         outputs:
-            -
-                startOn: false
-                position:
-                    x: -1.75
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: -1.25
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: -0.75
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: -0.25
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: 0.25
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: 0.75
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: 1.25
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: 1.75
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
-            -
-                startOn: false
-                position:
-                    x: 2
-                    y: 0.5
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+            - # Out 0
+                position: (-1.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Out 1
+                position: (-1.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Out 2
+                position: (-0.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Out 3
+                position: (-0.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Out 4
+                position: (0.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Out 5
+                position: (0.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Out 6
+                position: (1.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Out 7
+                position: (1.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Carry_Out
+                position: (2, 0.5, 0)
+                rotation: (0, 0, 270)
     logicCode: CirnosCircuits.ByteAdder
     placingRules:
-        offsetDimensions:
-            x: 2
-            y: 1
-        defaultOffset:
-            x: 0
-            y: 0
-        offsetScale:
-            x: 1
-            y: 1
-        cornerMidpoint:
-            x: 0
-            y: 0
-        gridPlacingDimensions:
-            x: 1
-            y: 1
-        allowWorldRotation: true
-        allowFineRotation: true
-        canBeFlipped: false
-        flippingPointHeight: -0.25
-        gridPositionsAreRelative: false
-        enableEdgeExtensions: false
-        primaryGridPositions:
-            -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+        allowFineRotation: false

@@ -4,174 +4,72 @@ AsciiDisplay:
     prefab:
         blocks:
             -
-                color:
-                    r: 21
-                    g: 107
-                    b: 91
-                scale:
-                    x: 5
-                    y: 1
-                    z: 2
-                position:
-                    x: 0
-                    y: 0
-                    z: 0.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 156b5b
+              scale: (5, 1, 2)
+              position: (0, 0, 0.5)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: -1.5
-                    y: 0.5
-                    z: 1.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (-1.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: -1
-                    y: 0.5
-                    z: 1.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (-1, 0.5, 1.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.5
-                    z: 1.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (-0.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.5
-                    z: 1.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.5, 1.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 1.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 1
-                    y: 0.5
-                    z: 1.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (1, 0.5, 1.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 1.5
-                    y: 0.5
-                    z: 1.5
-                rotation:
-                    x: 90
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (1.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
             -
-                length: 0.6
-                position:
-                    x: 2.5
-                    y: 0.5
-                    z: 1
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              length: 0.6
+              position: (2.5, 0.5, 1)
+              rotation: (0, 0, 270)
             -
-                length: 0.6
-                position:
-                    x: 2.5
-                    y: 0.5
-                    z: 0.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              length: 0.6
+              position: (2.5, 0.5, 0.5)
+              rotation: (0, 0, 270)
             -
-                length: 0.6
-                position:
-                    x: 2.5
-                    y: 0.5
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              length: 0.6
+              position: (2.5, 0.5, 0)
+              rotation: (0, 0, 270)
         outputs:
             -
-                startOn: false
-                position:
-                    x: -2
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (-2, 0.5, -0.5)
+              rotation: (270, 0, 0)
             -
-                startOn: false
-                position:
-                    x: -1
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (-1, 0.5, -0.5)
+              rotation: (270, 0, 0)
             -
-                startOn: false
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
             -
-                startOn: false
-                position:
-                    x: 1
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (1, 0.5, -0.5)
+              rotation: (270, 0, 0)
             -
-                startOn: false
-                position:
-                    x: 2
-                    y: 0.5
-                    z: -0.5
-                rotation:
-                    x: 270
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (2, 0.5, -0.5)
+              rotation: (270, 0, 0)
     logicCode: CirnosCircuits.AsciiDisplay
     placingRules:
         offsetDimensions:
@@ -197,55 +95,31 @@ AsciiDisplay:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
 EdgeDetector:
     column: CirnosCircuits
     category: Misc
     prefab:
         blocks:
             -
-                color:
-                    r: 113
-                    g: 0
-                    b: 0
-                scale:
-                    x: 1
-                    y: 0.5
-                    z: 1
-                position:
-                    x: 0
-                    y: 0
-                    z: 0
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 710000
+              scale: (1, 0.5, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: 0
-                    y: 0.5
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              length: 0.6
+              position: (0, 0.5, 0.25)
+              rotation: (0, 0, 0)
         outputs:
             -
-                startOn: false
-                position:
-                    x: 0
-                    y: 0.5
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              startOn: false
+              position: (0, 0.5, -0.25)
+              rotation: (0, 0, 0)
     logicCode: CirnosCircuits.EdgeDetector
     placingRules:
         offsetDimensions:
@@ -271,8 +145,8 @@ EdgeDetector:
         enableEdgeExtensions: false
         primaryGridPositions:
             -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null

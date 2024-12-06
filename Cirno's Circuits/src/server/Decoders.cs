@@ -10,7 +10,7 @@ namespace CirnosCircuits {
 
         protected override void DoLogicUpdate() {
             ioHandler.ClearOutputs();
-            int index = ioHandler.GetInputAsI32();
+            int index = ioHandler.GetInputAs<int>();
             Outputs[index].On = true;
         }
     }

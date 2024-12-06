@@ -4,1451 +4,572 @@ BCDToBinary:
     prefab:
         blocks:
             -
-                color:
-                    r: 145
-                    g: 0
-                    b: 0
-                scale:
-                    x: 1
-                    y: 2
-                    z: 32
-                position:
-                    x: 0
-                    y: 0
-                    z: -0.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 0
+              color: 910000
+              scale: (1, 2, 32)
+              position: (0, 0, -0.5)
+              rotation: (0, 0, 0)
         inputs:
             -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -7.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -7.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -7.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -7.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -6.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -6.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -6.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -6.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -6.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -6.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -6.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -6.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -5.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -5.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -5.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -5.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -3
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -3
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -3
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -3
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 1.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 1.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 1.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 1.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 2
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 2.5
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 3.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 3.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 3.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 3.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.25
-                    z: 6
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 0.75
-                    z: 6
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.25
-                    z: 6
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
-            -
-                length: 0.6
-                position:
-                    x: -0.5
-                    y: 1.75
-                    z: 6
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 90
+              length: 0.6
+              position: (-0.5, 0.25, -7.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -7.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -7.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -7.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -6.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -6.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -6.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -6.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -6.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -6.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -6.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -6.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -5.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -5.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -5.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -5.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -3)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -3)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -3)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -3)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -0.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -0.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -0.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -0.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, -0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, -0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, -0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, -0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 0.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 1.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 1.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 1.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 1.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 2)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 2.5)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 3.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 3.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 3.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 3.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 4.25)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 4.75)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.25, 6)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 0.75, 6)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.25, 6)
+              rotation: (0, 0, 90)
+            -
+              length: 0.6
+              position: (-0.5, 1.75, 6)
+              rotation: (0, 0, 90)
         outputs:
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -16.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -16.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -15.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -15.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -15.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -15.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -14.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -14.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -14.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -14.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -13.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -13.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -13.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -13.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -12.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -12.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -12.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -12.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -11.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -11.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -11.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -11.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -10.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -10.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -10.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -10.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -9.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -9.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -9.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -9.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -8.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -8.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -8.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -8.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -7.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -7.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -7.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -7.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -6.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -6.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -6.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -6.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -5.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -5.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -5.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -5.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -4.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -4.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -3.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -3.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -3.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -3.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -2.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -2.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -2.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -2.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -1.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -1.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -1.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -1.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -0.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: -0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, -0.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 0.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 0.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 0.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 0.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 1.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 1.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 1.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 1.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 2.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 2.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 2.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 2.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 3.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 3.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 3.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 3.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 4.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 4.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 4.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 4.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 5.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 5.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 5.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 5.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 6.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 6.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 6.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 6.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 7.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 7.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 7.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 7.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 8.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 8.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 8.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 8.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 9.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 9.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 9.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 9.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 10.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 10.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 10.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 10.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 11.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 11.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 11.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 11.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 12.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 12.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 12.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 12.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 13.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 13.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 13.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 13.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 14.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 14.25)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 14.75
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 14.75)
+              rotation: (0, 0, 270)
             -
-                startOn: false
-                position:
-                    x: 0.5
-                    y: 0.5
-                    z: 15.25
-                rotation:
-                    x: 0
-                    y: 0
-                    z: 270
+              startOn: false
+              position: (0.5, 0.5, 15.25)
+              rotation: (0, 0, 270)
     logicCode: CirnosCircuits.BCDToBinary
     placingRules:
-        offsetDimensions:
-            x: 2
-            y: 1
-        defaultOffset:
-            x: 0
-            y: 0
-        offsetScale:
-            x: 1
-            y: 1
-        cornerMidpoint:
-            x: 0
-            y: 0
-        gridPlacingDimensions:
-            x: 1
-            y: 1
-        allowWorldRotation: true
-        allowFineRotation: true
-        canBeFlipped: false
-        flippingPointHeight: -0.25
-        gridPositionsAreRelative: false
-        enableEdgeExtensions: false
-        primaryGridPositions:
-            -
-                x: 0.5
-                y: 0.5
-        secondaryGridPositions:
-        primaryEdgePositions:
-        secondaryEdgePositions:
+        allowFineRotation: false

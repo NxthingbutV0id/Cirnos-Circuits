@@ -14,8 +14,8 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
-			sbyte s = ioHandler.GetInputAsI8();
-			byte u = ioHandler.GetInputAsU8();
+			sbyte s = ioHandler.GetInputAs<sbyte>();
+			byte u = ioHandler.GetInputAs<byte>();
 			clk = Inputs[8].On;
 
 			if (clk && !prevClk) {
@@ -52,8 +52,8 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
-			short s = ioHandler.GetInputAsI16();
-			ushort u = ioHandler.GetInputAsU16();
+			short s = ioHandler.GetInputAs<short>();
+			ushort u = ioHandler.GetInputAs<ushort>();
 			clk = Inputs[16].On;
 
 			if (clk && !prevClk) {
@@ -90,8 +90,8 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
-			int s = ioHandler.GetInputAsI32();
-			uint u = ioHandler.GetInputAsU32();
+			int s = ioHandler.GetInputAs<int>();
+			uint u = ioHandler.GetInputAs<uint>();
 			clk = Inputs[32].On;
 
 			if (clk && !prevClk) {
@@ -127,8 +127,8 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
-			long s = ioHandler.GetInputAsI64();
-			ulong u = ioHandler.GetInputAsU64();
+			long s = ioHandler.GetInputAs<long>();
+			ulong u = ioHandler.GetInputAs<ulong>();
 			clk = Inputs[64].On;
 
 			if (clk && !prevClk) {
@@ -164,7 +164,7 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
-			ushort u = ioHandler.GetInputAsU16();
+			ushort u = ioHandler.GetInputAs<ushort>();
 			Half num = BitConverter.UInt16BitsToHalf(u);
 			clk = Inputs[16].On;
 
@@ -195,7 +195,7 @@ namespace CirnosCircuits {
 
 		protected override void DoLogicUpdate() {
 			
-			uint u = ioHandler.GetInputAsU32();
+			uint u = ioHandler.GetInputAs<uint>();
 			float num = BitConverter.UInt32BitsToSingle(u);
 			clk = Inputs[32].On;
 
@@ -225,7 +225,7 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
-			long u = ioHandler.GetInputAsI64();
+			long u = ioHandler.GetInputAs<long>();
 			double num = BitConverter.Int64BitsToDouble(u);
 			clk = Inputs[64].On;
 
