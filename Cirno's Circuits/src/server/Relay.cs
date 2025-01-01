@@ -1,7 +1,7 @@
 using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
-    public abstract class BaseRelay: LogicComponent {
+    public abstract class Relay: LogicComponent {
         protected abstract int Bits { get; }
         private IInputPeg[] inputsA;
         private IInputPeg[] inputsB;
@@ -39,6 +39,22 @@ namespace CirnosCircuits {
             return inputIndex == (Bits << 1);
         }
     }
+    
+    public class ByteRelay: Relay {
+        protected override int Bits => 8;
+    } // Needs Testing
+
+    public class WordRelay: Relay {
+        protected override int Bits => 16;
+    } // Needs Testing
+
+    public class DWordRelay: Relay {
+        protected override int Bits => 32;
+    } // Not Implemented
+
+    public class QWordRelay: Relay {
+        protected override int Bits => 64;
+    } // Not Implemented
     
     public abstract class FastMux: LogicComponent {
         protected abstract int Bits { get; }

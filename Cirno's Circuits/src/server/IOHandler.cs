@@ -21,18 +21,11 @@ namespace CirnosCircuits {
 		}
 
 		public T GetInputAs<T>(int offset = 0) where T : struct, IConvertible {
-			bool isByte = typeof(T) == typeof(byte) || typeof(T) == typeof(sbyte);
-			bool isShort = typeof(T) == typeof(short) || typeof(T) == typeof(ushort);
-			bool isInt = typeof(T) == typeof(int) || typeof(T) == typeof(uint);
-			bool isLong = typeof(T) == typeof(long) || typeof(T) == typeof(ulong);
 			bool isSigned = 
 				typeof(T) == typeof(sbyte) || 
 				typeof(T) == typeof(short) || 
 				typeof(T) == typeof(int) || 
 				typeof(T) == typeof(long);
-			if (!typeof(T).IsPrimitive || !(isByte || isShort || isInt || isLong)) {
-				throw new ArgumentException("T must be a primitive type.");
-			}
 
 			int bitSize = Marshal.SizeOf(typeof(T)) * 8;
 
@@ -79,27 +72,58 @@ namespace CirnosCircuits {
 	        OutputNumber(n, bitOffset);
         }
 
-        public void OutputNumber<T>(T number, int bitOffset = 0) where T : struct, IConvertible {
-	        bool isByte = typeof(T) == typeof(byte) || typeof(T) == typeof(sbyte);
-	        bool isShort = typeof(T) == typeof(short) || typeof(T) == typeof(ushort);
-	        bool isInt = typeof(T) == typeof(int) || typeof(T) == typeof(uint);
-	        bool isLong = typeof(T) == typeof(long) || typeof(T) == typeof(ulong);
-	        if (!typeof(T).IsPrimitive || !(isByte || isShort || isInt || isLong)) {
-		        throw new ArgumentException("T must be a primitive type.");
-	        }
-	        
-	        ulong value = Convert.ToUInt64(number);
-	        const int bits = sizeof(ulong) * 8;
-	        for (int i = bitOffset; i < bits && i < outputs.Count; i++) {
-		        ulong num = value >> (i - bitOffset);
+        public void OutputNumber(byte number, int bitOffset = 0) {
+	        for (int i = bitOffset; i < 8 && i < outputs.Count; i++) {
+		        byte num = (byte)(number >> (i - bitOffset));
 		        if (num == 0) break;
 		        outputs[i].On = (num & 1) == 1;
 	        }
         }
+        
+        public void OutputNumber(sbyte number, int bitOffset = 0) {
+	        OutputNumber((byte)number, bitOffset);
+        }
+        
+        public void OutputNumber(ushort number, int bitOffset = 0) {
+	        for (int i = bitOffset; i < 16 && i < outputs.Count; i++) {
+		        ushort num = (ushort)(number >> (i - bitOffset));
+		        if (num == 0) break;
+		        outputs[i].On = (num & 1) == 1;
+	        }
+        }
+        
+        public void OutputNumber(short number, int bitOffset = 0) {
+	        OutputNumber((ushort)number, bitOffset);
+        }
+        
+        public void OutputNumber(uint number, int bitOffset = 0) {
+	        for (int i = bitOffset; i < 32 && i < outputs.Count; i++) {
+		        uint num = number >> (i - bitOffset);
+		        if (num == 0) break;
+		        outputs[i].On = (num & 1) == 1;
+	        }
+        }
+        
+        public void OutputNumber(int number, int bitOffset = 0) {
+	        OutputNumber((uint)number, bitOffset);
+        }
+        
+        public void OutputNumber(ulong number, int bitOffset = 0) {
+	        for (int i = bitOffset; i < 64 && i < outputs.Count; i++) {
+		        ulong num = number >> (i - bitOffset);
+		        if (num == 0) break;
+		        outputs[i].On = (num & 1) == 1;
+	        }
+        }
+        
+        public void OutputNumber(long number, int bitOffset = 0) {
+	        OutputNumber((ulong)number, bitOffset);
+        }
 
 		public void OutputBoolArray(bool[] arr, int offset = 0) {
 			for (int i = 0; i < arr.Length; i++) {
-				outputs[i + offset].On = arr[i - offset];
+				if (i + offset >= outputs.Count) break;
+				outputs[i + offset].On = arr[i];
 			}
 		}
 

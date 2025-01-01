@@ -14,5 +14,5 @@ namespace CirnosCircuits {
 			
             prevTick = Inputs[0].On;
         }
-	} // Completed
+	}
 }

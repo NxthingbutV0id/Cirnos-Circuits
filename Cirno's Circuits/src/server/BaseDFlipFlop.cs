@@ -21,4 +21,24 @@ namespace CirnosCircuits {
             prevClk = clk;
         }
     }
+    
+    public class DFlipFlop: BaseDFlipFlop {
+        protected override int Bits => 1;
+    }
+
+    public class ByteDFlipFlop: BaseDFlipFlop {
+        protected override int Bits => 8;
+    }
+
+    public class WordDFlipFlop: BaseDFlipFlop {
+        protected override int Bits => 16;
+    }
+
+    public class DWordDFlipFlop: BaseDFlipFlop {
+        protected override int Bits => 32;
+    }
+
+    public class QWordDFlipFlop: BaseDFlipFlop {
+        protected override int Bits => 64;
+    } // Not Implemented
 }

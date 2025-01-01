@@ -2,6 +2,6 @@
 
 public class Loader: ServerMod {
 	protected override void Initialize() {
-		Logger.Info("Cirno's Circuits successfully initialized");
+		Logger.Info("(9) Cirno's Circuits successfully initialized! (9)");
 	}
 }

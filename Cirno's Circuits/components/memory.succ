@@ -1196,34 +1196,7 @@ DWordDFlipFlop:
               rotation: (0, 0, 0)
     logicCode: CirnosCircuits.DWordDLatch
     placingRules:
-        offsetDimensions:
-            x: 32
-            y: 2
-        defaultOffset:
-            x: 0
-            y: 0
-        offsetScale:
-            x: 1
-            y: 1
-        cornerMidpoint:
-            x: 0
-            y: 0
-        gridPlacingDimensions:
-            x: 1
-            y: 1
-        allowWorldRotation: true
-        allowFineRotation: true
-        canBeFlipped: false
-        flippingPointHeight: -0.25
-        gridPositionsAreRelative: false
-        enableEdgeExtensions: false
-        primaryGridPositions:
-            -
-              x: 0.5
-              y: 0.5
-        secondaryGridPositions: null
-        primaryEdgePositions: null
-        secondaryEdgePositions: null
+        allowFineRotation: false
 JKFlipFlop:
     column: CirnosCircuits
     category: Memory
@@ -1235,57 +1208,30 @@ JKFlipFlop:
               position: (0.5, 0, -0.5)
               rotation: (0, 0, 0)
         inputs:
-            -
+            - # J
               length: 0.6
               position: (1, 0.5, 0.5)
               rotation: (90, 0, 0)
-            -
+            - # K
               length: 0.6
               position: (0, 0.5, 0.5)
               rotation: (90, 0, 0)
-            -
+            - # CLK
               length: 0.6
               position: (0.5, 1, 0)
               rotation: (0, 0, 0)
         outputs:
-            -
+            - # Q
               startOn: false
               position: (0, 1, -1)
               rotation: (0, 0, 0)
-            -
+            - # Q'
               startOn: true
               position: (1, 1, -1)
               rotation: (0, 0, 0)
     logicCode: CirnosCircuits.JKFlipFlop
     placingRules:
-        offsetDimensions:
-            x: 2
-            y: 1
-        defaultOffset:
-            x: 0
-            y: 0
-        offsetScale:
-            x: 1
-            y: 1
-        cornerMidpoint:
-            x: 0
-            y: 0
-        gridPlacingDimensions:
-            x: 1
-            y: 1
-        allowWorldRotation: true
-        allowFineRotation: true
-        canBeFlipped: false
-        flippingPointHeight: -0.25
-        gridPositionsAreRelative: false
-        enableEdgeExtensions: false
-        primaryGridPositions:
-            -
-              x: 0.5
-              y: 0.5
-        secondaryGridPositions: null
-        primaryEdgePositions: null
-        secondaryEdgePositions: null
+        allowFineRotation: false
 SRLatch:
     column: CirnosCircuits
     category: Memory
@@ -1297,50 +1243,23 @@ SRLatch:
               position: (-0.5, 0, 0)
               rotation: (0, 0, 0)
         inputs:
-            -
+            - # S
               length: 0.6
               position: (0, 0.5, 0.5)
               rotation: (90, 0, 0)
-            -
+            - # R
               length: 0.6
               position: (-1, 0.5, 0.5)
               rotation: (90, 0, 0)
         outputs:
-            -
+            - # Q
               startOn: false
               position: (-1, 0.5, -0.5)
               rotation: (270, 0, 0)
-            -
+            - # Q'
               startOn: true
               position: (0, 0.5, -0.5)
               rotation: (270, 0, 0)
     logicCode: CirnosCircuits.SRLatch
     placingRules:
-        offsetDimensions:
-            x: 2
-            y: 1
-        defaultOffset:
-            x: 0
-            y: 0
-        offsetScale:
-            x: 1
-            y: 1
-        cornerMidpoint:
-            x: 0
-            y: 0
-        gridPlacingDimensions:
-            x: 1
-            y: 1
-        allowWorldRotation: true
-        allowFineRotation: true
-        canBeFlipped: false
-        flippingPointHeight: -0.25
-        gridPositionsAreRelative: false
-        enableEdgeExtensions: false
-        primaryGridPositions:
-            -
-              x: 0.5
-              y: 0.5
-        secondaryGridPositions: null
-        primaryEdgePositions: null
-        secondaryEdgePositions: null
+        allowFineRotation: false

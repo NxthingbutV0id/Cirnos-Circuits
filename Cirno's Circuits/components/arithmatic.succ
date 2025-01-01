@@ -108,3 +108,625 @@ ByteAdder:
     logicCode: CirnosCircuits.ByteAdder
     placingRules:
         allowFineRotation: false
+WordAdder:
+    column: CirnosCircuits
+    category: Arithmetic
+    prefab:
+        blocks:
+            -
+                color: 7f0000
+                scale: (8, 1, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (-4.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-0.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-0.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4.5, 0.5, 0)
+                rotation: (0, 0, 90)
+        outputs:
+            -
+                startOn: false
+                position: (-4.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-3.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-3.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-2.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-2.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-1.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-1.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-0.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-0.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (0.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (0.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (1.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (1.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (2.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (2.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (3.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (3.5, 0.5, 0)
+                rotation: (0, 0, 270)
+    logicCode: CirnosCircuits.WordAdder
+    placingRules:
+        allowFineRotation: false
+DWordAdder:
+    column: CirnosCircuits
+    category: Arithmetic
+    prefab:
+        blocks:
+            -
+                color: 7f0000
+                scale: (16, 1, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            - # A input pin 0
+                length: 0.6
+                position: (-8.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 1
+                length: 0.6
+                position: (-7.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 2
+                length: 0.6
+                position: (-7.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 3
+                length: 0.6
+                position: (-6.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 4
+                length: 0.6
+                position: (-6.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 5
+                length: 0.6
+                position: (-5.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 6
+                length: 0.6
+                position: (-5.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 7
+                length: 0.6
+                position: (-4.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 8
+                length: 0.6
+                position: (-4.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 9
+                length: 0.6
+                position: (-3.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 10
+                length: 0.6
+                position: (-3.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 11
+                length: 0.6
+                position: (-2.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 12
+                length: 0.6
+                position: (-2.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 13
+                length: 0.6
+                position: (-1.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 14
+                length: 0.6
+                position: (-1.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 15
+                length: 0.6
+                position: (-0.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 16
+                length: 0.6
+                position: (-0.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 17
+                length: 0.6
+                position: (0.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 18
+                length: 0.6
+                position: (0.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 19
+                length: 0.6
+                position: (1.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 20
+                length: 0.6
+                position: (1.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 21
+                length: 0.6
+                position: (2.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 22
+                length: 0.6
+                position: (2.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 23
+                length: 0.6
+                position: (3.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 24
+                length: 0.6
+                position: (3.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 25
+                length: 0.6
+                position: (4.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 26
+                length: 0.6
+                position: (4.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 27
+                length: 0.6
+                position: (5.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 28
+                length: 0.6
+                position: (5.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 29
+                length: 0.6
+                position: (6.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 30
+                length: 0.6
+                position: (6.75, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # A input pin 31
+                length: 0.6
+                position: (7.25, 0.75, 0.5)
+                rotation: (90, 0, 0)
+            - # B input pin
+                length: 0.6
+                position: (-8.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-7.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-7.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-6.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-6.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-5.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-5.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (4.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (4.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (5.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (5.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (6.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (6.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (7.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-8.5, 0.5, 0)
+                rotation: (0, 0, 90)
+        outputs:
+            -
+                startOn: false
+                position: (-8.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-7.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-7.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-6.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-6.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-5.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-5.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-4.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-4.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-3.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-3.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-2.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-2.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-1.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-1.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-0.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (-0.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (0.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (0.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (1.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (1.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (2.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (2.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (3.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (3.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (4.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (4.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (5.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (5.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (6.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (6.75, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (7.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                startOn: false
+                position: (7.5, 0.5, 0)
+                rotation: (0, 0, 270)
+    logicCode: CirnosCircuits.DWordAdder
+    placingRules:
+        allowFineRotation: false

@@ -128,7 +128,7 @@ namespace CirnosCircuits {
 			bool[] result = new bool[5];
 
 			for (int i = 0; i < 5; i++) {
-				result[i] = (num & (1 << i)) == 1;
+				result[i] = ((num >> i) & 1) == 1;
 			}
 
 			return result;
