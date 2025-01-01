@@ -24,15 +24,14 @@ A random assortment of parts and logic.
 - JK Flip-Flop
 - SR-Latch
 - Integer and Float Printers
-- 8 Bit Adder
-- (*New!*) De-Multiplexers
-- (*New!*) Counters
+- (*New!*) 8, 16, and 32 Bit Adders
+- De-Multiplexers
+- Counters
 
 ## Future Plans
 
 - Binary to BCD 7 segment with ripple blanking and negative support
 - Binary to Fractional BCD (fixed point values from 0.0000... to 0.9999...)
-- 16 and 32 bit Adder
 - Subtracters
 - Multipliers
 - Dividers
