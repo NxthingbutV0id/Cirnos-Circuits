@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/temp_succ/components/temp.succ
+/Cirno's Circuits.zip
