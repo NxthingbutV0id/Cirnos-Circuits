@@ -1,6 +1,60 @@
 ﻿using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
+    public abstract class Register : LogicComponent {
+        protected abstract int Bits { get; }
+        private IOHandler ioHandler;
+        private bool[] data;
+        private bool prevClk;
+        private bool clk;
+        private bool enable;
+        private bool reset;
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+            prevClk = false;
+            enable = false;
+            reset = false;
+            data = new bool[Bits];
+        }
+
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            clk = Inputs[Bits].On;
+            enable = Inputs[Bits + 1].On;
+            reset = Inputs[Bits + 2].On;
+            
+            bool risingEdge = !prevClk && clk;
+
+            if (reset && risingEdge) {
+                for (int i = 0; i < Bits; i++) {
+                    data[i] = false;
+                }
+            }
+            
+            if (enable && risingEdge) {
+                data = ioHandler.GrabBoolArrayFromInput(0, Bits);
+            }
+
+            prevClk = clk;
+        }
+    }
+    
+    public class ByteRegister : Register {
+        protected override int Bits => 8;
+    } // Not Implemented
+    
+    public class WordRegister : Register {
+        protected override int Bits => 16;
+    } // Not Implemented
+    
+    public class DWordRegister : Register {
+        protected override int Bits => 32;
+    } // Not Implemented
+    
+    public class QWordRegister : Register {
+        protected override int Bits => 64;
+    } // Not Implemented
+
     public abstract class DualReadRegister : LogicComponent {
         protected abstract int Bits { get; }
         private IOHandler ioHandler;

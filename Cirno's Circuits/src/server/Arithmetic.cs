@@ -59,6 +59,156 @@ namespace CirnosCircuits {
         }
     }
 
+    public class ByteDivider : LogicComponent {
+        private IOHandler ioHandler;
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            if (Inputs[16].On) {
+                sbyte a = ioHandler.GetInputAs<sbyte>();
+                sbyte b = ioHandler.GetInputAs<sbyte>(8);
+                (sbyte quotient, sbyte remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
+            
+                ioHandler.OutputNumber(quotient);
+                ioHandler.OutputNumber(remainder, 8);
+            } else {
+                byte a = ioHandler.GetInputAs<byte>();
+                byte b = ioHandler.GetInputAs<byte>(8);
+                (byte quotient, byte remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
+            
+                ioHandler.OutputNumber(quotient);
+                ioHandler.OutputNumber(remainder, 8);
+            }
+        }
+    }
+    
+    public class WordDivider : LogicComponent {
+        private IOHandler ioHandler;
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            if (Inputs[32].On) {
+                short a = ioHandler.GetInputAs<short>();
+                short b = ioHandler.GetInputAs<short>(16);
+                (short quotient, short remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
+            
+                ioHandler.OutputNumber(quotient);
+                ioHandler.OutputNumber(remainder, 16);
+            } else {
+                ushort a = ioHandler.GetInputAs<ushort>();
+                ushort b = ioHandler.GetInputAs<ushort>(16);
+                (ushort quotient, ushort remainder) = b == 0 ? (0, 0xffff) : Math.DivRem(a, b);
+            
+                ioHandler.OutputNumber(quotient);
+                ioHandler.OutputNumber(remainder, 16);
+            }
+        }
+    }
+    
+    public class DWordDivider : LogicComponent {
+        private IOHandler ioHandler;
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            if (Inputs[64].On) {
+                int a = ioHandler.GetInputAs<int>();
+                int b = ioHandler.GetInputAs<int>(32);
+                (int quotient, int remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
+            
+                ioHandler.OutputNumber(quotient);
+                ioHandler.OutputNumber(remainder, 32);
+            } else {
+                uint a = ioHandler.GetInputAs<uint>();
+                uint b = ioHandler.GetInputAs<uint>(32);
+                (uint quotient, uint remainder) = b == 0 ? (0, 0xffffffff) : Math.DivRem(a, b);
+            
+                ioHandler.OutputNumber(quotient);
+                ioHandler.OutputNumber(remainder, 32);
+            }
+        }
+    }
+
+    public class ByteMultiplier : LogicComponent {
+        private IOHandler ioHandler;
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            if (Inputs[16].On) {
+                sbyte a = ioHandler.GetInputAs<sbyte>();
+                sbyte b = ioHandler.GetInputAs<sbyte>(8);
+                short result = (short) (a * b);
+            
+                ioHandler.OutputNumber(result);
+            } else {
+                byte a = ioHandler.GetInputAs<byte>();
+                byte b = ioHandler.GetInputAs<byte>(8);
+                ushort result = (ushort) (a * b);
+            
+                ioHandler.OutputNumber(result);
+            }
+        }
+    }
+    
+    public class WordMultiplier : LogicComponent {
+        private IOHandler ioHandler;
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            if (Inputs[32].On) {
+                short a = ioHandler.GetInputAs<short>();
+                short b = ioHandler.GetInputAs<short>(16);
+                int result = a * b;
+            
+                ioHandler.OutputNumber(result);
+            } else {
+                ushort a = ioHandler.GetInputAs<ushort>();
+                ushort b = ioHandler.GetInputAs<ushort>(16);
+                uint result = (uint) a * b;
+            
+                ioHandler.OutputNumber(result);
+            }
+        }
+    }
+    
+    public class DWordMultiplier : LogicComponent {
+        private IOHandler ioHandler;
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+        }
+        
+        protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
+            if (Inputs[64].On) {
+                int a = ioHandler.GetInputAs<int>();
+                int b = ioHandler.GetInputAs<int>(32);
+                long result = (long) a * b;
+            
+                ioHandler.OutputNumber(result);
+            } else {
+                uint a = ioHandler.GetInputAs<uint>();
+                uint b = ioHandler.GetInputAs<uint>(32);
+                ulong result = (ulong) a * b;
+            
+                ioHandler.OutputNumber(result);
+            }
+        }
+    }
+
     public class ByteALU : LogicComponent {
         private IOHandler ioHandler;
 

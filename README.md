@@ -1,4 +1,4 @@
-# Cirno's Circuits (V0.4.2)
+# Cirno's Circuits (V0.4.3)
 
 A mod for Logic World (v0.91.3).
 A random assortment of parts and logic.
@@ -24,7 +24,9 @@ A random assortment of parts and logic.
 - JK Flip-Flop
 - SR-Latch
 - Integer and Float Printers
-- (*New!*) 8, 16, and 32 Bit Adders
+- 8, 16, and 32 Bit Adders
+- (*New*) 8, 16, and 32 Bit Multipliers
+- (*New*) 8, 16, and 32 Bit Dividers
 - De-Multiplexers
 - Counters
 
@@ -32,9 +34,6 @@ A random assortment of parts and logic.
 
 - Binary to BCD 7 segment with ripple blanking and negative support
 - Binary to Fractional BCD (fixed point values from 0.0000... to 0.9999...)
-- Subtracters
-- Multipliers
-- Dividers
 - Pulse Extender
 - Thinner switches
 - 14 and 16 segment displays
