@@ -1263,3 +1263,1141 @@ SRLatch:
     logicCode: CirnosCircuits.SRLatch
     placingRules:
         allowFineRotation: false
+ByteRegister:
+    column: CirnosCircuits
+    category: Registers
+    prefab:
+        blocks:
+            -
+                color: 38733f
+                scale: (8, 1, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.3
+                position: (-1.5, 1, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.4
+                position: (-0.5, 1, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.5
+                position: (0.5, 1, 0)
+                rotation: (0, 0, 0)
+        outputs:
+            -
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.ByteRegister
+    placingRules:
+        allowFineRotation: false
+WordRegister:
+    column: CirnosCircuits
+    category: Registers
+    prefab:
+        blocks:
+            -
+                color: 38733f
+                scale: (16, 1, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.3
+                position: (-1.5, 1, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.4
+                position: (-0.5, 1, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.5
+                position: (0.5, 1, 0)
+                rotation: (0, 0, 0)
+        outputs:
+            -
+                position: (-8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.WordRegister
+    placingRules:
+        allowFineRotation: false
+DWordRegister:
+    column: CirnosCircuits
+    category: Registers
+    prefab:
+        blocks:
+            -
+                color: 38733f
+                scale: (32, 1, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (-16, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-15, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-14, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-13, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-12, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-11, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-10, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-9, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (9, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (10, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (11, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (12, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (13, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (14, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (15, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.3
+                position: (-1.5, 1, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.4
+                position: (-0.5, 1, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.5
+                position: (0.5, 1, 0)
+                rotation: (0, 0, 0)
+        outputs:
+            -
+                position: (-16, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-15, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-14, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-13, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-12, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-11, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-10, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-9, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (9, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (10, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (11, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (12, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (13, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (14, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (15, 0.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.DWordRegister
+    placingRules:
+        allowFineRotation: false
+ByteDualReadRegister:
+    column: CirnosCircuits
+    category: Registers
+    prefab:
+        blocks:
+            -
+                color: 6f3873
+                scale: (8, 2, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.3
+                position: (-1.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.4
+                position: (-0.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.5
+                position: (0.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.6
+                position: (-4.5, 0.5, 0)
+                rotation: (0, 0, 90)
+            -
+                length: 0.6
+                position: (-4.5, 1.5, 0)
+                rotation: (0, 0, 90)
+        outputs:
+            -
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-4, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 1.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.ByteDRR
+    placingRules:
+        allowFineRotation: false
+WordDualReadRegister:
+    column: CirnosCircuits
+    category: Registers
+    prefab:
+        blocks:
+            -
+                color: 6f3873
+                scale: (16, 2, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.3
+                position: (-1.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.4
+                position: (-0.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.5
+                position: (0.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.6
+                position: (-8.5, 0.5, 0)
+                rotation: (0, 0, 90)
+            -
+                length: 0.6
+                position: (-8.5, 1.5, 0)
+                rotation: (0, 0, 90)
+        outputs:
+            -
+                position: (-8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-8, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-7, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-6, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-5, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-4, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (4, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (5, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (6, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (7, 1.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.WordDRR
+    placingRules:
+        allowFineRotation: false
+DWordDualReadRegister:
+    column: CirnosCircuits
+    category: Registers
+    prefab:
+        blocks:
+            -
+                color: 6f3873
+                scale: (32, 2, 1)
+                position: (-0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (-16, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-15, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-14, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-13, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-12, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-11, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-10, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-9, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (9, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (10, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (11, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (12, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (13, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (14, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.6
+                position: (15, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            -
+                length: 0.3
+                position: (-1.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.4
+                position: (-0.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.5
+                position: (0.5, 2, 0)
+                rotation: (0, 0, 0)
+            -
+                length: 0.6
+                position: (-16.5, 0.5, 0)
+                rotation: (0, 0, 90)
+            -
+                length: 0.6
+                position: (-16.5, 1.5, 0)
+                rotation: (0, 0, 90)
+        outputs:
+            -
+                position: (-16, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-15, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-14, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-13, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-12, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-11, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-10, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-9, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (9, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (10, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (11, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (12, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (13, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (14, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (15, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-16, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-15, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-14, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-13, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-12, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-11, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-10, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-9, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-8, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-7, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-6, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-5, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-4, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-3, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-2, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (-1, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (0, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (1, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (2, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (3, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (4, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (5, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (6, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (7, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (8, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (9, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (10, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (11, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (12, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (13, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (14, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            -
+                position: (15, 1.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.DWordDRR
+    placingRules:
+        allowFineRotation: false

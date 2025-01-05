@@ -807,7 +807,7 @@ ByteDivider:
                 rotation: (90, 0, 0)
             -
                 length: 0.6
-                position: (-8.5, 0.5, 0)
+                position: (-4.5, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             -
@@ -1002,7 +1002,7 @@ WordDivider:
                 rotation: (90, 0, 0)
             -
                 length: 0.6
-                position: (-16.5, 0.5, 0)
+                position: (-8.5, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             -
@@ -1373,7 +1373,7 @@ DWordDivider:
                 rotation: (90, 0, 0)
             -
                 length: 0.6
-                position: (-32.5, 0.5, 0)
+                position: (-16.5, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             -
@@ -1578,7 +1578,7 @@ ByteMultiplier:
         blocks:
             -
                 color: 4287f5
-                scale: (8, 2, 1)
+                scale: (8, 1, 1)
                 position: (-0.5, 0, 0)
                 rotation: (0, 0, 0)
         inputs:
@@ -1648,7 +1648,7 @@ ByteMultiplier:
                 rotation: (90, 0, 0)
             -
                 length: 0.6
-                position: (-8.5, 0.5, 0)
+                position: (-4.5, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             -
@@ -1709,7 +1709,7 @@ WordMultiplier:
         blocks:
             -
                 color: 4287f5
-                scale: (16, 2, 1)
+                scale: (16, 1, 1)
                 position: (-0.5, 0, 0)
                 rotation: (0, 0, 0)
         inputs:
@@ -1843,7 +1843,7 @@ WordMultiplier:
                 rotation: (90, 0, 0)
             -
                 length: 0.6
-                position: (-16.5, 0.5, 0)
+                position: (-8.5, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             -
@@ -1952,7 +1952,7 @@ DWordMultiplier:
         blocks:
             -
                 color: 4287f5
-                scale: (32, 2, 1)
+                scale: (32, 1, 1)
                 position: (-0.5, 0, 0)
                 rotation: (0, 0, 0)
         inputs:
@@ -2214,7 +2214,7 @@ DWordMultiplier:
                 rotation: (90, 0, 0)
             -
                 length: 0.6
-                position: (-32.5, 0.5, 0)
+                position: (-16.5, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             -

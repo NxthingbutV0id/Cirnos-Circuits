@@ -68,16 +68,24 @@ namespace CirnosCircuits {
         protected override void DoLogicUpdate() {
             ioHandler.ClearOutputs();
             if (Inputs[16].On) {
+                sbyte quotient = 0, remainder = 0;
                 sbyte a = ioHandler.GetInputAs<sbyte>();
                 sbyte b = ioHandler.GetInputAs<sbyte>(8);
-                (sbyte quotient, sbyte remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
+                
+                if (b != 0) {
+                    (quotient, remainder) = Math.DivRem(a, b);
+                }
             
                 ioHandler.OutputNumber(quotient);
                 ioHandler.OutputNumber(remainder, 8);
             } else {
+                byte quotient = 0, remainder = 0xff;
                 byte a = ioHandler.GetInputAs<byte>();
                 byte b = ioHandler.GetInputAs<byte>(8);
-                (byte quotient, byte remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
+                
+                if (b != 0) {
+                    (quotient, remainder) = Math.DivRem(a, b);
+                }
             
                 ioHandler.OutputNumber(quotient);
                 ioHandler.OutputNumber(remainder, 8);
@@ -94,16 +102,24 @@ namespace CirnosCircuits {
         protected override void DoLogicUpdate() {
             ioHandler.ClearOutputs();
             if (Inputs[32].On) {
+                short quotient = 0, remainder = 0;
                 short a = ioHandler.GetInputAs<short>();
                 short b = ioHandler.GetInputAs<short>(16);
-                (short quotient, short remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
+                
+                if (b != 0) {
+                    (quotient, remainder) = Math.DivRem(a, b);
+                }
             
                 ioHandler.OutputNumber(quotient);
                 ioHandler.OutputNumber(remainder, 16);
             } else {
+                ushort quotient = 0, remainder = 0xffff;
                 ushort a = ioHandler.GetInputAs<ushort>();
                 ushort b = ioHandler.GetInputAs<ushort>(16);
-                (ushort quotient, ushort remainder) = b == 0 ? (0, 0xffff) : Math.DivRem(a, b);
+                
+                if (b != 0) {
+                    (quotient, remainder) = Math.DivRem(a, b);
+                }
             
                 ioHandler.OutputNumber(quotient);
                 ioHandler.OutputNumber(remainder, 16);

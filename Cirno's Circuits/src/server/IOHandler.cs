@@ -73,7 +73,7 @@ namespace CirnosCircuits {
         }
 
         public void OutputNumber(byte number, int bitOffset = 0) {
-	        for (int i = bitOffset; i < 8 && i < outputs.Count; i++) {
+	        for (int i = bitOffset; i < 8 + bitOffset && i < outputs.Count; i++) {
 		        byte num = (byte)(number >> (i - bitOffset));
 		        if (num == 0) break;
 		        outputs[i].On = (num & 1) == 1;
@@ -85,7 +85,7 @@ namespace CirnosCircuits {
         }
         
         public void OutputNumber(ushort number, int bitOffset = 0) {
-	        for (int i = bitOffset; i < 16 && i < outputs.Count; i++) {
+	        for (int i = bitOffset; i < 16 + bitOffset && i < outputs.Count; i++) {
 		        ushort num = (ushort)(number >> (i - bitOffset));
 		        if (num == 0) break;
 		        outputs[i].On = (num & 1) == 1;
@@ -97,7 +97,7 @@ namespace CirnosCircuits {
         }
         
         public void OutputNumber(uint number, int bitOffset = 0) {
-	        for (int i = bitOffset; i < 32 && i < outputs.Count; i++) {
+	        for (int i = bitOffset; i < 32 + bitOffset && i < outputs.Count; i++) {
 		        uint num = number >> (i - bitOffset);
 		        if (num == 0) break;
 		        outputs[i].On = (num & 1) == 1;
@@ -109,7 +109,7 @@ namespace CirnosCircuits {
         }
         
         public void OutputNumber(ulong number, int bitOffset = 0) {
-	        for (int i = bitOffset; i < 64 && i < outputs.Count; i++) {
+	        for (int i = bitOffset; i < 64 + bitOffset && i < outputs.Count; i++) {
 		        ulong num = number >> (i - bitOffset);
 		        if (num == 0) break;
 		        outputs[i].On = (num & 1) == 1;

@@ -36,6 +36,7 @@ namespace CirnosCircuits {
             }
 
             prevClk = clk;
+            ioHandler.OutputBoolArray(data);
         }
     }
     
@@ -79,9 +80,9 @@ namespace CirnosCircuits {
             ioHandler.ClearOutputs();
             clk = Inputs[Bits].On;
             enable = Inputs[Bits + 1].On;
-            read1 = Inputs[Bits + 2].On;
-            read2 = Inputs[Bits + 3].On;
-            reset = Inputs[Bits + 4].On;
+            reset = Inputs[Bits + 2].On;
+            read1 = Inputs[Bits + 3].On;
+            read2 = Inputs[Bits + 4].On;
             
             bool risingEdge = !prevClk && clk;
 
