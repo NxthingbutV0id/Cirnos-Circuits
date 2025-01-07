@@ -59,6 +59,7 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
+			ioHandler.ClearOutputs();
 			byte result = ioHandler.GetInputAs<byte>();
 			if (result == 0) {
 				ioHandler.OutputNumber(segmentCode[0]);
@@ -98,6 +99,7 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
+			ioHandler.ClearOutputs();
 			ushort result = ioHandler.GetInputAs<ushort>();
 			if (result == 0) {
 				ioHandler.OutputNumber(segmentCode[0]);
@@ -137,6 +139,7 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
+			ioHandler.ClearOutputs();
 			uint result = ioHandler.GetInputAs<uint>();
 			if (result == 0) {
 				ioHandler.OutputNumber(segmentCode[0]);
@@ -175,6 +178,7 @@ namespace CirnosCircuits {
 		}
 
 		protected override void DoLogicUpdate() {
+			ioHandler.ClearOutputs();
 			ulong result = ioHandler.GetInputAs<ulong>();
 			if (result == 0) {
 				ioHandler.OutputNumber(segmentCode[0]);
