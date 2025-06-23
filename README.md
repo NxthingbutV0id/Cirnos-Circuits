@@ -1,6 +1,6 @@
-# Cirno's Circuits (V0.4.3)
+# Cirno's Circuits (V0.4.5)
 
-A mod for Logic World (v0.91.3).
+A mod for Logic World (v0.92 Preview).
 A random assortment of parts and logic.
 
 ![image](MainImage.jpg)
@@ -25,8 +25,8 @@ A random assortment of parts and logic.
 - SR-Latch
 - Integer and Float Printers
 - 8, 16, and 32 Bit Adders
-- (*New*) 8, 16, and 32 Bit Multipliers
-- (*New*) 8, 16, and 32 Bit Dividers
+- 8, 16, and 32 Bit Multipliers
+- 8, 16, and 32 Bit Dividers
 - De-Multiplexers
 - Counters
 

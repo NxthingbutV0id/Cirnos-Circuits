@@ -32,7 +32,7 @@ namespace CirnosCircuits {
 		}
 
 		private void SetCounter(byte input) => counter = input;
-	} // Not Implemented
+	}
 	
 	public class WordCounter: LogicComponent { 
 		private ushort counter;
@@ -65,7 +65,7 @@ namespace CirnosCircuits {
 		}
 
 		private void SetCounter(ushort input) => counter = input;
-	} // Not Implemented
+	}
 	
 	public class DWordCounter: LogicComponent { 
 		private uint counter;
@@ -98,7 +98,7 @@ namespace CirnosCircuits {
 		}
 
 		private void SetCounter(uint input) => counter = input;
-	} // Not Implemented
+	}
 	
 	public class QWordCounter: LogicComponent { 
 		private ulong counter;
@@ -131,5 +131,5 @@ namespace CirnosCircuits {
 		}
 
 		private void SetCounter(ulong input) => counter = input;
-	} // Not Implemented
+	}
 }

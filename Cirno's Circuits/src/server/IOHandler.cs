@@ -20,6 +20,15 @@ namespace CirnosCircuits {
 			}
 		}
 
+		/// <summary>
+		///
+		/// Gets the input value as a specific type.
+		///
+		/// <typeparam name="T">The type to convert the input to.</typeparam>
+		///
+		/// <param name="offset">The number of input pins to skip before reading.</param>
+		/// 
+		/// </summary>
 		public T GetInputAs<T>(int offset = 0) where T : struct, IConvertible {
 			bool isSigned = 
 				typeof(T) == typeof(sbyte) || 
@@ -52,6 +61,11 @@ namespace CirnosCircuits {
 			return (long)(value << shift) >> shift;
 		}
 
+		/// <summary>
+		///
+		/// 
+		/// 
+		/// </summary>
         public bool[] GrabBoolArrayFromInput(int startPin, int endPin) {
 	        bool[] data = new bool[endPin - startPin];
 
