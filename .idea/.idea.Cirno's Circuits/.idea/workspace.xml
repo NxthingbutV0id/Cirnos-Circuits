@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="057aa8a0-d3da-4c24-9590-85158f1c0cec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/6502.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Counters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Counters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/IOHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/IOHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NxthingbutV0id&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="d9848587-d87d-49ab-bea3-3cea064af830" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NxthingbutV0id/Cirnos-Circuits.git&quot;,
+    &quot;accountId&quot;: &quot;d9848587-d87d-49ab-bea3-3cea064af830&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Cirno's Circuits/src/server/Arithmetic.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ncaukqLlDz74jjzS3QZAzRz7G0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="057aa8a0-d3da-4c24-9590-85158f1c0cec" name="Changes" comment="" />
+      <created>1729275043693</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729275043693</updated>
+      <workItem from="1729275045029" duration="12334000" />
+      <workItem from="1729362258696" duration="11298000" />
+      <workItem from="1729913271204" duration="1152000" />
+      <workItem from="1729972690577" duration="17000" />
+      <workItem from="1729972926212" duration="66000" />
+      <workItem from="1729974191287" duration="300000" />
+      <workItem from="1729974508851" duration="826000" />
+      <workItem from="1732909987247" duration="2665000" />
+      <workItem from="1732921731137" duration="1668000" />
+      <workItem from="1733024497566" duration="3575000" />
+      <workItem from="1733271325671" duration="6763000" />
+      <workItem from="1733356292868" duration="13700000" />
+      <workItem from="1733426766311" duration="12643000" />
+      <workItem from="1733455308348" duration="5921000" />
+      <workItem from="1733635580151" duration="6937000" />
+      <workItem from="1733796175426" duration="4594000" />
+      <workItem from="1734535174930" duration="251000" />
+      <workItem from="1734605507145" duration="293000" />
+      <workItem from="1734605811659" duration="8103000" />
+      <workItem from="1734679451047" duration="5473000" />
+      <workItem from="1734897015239" duration="1682000" />
+      <workItem from="1735689989530" duration="1161000" />
+      <workItem from="1735691302672" duration="735000" />
+      <workItem from="1735860095308" duration="196000" />
+      <workItem from="1735868592618" duration="1782000" />
+      <workItem from="1735872967231" duration="2000" />
+      <workItem from="1735939867446" duration="1660000" />
+      <workItem from="1735959689382" duration="2720000" />
+      <workItem from="1736015797323" duration="6962000" />
+      <workItem from="1736037180584" duration="15000" />
+      <workItem from="1736037451402" duration="3061000" />
+      <workItem from="1736042622706" duration="1668000" />
+      <workItem from="1736213674308" duration="3548000" />
+      <workItem from="1736446096183" duration="1391000" />
+      <workItem from="1736469491969" duration="361000" />
+      <workItem from="1742864241709" duration="1207000" />
+      <workItem from="1749214716900" duration="14000" />
+      <workItem from="1749387556493" duration="170000" />
+      <workItem from="1749387738588" duration="4759000" />
+      <workItem from="1749556046232" duration="1855000" />
+      <workItem from="1750637149745" duration="32000" />
+      <workItem from="1750637195046" duration="351000" />
+    </task>
+    <task id="LOCAL-00001" summary="Major update (V0.4.0)&#10;&#10;Changes:&#10;1 bit De-Multiplexer added&#10;2 bit De-Multiplexer added&#10;3 bit De-Multiplexer added&#10;4 bit De-Multiplexer added&#10;8 bit Counter added&#10;16 bit Counter added&#10;32 bit Counter added&#10;64 bit Counter added&#10;8 bit Adder fixed&#10;8 bit Comparator fixed&#10;All .succ files have been reformated to be much smaller&#10;IOHandler has been reworked for the 100th time">
+      <option name="closed" value="true" />
+      <created>1733456745473</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733456745473</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Forgot to change manifest.succ">
+      <option name="closed" value="true" />
+      <created>1733537154556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733537154556</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed Ascii Display not working, Added new 16 bit and 32 bit adders, reformated and renamed some files">
+      <option name="closed" value="true" />
+      <created>1735690975435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735690975435</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Forgot to update picture and README.md">
+      <option name="closed" value="true" />
+      <created>1735691118539</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735691118539</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Finally added a MIT License">
+      <option name="closed" value="true" />
+      <created>1735860233679</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735860233679</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added multipliers and dividers (testing needed)">
+      <option name="closed" value="true" />
+      <created>1736037133891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736037133891</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Tested the new multipliers and dividers&#10;&#10;Added and tested Registers">
+      <option name="closed" value="true" />
+      <created>1736043828941</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736043828941</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Replaced &quot;EdgeDetector&quot; with a new Monostable section. Added Rising, Falling, and Dual Edge detectors, and a Pulse Detector, also known as a T-FlipFlop">
+      <option name="closed" value="true" />
+      <created>1736217039204</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736217039204</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Major update (V0.4.0)&#10;&#10;Changes:&#10;1 bit De-Multiplexer added&#10;2 bit De-Multiplexer added&#10;3 bit De-Multiplexer added&#10;4 bit De-Multiplexer added&#10;8 bit Counter added&#10;16 bit Counter added&#10;32 bit Counter added&#10;64 bit Counter added&#10;8 bit Adder fixed&#10;8 bit Comparator fixed&#10;All .succ files have been reformated to be much smaller&#10;IOHandler has been reworked for the 100th time" />
+    <MESSAGE value="Forgot to change manifest.succ" />
+    <MESSAGE value="Fixed Ascii Display not working, Added new 16 bit and 32 bit adders, reformated and renamed some files" />
+    <MESSAGE value="Forgot to update picture and README.md" />
+    <MESSAGE value="Finally added a MIT License" />
+    <MESSAGE value="added multipliers and dividers (testing needed)" />
+    <MESSAGE value="Tested the new multipliers and dividers&#10;&#10;Added and tested Registers" />
+    <MESSAGE value="Replaced &quot;EdgeDetector&quot; with a new Monostable section. Added Rising, Falling, and Dual Edge detectors, and a Pulse Detector, also known as a T-FlipFlop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced &quot;EdgeDetector&quot; with a new Monostable section. Added Rising, Falling, and Dual Edge detectors, and a Pulse Detector, also known as a T-FlipFlop" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

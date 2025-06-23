@@ -1,0 +1,194 @@
+AsciiDisplay:
+    column: CirnosCircuits
+    category: Misc
+    prefab:
+        blocks:
+            -
+              color: 156b5b
+              scale: (5, 1, 2)
+              position: (0, 0, 0.5)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.6
+              position: (-1.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-1, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-0.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (0, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (0.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (1, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (1.5, 0.5, 1.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (2.5, 0.5, 1)
+              rotation: (0, 0, 270)
+            -
+              length: 0.6
+              position: (2.5, 0.5, 0.5)
+              rotation: (0, 0, 270)
+            -
+              length: 0.6
+              position: (2.5, 0.5, 0)
+              rotation: (0, 0, 270)
+        outputs:
+            - # 0
+              startOn: false
+              position: (-2, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            - # 1
+              startOn: false
+              position: (-1, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            - # 2
+              startOn: false
+              position: (0, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            - # 3
+              startOn: false
+              position: (1, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            - # 4
+              startOn: false
+              position: (2, 0.5, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.AsciiDisplay
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
+RisingEdgeMono:
+    column: CirnosCircuits
+    category: Monostable
+    prefab:
+        blocks:
+            -
+              color: 005371
+              scale: (1, 0.25, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.3
+              position: (0, 0.25, 0.3)
+              rotation: (0, 0, 0)
+        outputs:
+            -
+              startOn: false
+              position: (0, 0.1, -0.2)
+              rotation: (0, 0, 0)
+    logicCode: CirnosCircuits.RisingEdgeMono
+    placingRules:
+        allowFineRotation: false
+FallingEdgeMono:
+    column: CirnosCircuits
+    category: Monostable
+    prefab:
+        blocks:
+            -
+              color: 480071
+              scale: (1, 0.25, 1)
+              position: (0, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.3
+              position: (0, 0.25, 0.3)
+              rotation: (0, 0, 0)
+        outputs:
+            -
+              startOn: false
+              position: (0, 0.1, -0.2)
+              rotation: (0, 0, 0)
+    logicCode: CirnosCircuits.FallingEdgeMono
+    placingRules:
+        allowFineRotation: false
+DualEdgeMono:
+    column: CirnosCircuits
+    category: Monostable
+    prefab:
+        blocks:
+            -
+                color: 007117
+                scale: (1, 0.25, 1)
+                position: (0, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.3
+                position: (0, 0.25, 0.3)
+                rotation: (0, 0, 0)
+        outputs:
+            -
+                startOn: false
+                position: (0, 0.1, -0.2)
+                rotation: (0, 0, 0)
+    logicCode: CirnosCircuits.DualEdgeMono
+    placingRules:
+        allowFineRotation: false
+TFlipFlop:
+    column: CirnosCircuits
+    category: Monostable
+    prefab:
+        blocks:
+            -
+                color: 006d71
+                scale: (1, 1, 1)
+                position: (0, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            -
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+        outputs:
+            -
+                startOn: false
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.TFlipFlop
+    placingRules:
+        allowFineRotation: false

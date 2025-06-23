@@ -1,0 +1,464 @@
+Decoder2Bit:
+    column: CirnosCircuits
+    category: Decoders
+    prefab:
+        blocks:
+            -
+              color: 9cff00
+              scale: (2, 1, 1)
+              position: (-0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.6
+              position: (-0.75, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-0.25, 0.5, 0.5)
+              rotation: (90, 0, 0)
+        outputs:
+            -
+              startOn: true
+              position: (-1.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.Decoder
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
+Decoder3Bit:
+    column: CirnosCircuits
+    category: Decoders
+    prefab:
+        blocks:
+            -
+              color: 9cff00
+              scale: (4, 1, 1)
+              position: (-0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.6
+              position: (-1, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-0.5, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (0, 0.5, 0.5)
+              rotation: (90, 0, 0)
+        outputs:
+            -
+              startOn: true
+              position: (-2.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-1.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-1.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (1.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.Decoder
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
+Decoder4Bit:
+    column: CirnosCircuits
+    category: Decoders
+    prefab:
+        blocks:
+            -
+              color: 9cff00
+              scale: (8, 1, 1)
+              position: (-0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.6
+              position: (-1.25, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-0.75, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-0.25, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (0.25, 0.5, 0.5)
+              rotation: (90, 0, 0)
+        outputs:
+            -
+              startOn: true
+              position: (-4.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-3.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-3.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-2.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-2.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-1.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-1.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (1.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (1.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (2.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (2.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (3.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.Decoder
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
+Decoder5Bit:
+    column: CirnosCircuits
+    category: Decoders
+    prefab:
+        blocks:
+            -
+              color: 9cff00
+              scale: (16, 1, 1)
+              position: (-0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            -
+              length: 0.6
+              position: (-1.5, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-1, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (-0.5, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (0, 0.5, 0.5)
+              rotation: (90, 0, 0)
+            -
+              length: 0.6
+              position: (0.5, 0.5, 0.5)
+              rotation: (90, 0, 0)
+        outputs:
+            -
+              startOn: true
+              position: (-8.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-7.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-7.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-6.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-6.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-5.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-5.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-4.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-4.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-3.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-3.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-2.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-2.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-1.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-1.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (-0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (0.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (1.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (1.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (2.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (2.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (3.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (3.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (4.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (4.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (5.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (5.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (6.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (6.75, 0.5, -0.5)
+              rotation: (270, 0, 0)
+            -
+              startOn: false
+              position: (7.25, 0.5, -0.5)
+              rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.Decoder
+    placingRules:
+        offsetDimensions:
+            x: 2
+            y: 1
+        defaultOffset:
+            x: 0
+            y: 0
+        offsetScale:
+            x: 1
+            y: 1
+        cornerMidpoint:
+            x: 0
+            y: 0
+        gridPlacingDimensions:
+            x: 1
+            y: 1
+        allowWorldRotation: true
+        allowFineRotation: true
+        canBeFlipped: false
+        flippingPointHeight: -0.25
+        gridPositionsAreRelative: false
+        enableEdgeExtensions: false
+        primaryGridPositions:
+            -
+              x: 0.5
+              y: 0.5
+        secondaryGridPositions: null
+        primaryEdgePositions: null
+        secondaryEdgePositions: null
