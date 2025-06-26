@@ -573,3 +573,324 @@ BCDToBinary:
     logicCode: CirnosCircuits.BCDToBinary
     placingRules:
         allowFineRotation: false
+HexToSevenSeg:
+    column: CirnosCircuits
+    category: Converters
+    prefab:
+        blocks:
+            -
+              color: 413000
+              scale: (2, 3, 1)
+              position: (-0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            - # IN0
+                length: 0.6
+                position: (-1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN1
+                length: 0.6
+                position: (-0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN2
+                length: 0.6
+                position: (-0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN3
+                length: 0.6
+                position: (0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # Blank In
+                length: 0.6
+                position: (-1.5, 1.5, 0)
+                rotation: (0, 0, 90)
+        outputs:
+            - # Segment G
+                startOn: false
+                position: (-0.5, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Segment F
+                startOn: false
+                position: (-1, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # Segment E
+                startOn: false
+                position: (-1, 1, -0.5)
+                rotation: (270, 0, 0)
+            - # Segment D
+                startOn: false
+                position: (-0.5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Segment C
+                startOn: false
+                position: (0, 1, -0.5)
+                rotation: (270, 0, 0)
+            - # Segment B
+                startOn: false
+                position: (0, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # Segment A
+                startOn: false
+                position: (-0.5, 2.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Blank Out
+                startOn: false
+                position: (0.5, 1.5, 0)
+                rotation: (0, 0, 270)
+    logicCode: CirnosCircuits.HexToSevenSeg
+    placingRules:
+        allowFineRotation: false
+ByteToBCD:
+    column: CirnosCircuits
+    category: Converters
+    prefab:
+        blocks:
+            -
+              color: 707070
+              scale: (4, 3.25, 1)
+              position: (0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            - # IN0
+                length: 0.6
+                position: (-1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN1
+                length: 0.6
+                position: (-0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN2
+                length: 0.6
+                position: (-0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN3
+                length: 0.6
+                position: (0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN4
+                length: 0.6
+                position: (0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN5
+                length: 0.6
+                position: (1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN6
+                length: 0.6
+                position: (1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN7
+                length: 0.6
+                position: (2.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+        outputs:
+            - # BCD0
+                startOn: false
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD1
+                startOn: false
+                position: (2, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD2
+                startOn: false
+                position: (2, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD3
+                startOn: false
+                position: (2, 2.75, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD4
+                startOn: false
+                position: (0.5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD5
+                startOn: false
+                position: (0.5, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD6
+                startOn: false
+                position: (0.5, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD7
+                startOn: false
+                position: (0.5, 2.75, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD8
+                startOn: false
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD9
+                startOn: false
+                position: (-1, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD10
+                startOn: false
+                position: (-1, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD11
+                startOn: false
+                position: (-1, 2.75, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.ByteToBCD
+    placingRules:
+        allowFineRotation: false
+WordToBCD:
+    column: CirnosCircuits
+    category: Converters
+    prefab:
+        blocks:
+            -
+                color: 707070
+                scale: (4, 3.25, 1)
+                position: (0.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            - # IN0
+                length: 0.6
+                position: (-1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN1
+                length: 0.6
+                position: (-0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN2
+                length: 0.6
+                position: (-0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN3
+                length: 0.6
+                position: (0.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN4
+                length: 0.6
+                position: (0.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN5
+                length: 0.6
+                position: (1.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN6
+                length: 0.6
+                position: (1.75, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN7
+                length: 0.6
+                position: (2.25, 0.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN8
+                length: 0.6
+                position: (-1.25, 1.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN9
+                length: 0.6
+                position: (-0.75, 1.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN10
+                length: 0.6
+                position: (-0.25, 1.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN11
+                length: 0.6
+                position: (0.25, 1.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN12
+                length: 0.6
+                position: (0.75, 1.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN13
+                length: 0.6
+                position: (1.25, 1.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN14
+                length: 0.6
+                position: (1.75, 1.25, 0.5)
+                rotation: (90, 0, 0)
+            - # IN15
+                length: 0.6
+                position: (2.25, 1.25, 0.5)
+                rotation: (90, 0, 0)
+        outputs:
+            - # BCD0
+                startOn: false
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD1
+                startOn: false
+                position: (2, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD2
+                startOn: false
+                position: (2, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD3
+                startOn: false
+                position: (2, 2.75, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD4
+                startOn: false
+                position: (1.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD5
+                startOn: false
+                position: (1.25, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD6
+                startOn: false
+                position: (1.25, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD7
+                startOn: false
+                position: (1.25, 2.75, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD8
+                startOn: false
+                position: (0.5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD9
+                startOn: false
+                position: (0.5, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD10
+                startOn: false
+                position: (0.5, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD11
+                startOn: false
+                position: (0.5, 2.75, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD12
+                startOn: false
+                position: (-0.25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD13
+                startOn: false
+                position: (-0.25, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD14
+                startOn: false
+                position: (-0.25, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD15
+                startOn: false
+                position: (-0.25, 2.75, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD16
+                startOn: false
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD17
+                startOn: false
+                position: (-1, 1.25, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD18
+                startOn: false
+                position: (-1, 2, -0.5)
+                rotation: (270, 0, 0)
+            - # BCD19
+                startOn: false
+                position: (-1, 2.75, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.WordToBCD
+    placingRules:
+        allowFineRotation: false

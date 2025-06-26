@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="057aa8a0-d3da-4c24-9590-85158f1c0cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/6502.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Counters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Counters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/IOHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/IOHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/Demux.succ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/converters.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/converters.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +127,10 @@
       <workItem from="1749387738588" duration="4759000" />
       <workItem from="1749556046232" duration="1855000" />
       <workItem from="1750637149745" duration="32000" />
-      <workItem from="1750637195046" duration="351000" />
+      <workItem from="1750637195046" duration="1816000" />
+      <workItem from="1750639837855" duration="4597000" />
+      <workItem from="1750905487403" duration="2855000" />
+      <workItem from="1750908489006" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="Major update (V0.4.0)&#10;&#10;Changes:&#10;1 bit De-Multiplexer added&#10;2 bit De-Multiplexer added&#10;3 bit De-Multiplexer added&#10;4 bit De-Multiplexer added&#10;8 bit Counter added&#10;16 bit Counter added&#10;32 bit Counter added&#10;64 bit Counter added&#10;8 bit Adder fixed&#10;8 bit Comparator fixed&#10;All .succ files have been reformated to be much smaller&#10;IOHandler has been reworked for the 100th time">
       <option name="closed" value="true" />
@@ -193,7 +196,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736217039204</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated to the new preview version">
+      <option name="closed" value="true" />
+      <created>1750637942610</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1750637942610</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Oops, forgot the jecs files">
+      <option name="closed" value="true" />
+      <created>1750638006029</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750638006029</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +230,9 @@
     <MESSAGE value="added multipliers and dividers (testing needed)" />
     <MESSAGE value="Tested the new multipliers and dividers&#10;&#10;Added and tested Registers" />
     <MESSAGE value="Replaced &quot;EdgeDetector&quot; with a new Monostable section. Added Rising, Falling, and Dual Edge detectors, and a Pulse Detector, also known as a T-FlipFlop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced &quot;EdgeDetector&quot; with a new Monostable section. Added Rising, Falling, and Dual Edge detectors, and a Pulse Detector, also known as a T-FlipFlop" />
+    <MESSAGE value="Updated to the new preview version" />
+    <MESSAGE value="Oops, forgot the jecs files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oops, forgot the jecs files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,6 +8,11 @@ CirnosCircuits.QWordComparator: "64 Bit Comparator"
 
 ComponentCategory.Converters: "Converters"
 CirnosCircuits.BCDToBinary: "BCD Digits to Binary (64 Bit)"
+CirnosCircuits.HexToSevenSeg: "Hexadecimal to 7-Segment Decoder (with Ripple Blanking)"
+CirnosCircuits.ByteToBCD: "8 Bit to BCD"
+CirnosCircuits.WordToBCD: "16 Bit to BCD"
+CirnosCircuits.DWordToBCD: "32 Bit to BCD"
+CirnosCircuits.QWordToBCD: "64 Bit to BCD"
 
 ComponentCategory.Decoders: "Decoders"
 CirnosCircuits.Decoder2Bit: "2-4 Decoder"
