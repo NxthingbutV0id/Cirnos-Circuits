@@ -42,19 +42,19 @@ namespace CirnosCircuits {
     
     public class ByteRegister : Register {
         protected override int Bits => 8;
-    } // Not Implemented
+    }
     
     public class WordRegister : Register {
         protected override int Bits => 16;
-    } // Not Implemented
+    }
     
     public class DWordRegister : Register {
         protected override int Bits => 32;
-    } // Not Implemented
+    }
     
     public class QWordRegister : Register {
         protected override int Bits => 64;
-    } // Not Implemented
+    }
 
     public abstract class DualReadRegister : LogicComponent {
         protected abstract int Bits { get; }
@@ -116,13 +116,47 @@ namespace CirnosCircuits {
 
     public class ByteDRR : DualReadRegister {
         protected override int Bits => 8;
-    } // Not Implemented
+    }
     
     public class WordDRR : DualReadRegister {
         protected override int Bits => 16;
-    } // Not Implemented
+    }
     
     public class DWordDRR : DualReadRegister {
         protected override int Bits => 32;
-    } // Not Implemented
+    }
+    
+    public class RAM256 : LogicComponent {
+        private IOHandler ioHandler;
+        private byte[] data;
+        private bool prevClk;
+        private bool clk;
+        private bool writeEnable;
+        private bool reset;
+        private int address;
+        
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+            prevClk = false;
+            writeEnable = false;
+            reset = false;
+            data = new byte[256];
+        }
+
+        protected override void DoLogicUpdate() {
+            var inputData = ioHandler.GetInputAs<byte>();
+            address = ioHandler.GetInputAs<int>(8) & 0xFF;
+            clk = Inputs[16].On;
+            writeEnable = Inputs[17].On;
+            reset = Inputs[18].On;
+            var risingEdge = !prevClk && clk;
+            if (risingEdge) {
+                if (reset) { for (var i = 0; i < 256; i++) { data[i] = 0; } }
+                if (writeEnable) { data[address] = inputData; }
+            }
+            ioHandler.ClearOutputs();
+            ioHandler.OutputNumber(data[address]);
+            prevClk = clk;
+        }
+    }
 }

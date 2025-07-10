@@ -192,3 +192,484 @@ TFlipFlop:
     logicCode: CirnosCircuits.TFlipFlop
     placingRules:
         allowFineRotation: false
+GBScreenIndexToXY:
+    column: CirnosCircuits
+    category: Misc
+    prefab:
+        blocks:
+            -
+                color: 000000
+                scale: (17, 1, 1)
+                position: (0, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            - # Index (0)
+                length: 0.6
+                position: (8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (1)
+                length: 0.6
+                position: (7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (2)
+                length: 0.6
+                position: (6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (3)
+                length: 0.6
+                position: (5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (4)
+                length: 0.6
+                position: (4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (5)
+                length: 0.6
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (6)
+                length: 0.6
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (7)
+                length: 0.6
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (8)
+                length: 0.6
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (9)
+                length: 0.6
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (10)
+                length: 0.6
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (11)
+                length: 0.6
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (12)
+                length: 0.6
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (13)
+                length: 0.6
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Index (14)
+                length: 0.6
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+        outputs:
+            - # X (0)
+                startOn: false
+                position: (8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # X (1)
+                startOn: false
+                position: (7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # X (2)
+                startOn: false
+                position: (6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # X (3)
+                startOn: false
+                position: (5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # X (4)
+                startOn: false
+                position: (4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # X (5)
+                startOn: false
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # X (6)
+                startOn: false
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # X (7)
+                startOn: false
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (0)
+                startOn: false
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (1)
+                startOn: false
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (2)
+                startOn: false
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (3)
+                startOn: false
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (4)
+                startOn: false
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (5)
+                startOn: false
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (6)
+                startOn: false
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Y (7)
+                startOn: false
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+    logicCode: CirnosCircuits.GBScreenIndexToXY
+    placingRules:
+        allowFineRotation: false
+StackUnit:
+    column: CirnosCircuits
+    category: CPUs
+    prefab:
+        blocks:
+            -
+              color: a62d24
+              scale: (16, 2, 1)
+              position: (-0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            - # Address In (0)
+                length: 0.6
+                position: (7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (1)
+                length: 0.6
+                position: (6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (2)
+                length: 0.6
+                position: (5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (3)
+                length: 0.6
+                position: (4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (4)
+                length: 0.6
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (5)
+                length: 0.6
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (6)
+                length: 0.6
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (7)
+                length: 0.6
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (8)
+                length: 0.6
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (9)
+                length: 0.6
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (10)
+                length: 0.6
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (11)
+                length: 0.6
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (12)
+                length: 0.6
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (13)
+                length: 0.6
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (14)
+                length: 0.6
+                position: (-7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (15)
+                length: 0.6
+                position: (-8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Clock
+                length: 0.6
+                position: (7, 2, 0)
+                rotation: (0, 0, 0)
+            - # Pop
+                length: 0.5
+                position: (6, 2, 0)
+                rotation: (0, 0, 0)
+            - # Enable
+                length: 0.4
+                position: (5, 2, 0)
+                rotation: (0, 0, 0)
+            - # Reset
+                length: 0.3
+                position: (4, 2, 0)
+                rotation: (0, 0, 0)
+        outputs:
+            - # Address Out (0)
+                startOn: false
+                position: (7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (1)
+                startOn: false
+                position: (6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (2)
+                startOn: false
+                position: (5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (3)
+                startOn: false
+                position: (4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (4)
+                startOn: false
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (5)
+                startOn: false
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (6)
+                startOn: false
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (7)
+                startOn: false
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (8)
+                startOn: false
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (9)
+                startOn: false
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (10)
+                startOn: false
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (11)
+                startOn: false
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (12)
+                startOn: false
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (13)
+                startOn: false
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (14)
+                startOn: false
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Address Out (15)
+                startOn: false
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (0)
+                startOn: false
+                position: (7, 1.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (1)
+                startOn: false
+                position: (6, 1.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (2)
+                startOn: false
+                position: (5, 1.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (3)
+                startOn: false
+                position: (4, 1.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (4)
+                startOn: false
+                position: (3, 1.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (5)
+                startOn: false
+                position: (2, 1.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (6)
+                startOn: false
+                position: (1, 1.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Stack Pointer (7)
+                startOn: false
+                position: (0, 1.5, 0.5)
+                rotation: (90, 0, 0)
+    logicCode: CirnosCircuits.StackUnit
+    placingRules:
+        allowFineRotation: false
+ProgramROM:
+    column: CirnosCircuits
+    category: CPUs
+    prefab:
+        blocks:
+            -
+              color: d9d9d9
+              scale: (16, 1, 1)
+              position: (-0.5, 0, 0)
+              rotation: (0, 0, 0)
+        inputs:
+            - # Address In (0)
+                length: 0.6
+                position: (7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (1)
+                length: 0.6
+                position: (6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (2)
+                length: 0.6
+                position: (5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (3)
+                length: 0.6
+                position: (4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (4)
+                length: 0.6
+                position: (3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (5)
+                length: 0.6
+                position: (2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (6)
+                length: 0.6
+                position: (1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (7)
+                length: 0.6
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (8)
+                length: 0.6
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (9)
+                length: 0.6
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (10)
+                length: 0.6
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (11)
+                length: 0.6
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (12)
+                length: 0.6
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (13)
+                length: 0.6
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (14)
+                length: 0.6
+                position: (-7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address In (15)
+                length: 0.6
+                position: (-8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # ROM Select (0)
+                length: 0.6
+                position: (7, 1, 0)
+                rotation: (0, 0, 0)
+            - # ROM Select (1)
+                length: 0.6
+                position: (6, 1, 0)
+                rotation: (0, 0, 0)
+        outputs:
+            - # Instruction Out (0)
+                startOn: false
+                position: (7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (1)
+                startOn: false
+                position: (6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (2)
+                startOn: false
+                position: (5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (3)
+                startOn: false
+                position: (4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (4)
+                startOn: false
+                position: (3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (5)
+                startOn: false
+                position: (2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (6)
+                startOn: false
+                position: (1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (7)
+                startOn: false
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (8)
+                startOn: false
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (9)
+                startOn: false
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (10)
+                startOn: false
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (11)
+                startOn: false
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (12)
+                startOn: false
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (13)
+                startOn: false
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (14)
+                startOn: false
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Instruction Out (15)
+                startOn: false
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+    logicCode: CirnosCircuits.ProgramROM
+    placingRules:
+        allowFineRotation: false

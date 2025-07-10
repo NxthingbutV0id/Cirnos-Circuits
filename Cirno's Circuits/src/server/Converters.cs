@@ -201,4 +201,21 @@ namespace CirnosCircuits {
 			}
 		}
 	}
+	
+	public class GBScreenIndexToXY : LogicComponent {
+		private IOHandler ioHandler;
+		
+		protected override void Initialize() {
+			ioHandler = new IOHandler(Inputs, Outputs);
+		}
+
+		protected override void DoLogicUpdate() {
+			ioHandler.ClearOutputs();
+			var index = ioHandler.GetInputAs<short>();
+			var x = index % 160;
+			var y = index / 160;
+			var output = (ushort)((y << 8) | x);
+			ioHandler.OutputNumber(output);
+		}
+	}
 }

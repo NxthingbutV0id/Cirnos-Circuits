@@ -148,5 +148,17 @@ namespace CirnosCircuits {
 				}
 			}
 		}
+		
+		public void OutputBoolArray(bool[,] arr) {
+			var rows = arr.GetLength(0);
+			var cols = arr.GetLength(1);
+			for (int i = 0; i < rows; i++) {
+				for (int j = 0; j < cols; j++) {
+					int index = i * cols + j;
+					if (index >= outputs.Count) break;
+					outputs[index].On = arr[i, j];
+				}
+			}
+		}
 	}
 }
