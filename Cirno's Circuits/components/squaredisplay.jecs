@@ -16470,6 +16470,6 @@ SquareDisplay64:
                 startOn: false
                 position: (0.5, 4, 0)
                 rotation: (0, 0, 270)
-    logicCode: CirnosCircuits.SquareDisplayUnit
+    logicCode: CirnosCircuits.SquareDisplay64
     placingRules:
         allowFineRotation: false

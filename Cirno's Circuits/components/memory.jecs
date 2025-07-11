@@ -2408,7 +2408,7 @@ RAM256:
         blocks:
             -
                 color: cc5516
-                scale: (16, 2, 1)
+                scale: (8, 2, 1)
                 position: (-3.5, 0, 0)
                 rotation: (0, 0, 0)
         inputs:

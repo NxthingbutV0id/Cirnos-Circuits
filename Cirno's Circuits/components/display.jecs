@@ -92262,7 +92262,7 @@ GBDisplay:
                 startOn: false
                 position: (0.5, 4, 0)
                 rotation: (0, 0, 270)
-        logicCode: CirnosCircuits.GBDisplayUnit
+        logicCode: CirnosCircuits.GameBoyDisplay
         placingRules:
             offsetDimensions:
                 x: 2
@@ -92280,7 +92280,7 @@ GBDisplay:
                 x: 1
                 y: 1
             allowWorldRotation: true
-            allowFineRotation: true
+            allowFineRotation: false
             canBeFlipped: false
             flippingPointHeight: -0.25
             gridPositionsAreRelative: false

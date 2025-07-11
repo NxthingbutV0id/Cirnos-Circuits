@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="057aa8a0-d3da-4c24-9590-85158f1c0cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cirno's Circuits/components/display.jecs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay.jecs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/display.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/display.jecs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/memory.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/memory.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/6502.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/IOHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/IOHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +131,8 @@
       <workItem from="1750905487403" duration="2855000" />
       <workItem from="1750908489006" duration="1228000" />
       <workItem from="1752087372557" duration="3746000" />
-      <workItem from="1752101328443" duration="16903000" />
+      <workItem from="1752101328443" duration="18178000" />
+      <workItem from="1752170275416" duration="6356000" />
     </task>
     <task id="LOCAL-00001" summary="Major update (V0.4.0)&#10;&#10;Changes:&#10;1 bit De-Multiplexer added&#10;2 bit De-Multiplexer added&#10;3 bit De-Multiplexer added&#10;4 bit De-Multiplexer added&#10;8 bit Counter added&#10;16 bit Counter added&#10;32 bit Counter added&#10;64 bit Counter added&#10;8 bit Adder fixed&#10;8 bit Comparator fixed&#10;All .succ files have been reformated to be much smaller&#10;IOHandler has been reworked for the 100th time">
       <option name="closed" value="true" />
@@ -226,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750910827040</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Display and stuff, however it don't work">
+      <option name="closed" value="true" />
+      <created>1752123498715</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752123498715</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +251,8 @@
     <MESSAGE value="Updated to the new preview version" />
     <MESSAGE value="Oops, forgot the jecs files" />
     <MESSAGE value="Added some components, needs more testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some components, needs more testing" />
+    <MESSAGE value="Added Display and stuff, however it don't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Display and stuff, however it don't work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
