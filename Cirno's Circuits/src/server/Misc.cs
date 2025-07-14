@@ -578,14 +578,16 @@ namespace CirnosCircuits {
         
         // Programs are from https://github.com/mattbatwings/BatPU-2/tree/main/programs
         private static ushort[] GetRomData(int romSelect) {
+            // TODO: Error: Could not find a part of the path 'C:\Program Files (x86)\Steam\steamapps\common\Logic World\Server\programs\tetris.hex'.
+            // and Add a 32x32 display
             return romSelect switch {
-                0 => LoadHexData("programs/tetris.hex"),
-                1 => LoadHexData("programs/2048.hex"),
-                2 => LoadHexData("programs/dvd.hex"),
-                3 => LoadHexData("programs/gol.hex"),
-                4 => LoadHexData("programs/helloworld.hex"),
-                5 => LoadHexData("programs/minesweeper.hex"),
-                6 => LoadMcData("programs/maze.mc"),
+                0 => LoadHexData(@"\Cirno's Circuits\programs\tetris.hex"),
+                1 => LoadHexData(@"\Cirno's Circuits\programs\2048.hex"),
+                2 => LoadHexData(@"\Cirno's Circuits\programs\dvd.hex"),
+                3 => LoadHexData(@"\Cirno's Circuits\programs\gol.hex"),
+                4 => LoadHexData(@"\Cirno's Circuits\programs\helloworld.hex"),
+                5 => LoadHexData(@"\Cirno's Circuits\programs\minesweeper.hex"),
+                6 => LoadMcData(@"\Cirno's Circuits\programs\maze.mc"),
                 _ => new ushort[1024]
             };
         }
