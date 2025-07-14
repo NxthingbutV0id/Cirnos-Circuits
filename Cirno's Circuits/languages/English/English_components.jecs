@@ -15,9 +15,11 @@ CirnosCircuits.DWordToBCD: "32 Bit to BCD"
 CirnosCircuits.QWordToBCD: "64 Bit to BCD"
     
 ComponentCategory.CPUs: "Processor Components"
+CirnosCircuits.BatPU2: "BATPU-2 Processor"
 CirnosCircuits.BATPU2CU: "Control Unit (BATPU-2)"
 CirnosCircuits.StackUnit: "Call Stack"
-CirnosCircuits.ProgramROM: "Program ROM (BATPU-2)"
+CirnosCircuits.ProgramRomBatPU: "Program ROM (BATPU-2)"
+CirnosCircuits.ProgramRom65c02: "Program ROM (6502/65c02)"
 
 ComponentCategory.Display: "Massive Displays"
 CirnosCircuits.SquareDisplay64: "Square Display (64x64)"

@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="057aa8a0-d3da-4c24-9590-85158f1c0cec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Misc.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/display.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/display.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/memory.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/memory.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -132,7 +133,9 @@
       <workItem from="1750908489006" duration="1228000" />
       <workItem from="1752087372557" duration="3746000" />
       <workItem from="1752101328443" duration="18178000" />
-      <workItem from="1752170275416" duration="6356000" />
+      <workItem from="1752170275416" duration="7611000" />
+      <workItem from="1752435974236" duration="13576000" />
+      <workItem from="1752467877399" duration="2144000" />
     </task>
     <task id="LOCAL-00001" summary="Major update (V0.4.0)&#10;&#10;Changes:&#10;1 bit De-Multiplexer added&#10;2 bit De-Multiplexer added&#10;3 bit De-Multiplexer added&#10;4 bit De-Multiplexer added&#10;8 bit Counter added&#10;16 bit Counter added&#10;32 bit Counter added&#10;64 bit Counter added&#10;8 bit Adder fixed&#10;8 bit Comparator fixed&#10;All .succ files have been reformated to be much smaller&#10;IOHandler has been reworked for the 100th time">
       <option name="closed" value="true" />
@@ -230,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752123498715</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Lost track of time and now it's 3:43 am...">
+      <option name="closed" value="true" />
+      <created>1752219847305</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1752219847305</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +263,8 @@
     <MESSAGE value="Oops, forgot the jecs files" />
     <MESSAGE value="Added some components, needs more testing" />
     <MESSAGE value="Added Display and stuff, however it don't work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Display and stuff, however it don't work" />
+    <MESSAGE value="Lost track of time and now it's 3:43 am..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lost track of time and now it's 3:43 am..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

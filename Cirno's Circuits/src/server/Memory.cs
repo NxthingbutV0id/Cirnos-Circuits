@@ -125,38 +125,89 @@ namespace CirnosCircuits {
     public class DWordDRR : DualReadRegister {
         protected override int Bits => 32;
     }
-    
-    public class RAM256 : LogicComponent {
+
+    public abstract class BaseRam : LogicComponent {
         private IOHandler ioHandler;
         private byte[] data;
         private bool prevClk;
         private bool clk;
         private bool writeEnable;
         private bool reset;
+        private bool chipEnable;
         private int address;
+        private int clockIndex, writeIndex, resetIndex, chipEnableIndex, total;
+        
+        protected abstract int addressBits { get; }
         
         protected override void Initialize() {
             ioHandler = new IOHandler(Inputs, Outputs);
             prevClk = false;
             writeEnable = false;
             reset = false;
-            data = new byte[256];
+            chipEnable = false;
+            total = 1 << addressBits;
+            data = new byte[total];
+            clockIndex = 8 + addressBits;
+            writeIndex = clockIndex + 1;
+            resetIndex = writeIndex + 1;
+            chipEnableIndex = resetIndex + 1;
         }
 
         protected override void DoLogicUpdate() {
             var inputData = ioHandler.GetInputAs<byte>();
-            address = ioHandler.GetInputAs<int>(8) & 0xFF;
-            clk = Inputs[16].On;
-            writeEnable = Inputs[17].On;
-            reset = Inputs[18].On;
+            address = ioHandler.GetInputAs<int>(8) & (addressBits - 1);
+            clk = Inputs[clockIndex].On;
+            writeEnable = Inputs[writeIndex].On;
+            reset = Inputs[resetIndex].On;
+            chipEnable = Inputs[chipEnableIndex].On;
             var risingEdge = !prevClk && clk;
+            
+            if (!chipEnable) {
+                ioHandler.ClearOutputs();
+                prevClk = clk;
+                return;
+            }
+            
             if (risingEdge) {
-                if (reset) { for (var i = 0; i < 256; i++) { data[i] = 0; } }
+                if (reset) { for (var i = 0; i < total; i++) { data[i] = 0; } }
                 if (writeEnable) { data[address] = inputData; }
             }
+            
             ioHandler.ClearOutputs();
             ioHandler.OutputNumber(data[address]);
             prevClk = clk;
         }
+    }
+    
+    public class RAM256 : BaseRam {
+        protected override int addressBits => 8;
+    }
+    
+    public class RAM1k : BaseRam {
+        protected override int addressBits => 10;
+    }
+
+    public class RAM2k : BaseRam {
+        protected override int addressBits => 11;
+    }
+    
+    public class RAM4k : BaseRam {
+        protected override int addressBits => 12;
+    }
+    
+    public class RAM8k : BaseRam {
+        protected override int addressBits => 13;
+    }
+    
+    public class RAM16k : BaseRam {
+        protected override int addressBits => 14;
+    }
+    
+    public class RAM32k : BaseRam {
+        protected override int addressBits => 15;
+    }
+
+    public class RAM64k : BaseRam {
+        protected override int addressBits => 16;
     }
 }
