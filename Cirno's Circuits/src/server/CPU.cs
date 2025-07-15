@@ -78,7 +78,6 @@ namespace CirnosCircuits {
                 
                 Execute(dataIn);
             }
-            OutputData();
             prevClk = clk;
         }
         
@@ -86,9 +85,28 @@ namespace CirnosCircuits {
             for (var i = 0; i < registerFile.Length; i++) {
                 registerFile[i] = 0;
             }
-            programCounter = 0;
-            stackPointer = 0;
             callStack = new ushort[16];
+            stackPointer = 0;
+            registerFile = new byte[16];
+            instruction = 0;
+            programCounter = 0;
+            prevClk = false;
+            carryFlag = false;
+            zeroFlag = false;
+            regA = 0;
+            regB = 0;
+            regC = 0;
+            condition = 0;
+            address = 0;
+            immediate = 0;
+            offset = 0;
+            inWaitingState = false;
+            addressOut = 0;
+            dataOut = 0;
+            halted = false;
+            readEnable = false;
+            writeEnable = false;
+            
             ioHandler.ClearOutputs();
         }
         
@@ -146,14 +164,14 @@ namespace CirnosCircuits {
                 case Opcode.LDR: LDR(dataIn); break;
                 case Opcode.STR: STR(); break;
             }
+            OutputData();
         }
 
         private void OutputData() {
             ioHandler.ClearOutputs();
             programCounter = (ushort)(programCounter & 0x3FF); // Ensure PC is within bounds
-            ioHandler.OutputNumber(programCounter);
-            ioHandler.OutputNumber(dataOut, 10);
-            ioHandler.OutputNumber(addressOut, 18);
+            var value = programCounter | (ulong)dataOut << 10 | (ulong)addressOut << 18;
+            ioHandler.OutputNumber(value);
             Outputs[26].On = halted;
             Outputs[27].On = readEnable;
             Outputs[28].On = writeEnable;
@@ -264,20 +282,20 @@ namespace CirnosCircuits {
         }
         
         private void CAL() {
-            callStack[stackPointer++] = (ushort)(programCounter + 1);
+            callStack[stackPointer] = (ushort)(programCounter + 1);
+            stackPointer = (stackPointer + 1) & 0xf;
             programCounter = (ushort)address;
         }
         
         private void RET() {
-            programCounter = callStack[--stackPointer];
+            stackPointer = (stackPointer - 1) & 0xf;
+            programCounter = callStack[stackPointer];
         }
         
         private void LDR(byte dataIn) {
             if (inWaitingState) {
                 WriteRegister(regB, dataIn);
-                readEnable = false;
                 inWaitingState = false;
-                addressOut = 0;
                 programCounter++;
             } else { // First time execution
                 addressOut = (byte)((ReadRegister(regA) + offset) & 0xFF);
@@ -288,12 +306,10 @@ namespace CirnosCircuits {
             }
         }
         
+        // TODO: I am not sure how to verify that this is correct but that's a problem for future me
         private void STR() {
             if (inWaitingState) {
                 inWaitingState = false;
-                writeEnable = false;
-                dataOut = 0;
-                addressOut = 0;
                 programCounter++;
             } else {
                 addressOut = (byte)((ReadRegister(regA) + offset) & 0xFF);

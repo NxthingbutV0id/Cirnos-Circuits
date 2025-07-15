@@ -563,6 +563,7 @@ namespace CirnosCircuits {
         }
 
         protected override void DoLogicUpdate() {
+            ioHandler.ClearOutputs();
             var address = ioHandler.GetInputAs<ushort>() & 0x3FF;
             var romSelect = ioHandler.GetInputAs<byte>(10) & 7;
 
@@ -578,16 +579,14 @@ namespace CirnosCircuits {
         
         // Programs are from https://github.com/mattbatwings/BatPU-2/tree/main/programs
         private static ushort[] GetRomData(int romSelect) {
-            // TODO: Error: Could not find a part of the path 'C:\Program Files (x86)\Steam\steamapps\common\Logic World\Server\programs\tetris.hex'.
-            // and Add a 32x32 display
             return romSelect switch {
-                0 => LoadHexData(@"\Cirno's Circuits\programs\tetris.hex"),
-                1 => LoadHexData(@"\Cirno's Circuits\programs\2048.hex"),
-                2 => LoadHexData(@"\Cirno's Circuits\programs\dvd.hex"),
-                3 => LoadHexData(@"\Cirno's Circuits\programs\gol.hex"),
-                4 => LoadHexData(@"\Cirno's Circuits\programs\helloworld.hex"),
-                5 => LoadHexData(@"\Cirno's Circuits\programs\minesweeper.hex"),
-                6 => LoadMcData(@"\Cirno's Circuits\programs\maze.mc"),
+                0 => LoadHexData(@"C:\Program Files (x86)\Steam\steamapps\common\Logic World\GameData\Cirno's Circuits\programs\tetris.hex"),
+                1 => LoadHexData(@"C:\Program Files (x86)\Steam\steamapps\common\Logic World\GameData\Cirno's Circuits\programs\2048.hex"),
+                2 => LoadHexData(@"C:\Program Files (x86)\Steam\steamapps\common\Logic World\GameData\Cirno's Circuits\programs\dvd.hex"),
+                3 => LoadHexData(@"C:\Program Files (x86)\Steam\steamapps\common\Logic World\GameData\Cirno's Circuits\programs\gol.hex"),
+                4 => LoadHexData(@"C:\Program Files (x86)\Steam\steamapps\common\Logic World\GameData\Cirno's Circuits\programs\helloworld.hex"),
+                5 => LoadHexData(@"C:\Program Files (x86)\Steam\steamapps\common\Logic World\GameData\Cirno's Circuits\programs\minesweeper.hex"),
+                6 => LoadMcData(@"C:\Program Files (x86)\Steam\steamapps\common\Logic World\GameData\Cirno's Circuits\programs\maze.mc"),
                 _ => new ushort[1024]
             };
         }

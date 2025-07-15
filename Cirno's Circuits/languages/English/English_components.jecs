@@ -23,6 +23,7 @@ CirnosCircuits.ProgramRom65c02: "Program ROM (6502/65c02)"
 
 ComponentCategory.Display: "Massive Displays"
 CirnosCircuits.SquareDisplay64: "Square Display (64x64)"
+CirnosCircuits.SquareDisplay32: "Square Display (32x32)"
 CirnosCircuits.GBDisplay: "Game Boy Display (160x144)"
 
 ComponentCategory.Decoders: "Decoders"

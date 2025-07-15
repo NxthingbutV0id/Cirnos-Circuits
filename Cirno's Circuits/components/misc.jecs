@@ -573,30 +573,6 @@ ProgramRomBatPU:
                 length: 0.6
                 position: (-2, 0.5, -0.5)
                 rotation: (270, 0, 0)
-            - # Address In (10)
-                length: 0.6
-                position: (-3, 0.5, -0.5)
-                rotation: (270, 0, 0)
-            - # Address In (11)
-                length: 0.6
-                position: (-4, 0.5, -0.5)
-                rotation: (270, 0, 0)
-            - # Address In (12)
-                length: 0.6
-                position: (-5, 0.5, -0.5)
-                rotation: (270, 0, 0)
-            - # Address In (13)
-                length: 0.6
-                position: (-6, 0.5, -0.5)
-                rotation: (270, 0, 0)
-            - # Address In (14)
-                length: 0.6
-                position: (-7, 0.5, -0.5)
-                rotation: (270, 0, 0)
-            - # Address In (15)
-                length: 0.6
-                position: (-8, 0.5, -0.5)
-                rotation: (270, 0, 0)
             - # ROM Select (0)
                 length: 0.6
                 position: (7, 1, 0)
@@ -604,6 +580,10 @@ ProgramRomBatPU:
             - # ROM Select (1)
                 length: 0.6
                 position: (6, 1, 0)
+                rotation: (0, 0, 0)
+            - # ROM Select (2)
+                length: 0.6
+                position: (5, 1, 0)
                 rotation: (0, 0, 0)
         outputs:
             - # Instruction Out (0)
