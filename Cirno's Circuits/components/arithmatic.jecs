@@ -6,7 +6,7 @@ ByteAdder:
             -
                 color: 7f0000
                 scale: (4, 1, 1)
-                position: (0, 0, 0)
+                position: (-0.5, 0, 0)
                 rotation: (0, 0, 0)
         inputs:
             - # B input bit 0
@@ -75,7 +75,7 @@ ByteAdder:
                 rotation: (90, 0, 0)
             - # Carry_In
                 length: 0.6
-                position: (-2, 0.75, 0)
+                position: (-2, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             - # Out 0

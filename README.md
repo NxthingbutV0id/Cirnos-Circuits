@@ -1,4 +1,4 @@
-# Cirno's Circuits (V0.4.5)
+# Cirno's Circuits (V0.5.0)
 
 A mod for Logic World (v0.92 Preview).
 A random assortment of parts and logic.
@@ -10,10 +10,6 @@ A random assortment of parts and logic.
 - Multiplexers
 - Decoders
 - Ascii to 5x7 matrix
-	
-	- 7 bit ascii value (first 32 are blank)
-	- 3 bit row selector (runs top down, 1 to 7, 0 is always blank)
-
 - Sideways Logic Gates!
 - Big Relays
 - Big D-Latches

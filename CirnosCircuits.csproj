@@ -10,6 +10,7 @@
   <ItemGroup>
     <Folder Include="Cirno%27s Circuits\languages\English\" />
     <Folder Include="Cirno's Circuits\programs\" />
+    <Folder Include="Documentation\Images\" />
   </ItemGroup>
 
   <ItemGroup>

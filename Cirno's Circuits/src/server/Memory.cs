@@ -40,6 +40,27 @@ namespace CirnosCircuits {
         }
     }
     
+    public class BitRegister : LogicComponent {
+        private bool data;
+        private bool prevClk;
+        private bool clk;
+        private bool enable;
+        protected override void Initialize() {
+            prevClk = false;
+            enable = false;
+            data = false;
+        }
+
+        protected override void DoLogicUpdate() {
+            clk = Inputs[1].On;
+            enable = Inputs[2].On;
+            if (!prevClk && clk && enable) {
+                data = Inputs[0].On;
+            }
+            Outputs[0].On = data;
+        }
+    }
+    
     public class ByteRegister : Register {
         protected override int Bits => 8;
     }
@@ -209,5 +230,176 @@ namespace CirnosCircuits {
 
     public class RAM64k : BaseRam {
         protected override int addressBits => 16;
+    }
+    
+    public class DualReadRegisterFileBATPU : LogicComponent {
+        private IOHandler ioHandler;
+        private bool clk, prevClk, reset, writeEnable;
+        private byte[] registers;
+        private int rs1, rs2, rd;
+        
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+            prevClk = false;
+            reset = false;
+            writeEnable = false;
+            registers = new byte[16];
+            rs1 = 0;
+            rs2 = 0;
+            rd = 0;
+        }
+
+        protected override void DoLogicUpdate() {
+            var dataIn = ioHandler.GetInputAs<byte>();
+            rs1 = ioHandler.GetInputAs<byte>(8) & 0xf;
+            rs2 = ioHandler.GetInputAs<byte>(12) & 0xf;
+            rd = ioHandler.GetInputAs<byte>(16) & 0xf;
+            clk = Inputs[20].On;
+            writeEnable = Inputs[21].On;
+            reset = Inputs[22].On;
+            if (!prevClk && clk && writeEnable) {
+                registers[rd] = dataIn;
+            }
+            
+            ioHandler.ClearOutputs();
+            ioHandler.OutputNumber(registers[rs1]);
+            ioHandler.OutputNumber(registers[rs2], 8);
+            
+            if (reset) {
+                Reset();
+            }
+        }
+        
+        private void Reset() {
+            for (var i = 0; i < registers.Length; i++) {
+                registers[i] = 0;
+            }
+        }
+    }
+
+    public class DualReadRegisterFileRISCV : LogicComponent {
+        private IOHandler ioHandler;
+        private bool clk, prevClk, reset, writeEnable;
+        private int[] registers;
+        private int rs1, rs2, rd;
+        
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+            prevClk = false;
+            reset = false;
+            writeEnable = false;
+            registers = new int[32];
+            rs1 = 0;
+            rs2 = 0;
+            rd = 0;
+        }
+
+        protected override void DoLogicUpdate() {
+            var dataIn = ioHandler.GetInputAs<int>();
+            rs1 = ioHandler.GetInputAs<byte>(32) & 0x1f;
+            rs2 = ioHandler.GetInputAs<byte>(37) & 0x1f;
+            rd = ioHandler.GetInputAs<byte>(42) & 0xf;
+            clk = Inputs[47].On;
+            writeEnable = Inputs[48].On;
+            reset = Inputs[49].On;
+            if (!prevClk && clk && writeEnable) {
+                registers[rd] = dataIn;
+            }
+            
+            ioHandler.ClearOutputs();
+            ioHandler.OutputNumber(registers[rs1]);
+            ioHandler.OutputNumber(registers[rs2], 32);
+            
+            if (reset) {
+                Reset();
+            }
+        }
+        
+        private void Reset() {
+            for (var i = 0; i < registers.Length; i++) {
+                registers[i] = 0;
+            }
+        }
+    }
+
+    public class MultiByteRam : LogicComponent {
+        private IOHandler ioHandler;
+        private byte[] data;
+        private bool prevClk, clk, writeEnable, readEnable, reset, chipEnable;
+        private int address, dataType, clockIndex, writeIndex, resetIndex, chipEnableIndex, total;
+        private const int dataBits = 32;
+        private const int dataTypeBits = 2;
+        private const int addressBits = 16;
+        private const int Byte = 0;
+        private const int Word = 1;
+        private const int DWord = 2;
+        
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+            prevClk = false;
+            writeEnable = false;
+            reset = false;
+            chipEnable = false;
+            total = 1 << addressBits;
+            data = new byte[total];
+            clockIndex = dataBits + dataTypeBits + addressBits;
+            writeIndex = clockIndex + 1;
+            resetIndex = writeIndex + 1;
+            chipEnableIndex = resetIndex + 1;
+            dataType = 0;
+        }
+
+        protected override void DoLogicUpdate() {
+            var inputData = ioHandler.GetInputAs<int>();
+            address = ioHandler.GetInputAs<int>(32) & 0xffff;
+            dataType = ioHandler.GetInputAs<int>(48) & 0x3;
+
+            if (dataType == 3) {
+                dataType = 2;
+            }
+
+            clk = Inputs[clockIndex].On;
+            writeEnable = Inputs[writeIndex].On;
+            reset = Inputs[resetIndex].On;
+            chipEnable = Inputs[chipEnableIndex].On;
+            var risingEdge = !prevClk && clk;
+            
+            if (!chipEnable) {
+                ioHandler.ClearOutputs();
+                prevClk = clk;
+                return;
+            }
+            
+            if (risingEdge && writeEnable) {
+                switch (dataType) {
+                    case Byte: data[address] = (byte)(inputData & 0xff); break;
+                    case Word:
+                        data[address] = (byte)((inputData >> 8) & 0xff);
+                        data[address + 1] = (byte)(inputData & 0xff);
+                        break;
+                    case DWord:
+                        data[address] = (byte)((inputData >> 24) & 0xff);
+                        data[address + 1] = (byte)((inputData >> 16) & 0xff);
+                        data[address + 2] = (byte)((inputData >> 8) & 0xff);
+                        data[address + 3] = (byte)(inputData & 0xff);
+                        break;
+                }
+            }
+
+            if (readEnable) {
+                ioHandler.ClearOutputs();
+                var outputData = dataType switch {
+                    Byte => data[address],
+                    Word => (data[address] << 8) | data[address + 1],
+                    DWord => (data[address] << 24) | (data[address + 1] << 16) | (data[address + 2] << 8) | data[address + 3],
+                    _ => 0
+                };
+                ioHandler.OutputNumber(outputData);
+            }
+
+            if (reset) { for (var i = 0; i < total; i++) { data[i] = 0; } }
+            
+            prevClk = clk;
+        }
     }
 }

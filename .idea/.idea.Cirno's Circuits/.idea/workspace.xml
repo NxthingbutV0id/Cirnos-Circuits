@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="057aa8a0-d3da-4c24-9590-85158f1c0cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay64.jecs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Screens.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Docs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay32.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/arithmatic.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/arithmatic.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/converters.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/converters.jecs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/manifest.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/manifest.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/AsciiDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/AsciiDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Misc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Misc.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CirnosCircuits.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CirnosCircuits.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +143,9 @@
       <workItem from="1752170275416" duration="7611000" />
       <workItem from="1752435974236" duration="13576000" />
       <workItem from="1752467877399" duration="5127000" />
-      <workItem from="1752526357628" duration="5246000" />
+      <workItem from="1752526357628" duration="5424000" />
+      <workItem from="1752697466006" duration="10633000" />
+      <workItem from="1752724494031" duration="2636000" />
     </task>
     <task id="LOCAL-00001" summary="Major update (V0.4.0)&#10;&#10;Changes:&#10;1 bit De-Multiplexer added&#10;2 bit De-Multiplexer added&#10;3 bit De-Multiplexer added&#10;4 bit De-Multiplexer added&#10;8 bit Counter added&#10;16 bit Counter added&#10;32 bit Counter added&#10;64 bit Counter added&#10;8 bit Adder fixed&#10;8 bit Comparator fixed&#10;All .succ files have been reformated to be much smaller&#10;IOHandler has been reworked for the 100th time">
       <option name="closed" value="true" />
@@ -259,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752475380981</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added junk, needs more testing">
+      <option name="closed" value="true" />
+      <created>1752558067461</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1752558067461</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +300,8 @@
     <MESSAGE value="Lost track of time and now it's 3:43 am..." />
     <MESSAGE value="Needs testing" />
     <MESSAGE value="Need sleep..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Need sleep..." />
+    <MESSAGE value="Added junk, needs more testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added junk, needs more testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
