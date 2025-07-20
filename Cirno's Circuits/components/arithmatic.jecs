@@ -5,105 +5,114 @@ ByteAdder:
         blocks:
             -
                 color: 7f0000
-                scale: (4, 1, 1)
-                position: (-0.5, 0, 0)
+                scale: (8, 1, 1)
+                position: (-3.5, 0, 0)
                 rotation: (0, 0, 0)
         inputs:
             - # B input bit 0
                 length: 0.6
-                position: (-1.75, 0.25, 0.5)
+                position: (-7, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # B input bit 1
                 length: 0.6
-                position: (-1.25, 0.25, 0.5)
+                position: (-6, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # B input bit 2
                 length: 0.6
-                position: (-0.75, 0.25, 0.5)
+                position: (-5, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # B input bit 3
                 length: 0.6
-                position: (-0.25, 0.25, 0.5)
+                position: (-4, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # B input bit 4
                 length: 0.6
-                position: (0.25, 0.25, 0.5)
+                position: (-3, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # B input bit 5
                 length: 0.6
-                position: (0.75, 0.25, 0.5)
+                position: (-2, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # B input bit 6
                 length: 0.6
-                position: (1.25, 0.25, 0.5)
+                position: (-1, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # B input bit 7
                 length: 0.6
-                position: (1.75, 0.25, 0.5)
+                position: (0, 0.25, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 0
                 length: 0.6
-                position: (-1.75, 0.75, 0.5)
+                position: (-7, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 1
                 length: 0.6
-                position: (-1.25, 0.75, 0.5)
+                position: (-6, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 2
                 length: 0.6
-                position: (-0.75, 0.75, 0.5)
+                position: (-5, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 3
                 length: 0.6
-                position: (-0.25, 0.75, 0.5)
+                position: (-4, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 4
                 length: 0.6
-                position: (0.25, 0.75, 0.5)
+                position: (-3, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 5
                 length: 0.6
-                position: (0.75, 0.75, 0.5)
+                position: (-2, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 6
                 length: 0.6
-                position: (1.25, 0.75, 0.5)
+                position: (-1, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # A input bit 7
                 length: 0.6
-                position: (1.75, 0.75, 0.5)
+                position: (0, 0.75, 0.5)
                 rotation: (90, 0, 0)
             - # Carry_In
                 length: 0.6
-                position: (-2, 0.5, 0)
+                position: (-7.5, 0.5, 0)
                 rotation: (0, 0, 90)
         outputs:
             - # Out 0
-                position: (-1.75, 0.5, -0.5)
+                startOn: false
+                position: (-7, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Out 1
-                position: (-1.25, 0.5, -0.5)
+                startOn: false
+                position: (-6, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Out 2
-                position: (-0.75, 0.5, -0.5)
+                startOn: false
+                position: (-5, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Out 3
-                position: (-0.25, 0.5, -0.5)
+                startOn: false
+                position: (-4, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Out 4
-                position: (0.25, 0.5, -0.5)
+                startOn: false
+                position: (-3, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Out 5
-                position: (0.75, 0.5, -0.5)
+                startOn: false
+                position: (-2, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Out 6
-                position: (1.25, 0.5, -0.5)
+                startOn: false
+                position: (-1, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Out 7
-                position: (1.75, 0.5, -0.5)
+                startOn: false
+                position: (0, 0.5, -0.5)
                 rotation: (270, 0, 0)
             - # Carry_Out
-                position: (2, 0.5, 0)
+                startOn: false
+                position: (0.5, 0.5, 0)
                 rotation: (0, 0, 270)
     logicCode: CirnosCircuits.ByteAdder
     placingRules:

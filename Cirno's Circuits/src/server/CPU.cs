@@ -329,4 +329,8 @@ namespace CirnosCircuits {
             registerFile[regIndex] = value;
         }
     }
+
+    public class ControlUnit6502 : LogicComponent {
+        // TODO: use the 6502.hex file
+    }
 }

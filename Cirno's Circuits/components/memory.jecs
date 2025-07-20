@@ -2647,3 +2647,38 @@ RAM1k:
     logicCode: CirnosCircuits.RAM1k
     placingRules:
         allowFineRotation: false
+BitRegister:
+    column: CirnosCircuits
+    category: Registers
+    prefab:
+        blocks:
+            -
+                color: 38733f
+                scale: (1, 1, 1)
+                position: (0, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            - # Data In
+                length: 0.6
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Clock
+                length: 0.4
+                position: (0, 1, 0.25)
+                rotation: (0, 0, 0)
+            - # Write Enable
+                length: 0.6
+                position: (0, 1, -0.25)
+                rotation: (0, 0, 0)
+            - # Reset
+                length: 0.3
+                position: (-0.5, 0.5, 0)
+                rotation: (0, 0, 90)
+        outputs:
+            - # Data Out
+                startOn: false
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+    logicCode: CirnosCircuits.BitRegister
+    placingRules:
+        allowFineRotation: false

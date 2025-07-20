@@ -45,19 +45,28 @@ namespace CirnosCircuits {
         private bool prevClk;
         private bool clk;
         private bool enable;
+        private bool reset;
         protected override void Initialize() {
             prevClk = false;
             enable = false;
             data = false;
+            reset = false;
         }
 
         protected override void DoLogicUpdate() {
             clk = Inputs[1].On;
             enable = Inputs[2].On;
+            reset = Inputs[3].On;
             if (!prevClk && clk && enable) {
                 data = Inputs[0].On;
             }
+
+            if (reset) {
+                data = false;
+            }
+
             Outputs[0].On = data;
+            prevClk = clk;
         }
     }
     
@@ -105,29 +114,27 @@ namespace CirnosCircuits {
             read1 = Inputs[Bits + 3].On;
             read2 = Inputs[Bits + 4].On;
             
-            bool risingEdge = !prevClk && clk;
-
-            if (reset && risingEdge) {
-                for (int i = 0; i < Bits; i++) {
-                    data[i] = false;
+            if (enable && !prevClk && clk) {
+                for (var i = 0; i < Bits; i++) {
+                    data[i] = Inputs[i].On;
                 }
             }
 
             if (read1) {
-                for (int i = 0; i < Bits; i++) {
+                for (var i = 0; i < Bits; i++) {
                     Outputs[i].On = data[i];
                 }
             }
             
             if (read2) {
-                for (int i = 0; i < Bits; i++) {
+                for (var i = 0; i < Bits; i++) {
                     Outputs[i + Bits].On = data[i];
                 }
             }
             
-            if (enable && risingEdge) {
-                for (int i = 0; i < Bits; i++) {
-                    data[i] = Inputs[i].On;
+            if (reset) {
+                for (var i = 0; i < Bits; i++) {
+                    data[i] = false;
                 }
             }
 

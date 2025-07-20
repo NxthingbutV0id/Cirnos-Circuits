@@ -141,12 +141,8 @@ namespace CirnosCircuits {
 		
 		protected override void DoLogicUpdate() {
 			var address = ioHandler.GetInputAs<byte>() & 0x7F;
-
-			var value = asciiTable[address] | (asciiTable[address] << 5) | (asciiTable[address] << 10) |
-				(asciiTable[address] << 15) | (asciiTable[address] << 20) | (asciiTable[address] << 25) |
-				(asciiTable[address] << 30);
-
-			ioHandler.OutputNumber(value);
+			ioHandler.ClearOutputs();
+			ioHandler.OutputNumber(asciiTable[address]);
 		}
     } // Completed
 	
@@ -175,6 +171,56 @@ namespace CirnosCircuits {
 			Outputs[4].On = c&(!(a&b)|e) | a&b&d&e;
 			Outputs[5].On = d | a&b&c&e;
 			Outputs[6].On = e&!(a&b&d) | a&b&c;
+		}
+	}
+
+	public class BatCharDisplay : LogicComponent {
+		private IOHandler ioHandler;
+		// Pixels from the top left corner, going right and then down
+		private readonly ushort[] charTable = {
+			0b000000000000000, // Space
+			0b010101111101101, // A
+			0b111101110101111, // B
+			0b111100100100111, // C
+			0b110101101101110, // D
+			0b111100110100111, // E
+			0b111100110100000, // F
+			0b111100100101111, // G
+			0b101101111101101, // H
+			0b111010010010111, // I
+			0b001001001101111, // J
+			0b101101110101101, // K
+			0b100100100100111, // L
+			0b101111101101101, // M
+			0b110101101101101, // N
+			0b111101101101111, // O
+			0b111101110100100, // P
+			0b010101101010001, // Q
+			0b111101110101101, // R
+			0b111100111001111, // S
+			0b111010010010010, // T
+			0b101101101101111, // U
+			0b101101101110100, // V
+			0b101101101111101, // W
+			0b101101010101101, // X
+			0b101101010010010, // Y
+			0b111001010100111, // Z
+			0b000000000000010, // .
+			0b010010010000010, // !
+			0b111001011000010  // ?
+		};
+
+		protected override void Initialize() {
+			ioHandler = new IOHandler(Inputs, Outputs);
+		}
+
+		protected override void DoLogicUpdate() {
+			var character = ioHandler.GetInputAs<byte>() & 0x1F;
+			ioHandler.ClearOutputs();
+			if (character >= charTable.Length) {
+				character = 0;
+			}
+			ioHandler.OutputNumber(charTable[character]);
 		}
 	}
 }
