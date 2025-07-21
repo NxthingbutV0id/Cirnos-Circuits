@@ -227,104 +227,14 @@ namespace CirnosCircuits {
     public class BATPU2ControlUnit : LogicComponent {
         private IOHandler ioHandler;
         private bool[] signals;
-        private const int ADD = 0;
-        private const int SUB = 1;
-        private const int NOR = 2;
-        private const int AND = 3;
-        private const int XOR = 4;
-        private const int RSH = 5;
-        private const int UFR = 6;
-        private const int Z = 7;
-        private const int NZ = 8;
-        private const int CS = 9;
-        private const int CC = 10;
-        private const int ALU_REG = 11;
-        private const int ALU_IMM = 12;
-        private const int SE_IMM = 13;
-        private const int REG_EN = 14;
-        private const int WR_A = 15;
-        private const int WR_B = 16;
-        private const int WR_C = 17;
-        private const int STACK_EN = 18;
-        private const int STACK_PUSH = 19;
-        private const int STACK_POP = 20;
-        private const int RAM_EN = 21;
-        private const int RAM_R = 22;
-        private const int RAM_W = 23;
-        private const int PC_EN = 24;
-        private const int IMM_DB = 25;
-        private const int ALU_DB = 26;
-        private const int RAM_DB = 27;
-        private const int NPC_AB = 28;
-        private const int IMM_AB = 29;
-        private const int STACK_AB = 30;
-        private const int HALT = 31;
+        
 
         protected override void Initialize() {
             ioHandler = new IOHandler(Inputs, Outputs);
-            signals = new bool[32];
         }
 
         protected override void DoLogicUpdate() {
-            var input = ioHandler.GetInputAs<byte>();
-            // Bits: RBCCOOOO
-            // R: Reset, B: Branch, CC: Condition, OOOO: Opcode
-            var opcode = input & 0xF;
-            var condition = (input >> 4) & 0x3;
-            var takeBranch = (input & 0b01000000) != 0;
-            var reset = (input & 0b10000000) != 0;
-
-            signals[ADD] = opcode is 2 or 9 or >= 14;
-            signals[SUB] = opcode is 3;
-            signals[NOR] = opcode is 4;
-            signals[AND] = opcode is 5;
-            signals[XOR] = opcode is 6;
-            signals[RSH] = opcode is 7;
-            signals[UFR] = opcode is <= 6 and >= 2 or 9;
-            signals[Z] = condition is 0;
-            signals[NZ] = condition is 1;
-            signals[CS] = condition is 2;
-            signals[CC] = condition is 3;
-            signals[ALU_REG] = opcode is <= 7 and >= 2;
-            signals[ALU_IMM] = opcode is 9 or >= 14;
-            signals[SE_IMM] = opcode >= 14;
-            signals[REG_EN] = opcode is <= 9 and >= 2 or 14;
-            signals[WR_A] = opcode is 8 or 9;
-            signals[WR_B] = opcode >= 14;
-            signals[WR_C] = opcode is <= 7 and >= 2;
-            signals[STACK_EN] = opcode is 12 or 13;
-            signals[STACK_PUSH] = opcode is 12;
-            signals[STACK_POP] = opcode is 13;
-            signals[RAM_EN] = opcode >= 14;
-            signals[RAM_R] = opcode is 14;
-            signals[RAM_W] = opcode is 15;
-            signals[PC_EN] = opcode is not 1;
-            signals[IMM_DB] = opcode is 8;
-            signals[ALU_DB] = opcode is <= 7 and >= 2 or 9;
-            signals[RAM_DB] = opcode is 14;
-            signals[NPC_AB] = opcode is not (10 or 11 or 12 or 13);
-            signals[IMM_AB] = opcode is 10 or 12;
-            signals[STACK_AB] = opcode is 13;
-            signals[HALT] = opcode is 1;
-
-            if (opcode == 11) {
-                if (takeBranch) {
-                    signals[NPC_AB] = false;
-                    signals[IMM_AB] = true;
-                } else {
-                    signals[NPC_AB] = true;
-                    signals[IMM_AB] = false;
-                }
-            }
-
-            if (reset) {
-                signals[PC_EN] = true;
-                signals[NPC_AB] = false;
-                signals[IMM_AB] = false;
-                signals[STACK_AB] = false;
-            }
-            
-            ioHandler.OutputBoolArray(signals);
+            //TODO: Implement
         }
     }
 

@@ -17,6 +17,7 @@ CirnosCircuits.BATPU2CU: "Control Unit (BATPU-2)"
 CirnosCircuits.StackUnit: "Call Stack"
 CirnosCircuits.ProgramRomBatPU: "Program ROM (BATPU-2)"
 CirnosCircuits.ProgramRom65c02: "Program ROM (6502/65c02)"
+CirnosCircuits.ControlUnit6502: "6502 Control Unit"
 
 ComponentCategory.Display: "Massive Displays"
 CirnosCircuits.SquareDisplay64: "Square Display (64x64)"
