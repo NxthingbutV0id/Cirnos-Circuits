@@ -93,19 +93,21 @@ public abstract class DisplayUnit : LogicComponent {
         ioHandler.ClearOutputs(); // Update outputs
     }
 }
-
+// Too big, will crash saves
 public class SquareDisplay32 : DisplayUnit {
     protected override int width => 32;
     protected override int height => 32;
 }
 
+// Too big, will crash saves
+public class SquareDisplay64 : DisplayUnit {
+    protected override int width => 64;
+    protected override int height => 64;
+}
+
+// Massive... Will cause major lag
 public class GameBoyDisplay : DisplayUnit {
     protected override int width => 160;
     protected override int height => 144;
     
-}
-
-public class SquareDisplay64 : DisplayUnit {
-    protected override int width => 64;
-    protected override int height => 64;
 }

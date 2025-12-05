@@ -1,6 +1,7 @@
 ﻿using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
+	// One tick pulse on rising edge
 	public class RisingEdgeMono: LogicComponent {
 		private bool prevTick;
 		protected override void Initialize() {
@@ -16,6 +17,7 @@ namespace CirnosCircuits {
         }
 	}
 	
+	// One tick pulse on falling edge
 	public class FallingEdgeMono: LogicComponent {
 		private bool prevTick;
 		protected override void Initialize() {
@@ -31,6 +33,7 @@ namespace CirnosCircuits {
 		}
 	}
 	
+	// One tick pulse on any transition
 	public class DualEdgeMono: LogicComponent {
 		private bool prevTick;
 		protected override void Initialize() {

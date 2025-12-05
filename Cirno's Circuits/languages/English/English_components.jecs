@@ -12,18 +12,7 @@ CirnosCircuits.HexToSevenSeg: "Hexadecimal to 7-Segment Decoder (with Ripple Bla
 CirnosCircuits.HexTo5x7Matrix: "Hexadecimal to 5x7 Matrix Decoder"
     
 ComponentCategory.CPUs: "Processor Components"
-CirnosCircuits.BatPU2: "BATPU-2 Processor"
-CirnosCircuits.BATPU2CU: "Control Unit (BATPU-2)"
-CirnosCircuits.StackUnit: "Call Stack"
-CirnosCircuits.ProgramRomBatPU: "Program ROM (BATPU-2)"
-CirnosCircuits.ProgramRom65c02: "Program ROM (6502/65c02)"
 CirnosCircuits.ControlUnit6502: "6502 Control Unit"
-
-ComponentCategory.Display: "Massive Displays"
-CirnosCircuits.SquareDisplay64: "Square Display (64x64)"
-CirnosCircuits.SquareDisplay32: "Square Display (32x32)"
-CirnosCircuits.GBDisplay: "Game Boy Display (160x144)"
-CirnosCircuits.BatCharDisplay: "BATPU Character Display (3x5)"
 
 ComponentCategory.Decoders: "Decoders"
 CirnosCircuits.Decoder2Bit: "2-4 Decoder"

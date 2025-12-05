@@ -32,6 +32,7 @@ namespace CirnosCircuits {
         protected override int NumberOfOutputs => 16;
     }
     
+    // Note: TOO FUCKING BIG, CRASHES SAVES
     public class DeMux8Bit: DeMux {
         protected override int NumberOfOutputs => 256;
     }

@@ -3,14 +3,12 @@
 namespace CirnosCircuits {
     public abstract class Register : LogicComponent {
         protected abstract int Bits { get; }
-        private IOHandler ioHandler;
         private bool[] data;
         private bool prevClk;
         private bool clk;
         private bool enable;
         private bool reset;
         protected override void Initialize() {
-            ioHandler = new IOHandler(Inputs, Outputs);
             prevClk = false;
             enable = false;
             reset = false;
@@ -18,25 +16,27 @@ namespace CirnosCircuits {
         }
 
         protected override void DoLogicUpdate() {
-            ioHandler.ClearOutputs();
             clk = Inputs[Bits].On;
             enable = Inputs[Bits + 1].On;
             reset = Inputs[Bits + 2].On;
-            
-            bool risingEdge = !prevClk && clk;
 
-            if (reset && risingEdge) {
-                for (int i = 0; i < Bits; i++) {
+            if (!prevClk && clk && enable && !reset) {
+                for (var i = 0; i < Bits; i++) {
+                    data[i] = Inputs[i].On;
+                }
+            }
+            
+            if (reset) {
+                for (var i = 0; i < Bits; i++) {
                     data[i] = false;
                 }
             }
             
-            if (enable && risingEdge) {
-                data = ioHandler.GrabBoolArrayFromInput(0, Bits);
+            for (var i = 0; i < Bits; i++) {
+                Outputs[i].On = data[i];
             }
 
             prevClk = clk;
-            ioHandler.OutputBoolArray(data);
         }
     }
     

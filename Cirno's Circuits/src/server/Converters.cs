@@ -21,16 +21,16 @@ namespace CirnosCircuits {
 	    }
 
 		protected override void DoLogicUpdate() {
-			ulong result = 0ul;
-			byte[] temp = new byte[10];
+			var result = 0ul;
+			var temp = new byte[10];
 			
-			for (int i = 0; i < 10; i++) {
+			for (var i = 0; i < 10; i++) {
 				temp[i] = ioHandler.GetInputAs<byte>(8 * i);
 			}
 
-			int power = 0;
-			for (int i = 0; i < 10; i++) {
-				ulong num = (ulong)temp[i] & 0xf;
+			var power = 0;
+			for (var i = 0; i < 10; i++) {
+				var num = (ulong)temp[i] & 0xf;
 				if (num > 9) num = 9;
 				result += num * Pow(10, power);
 
@@ -65,6 +65,120 @@ namespace CirnosCircuits {
 			}
 			var output = Segment.GetSegmentCode(input);
 			ioHandler.OutputNumber(output);
+		}
+	}
+
+	public class ByteToSevenSeg : LogicComponent {
+		private IOHandler ioHandler;
+		private const int Signed = 8;
+		
+		protected override void Initialize() {
+			ioHandler = new IOHandler(Inputs, Outputs);
+		}
+
+		protected override void DoLogicUpdate() {
+			ioHandler.ClearOutputs();
+			if (Inputs[Signed].On) {
+				var input = ioHandler.GetInputAs<sbyte>();
+				var sign = input < 0 ? 1 : 0;
+				var absInput = (input ^ (input >> 7)) - (input >> 7);
+				
+				var units = absInput % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(units));
+				if (absInput < 10) { 
+					ioHandler.OutputNumber(sign, 7);
+					return; 
+				}
+				var tens = (absInput / 10) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(tens), 7);
+				if (absInput < 100) { 
+					ioHandler.OutputNumber(sign, 14);
+					return; 
+				}
+				var hundreds = (absInput / 100) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(hundreds), 14);
+				ioHandler.OutputNumber(sign, 21);
+			} else {
+				var input = ioHandler.GetInputAs<byte>();
+				
+				var units = input % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(units));
+				
+				if (input < 10) { return; }
+				var tens = (input / 10) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(tens), 7);
+				
+				if (input < 100) { return; }
+				var hundreds = (input / 100) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(hundreds), 14);
+			}
+		}
+	}
+	
+	public class WordToSevenSeg : LogicComponent {
+		private IOHandler ioHandler;
+		private const int Signed = 16;
+		
+		protected override void Initialize() {
+			ioHandler = new IOHandler(Inputs, Outputs);
+		}
+
+		protected override void DoLogicUpdate() {
+			ioHandler.ClearOutputs();
+			if (Inputs[Signed].On) {
+				var input = ioHandler.GetInputAs<short>();
+				var sign = input < 0 ? 1 : 0;
+				var absInput = (input ^ (input >> 15)) - (input >> 15);
+				
+				var units = absInput % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(units));
+				if (absInput < 10) { 
+					ioHandler.OutputNumber(sign, 7);
+					return; 
+				}
+				var tens = (absInput / 10) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(tens), 7);
+				if (absInput < 100) { 
+					ioHandler.OutputNumber(sign, 14);
+					return; 
+				}
+				var hundreds = (absInput / 100) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(hundreds), 14);
+				if (absInput < 1000) {
+					ioHandler.OutputNumber(sign, 21);
+					return;
+				}
+				var thousands = (absInput / 1000) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(thousands), 21);
+				if (absInput < 10000) {
+					ioHandler.OutputNumber(sign, 28);
+					return;
+				}
+				var tenThousands = (absInput / 10000) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(tenThousands), 28);
+				ioHandler.OutputNumber(sign, 35);
+			} else {
+				var input = ioHandler.GetInputAs<ushort>();
+				
+				var units = input % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(units));
+				
+				if (input < 10) { return; }
+				var tens = (input / 10) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(tens), 7);
+				
+				if (input < 100) { return; }
+				var hundreds = (input / 100) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(hundreds), 14);
+				
+				if (input < 1000) { return; }
+				var thousands = (input / 1000) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(thousands), 21);
+				
+				if (input < 10000) { return; }
+				var tenThousands = (input / 10000) % 10;
+				ioHandler.OutputNumber(Segment.GetSegmentCode(tenThousands), 28);
+			}
 		}
 	}
 	

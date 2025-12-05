@@ -1,39 +1,38 @@
-# Cirno's Circuits (V0.5.0)
+# Cirno's Circuits (V0.5.1)
 
-A mod for Logic World (v0.92 Preview).
-A random assortment of parts and logic.
+A random assortment of parts and logic for Logic World (v0.92.1).
 
 ![image](MainImage.jpg)
 
-## Includes:
-
-- Multiplexers
-- Decoders
-- Ascii to 5x7 matrix
-- Sideways Logic Gates!
-- Big Relays
-- Big D-Latches
-- D-Flip Flops
+## Components Included:
+- Adders
+- Dividers
+- Multipliers
 - Comparators
-- BCD to binary Converter (19 digits to 64 bits)
-- Edge Detector (Rising and Falling)
-- JK Flip-Flop
-- SR-Latch
-- Integer and Float Printers
-- 8, 16, and 32 Bit Adders
-- 8, 16, and 32 Bit Multipliers
-- 8, 16, and 32 Bit Dividers
-- De-Multiplexers
+- BCD to Binary Converter
+- Hex to 7-Segment Decoder
 - Counters
+- Decoders
+- Multiplexers 
+- Demultiplexers
+- Integer Printers
+- Float Printers
+- Extended Relays
+- Sideways AND, OR, XOR, NAND, NOR, XNOR Gates
+- Extended D-Latches
+- D-Flip Flops
+- JK Flip Flop
+- SR Latch
+- T-Flip Flop
+- Single and Dual Read Registers
+- Ascii Display ROM
+- Edge Detector (Rising, Falling, and Dual)
 
-## Future Plans
+### Experimental (might be deleted in future releases)
 
-- Binary to BCD 7 segment with ripple blanking and negative support
-- Binary to Fractional BCD (fixed point values from 0.0000... to 0.9999...)
-- Pulse Extender
-- Thinner switches
-- 14 and 16 segment displays
-- Text input to Binary (type in "42", output 101010)
+- 6502 Control Unit
+- 8-to-256 Decoder* (Unstable, might corrupt save files)
+- Synchronous RAM (256B and 1kB)
 
 ## Install
 
