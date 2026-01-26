@@ -2682,3 +2682,362 @@ BitRegister:
     logicCode: CirnosCircuits.BitRegister
     placingRules:
         allowFineRotation: false
+RAM16M:
+    column: CirnosCircuits
+    category: Memory
+    prefab:
+        blocks:
+            -
+                color: cc5516
+                scale: (32, 2, 1)
+                position: (-15.5, 0, 0)
+                rotation: (0, 0, 0)
+        inputs:
+            - # Data (0)
+                length: 0.6
+                position: (0, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (1)
+                length: 0.6
+                position: (-1, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (2)
+                length: 0.6
+                position: (-2, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (3)
+                length: 0.6
+                position: (-3, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (4)
+                length: 0.6
+                position: (-4, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (5)
+                length: 0.6
+                position: (-5, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (6)
+                length: 0.6
+                position: (-6, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (7)
+                length: 0.6
+                position: (-7, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (8)
+                length: 0.6
+                position: (-8, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (9)
+                length: 0.6
+                position: (-9, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (10)
+                length: 0.6
+                position: (-10, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (11)
+                length: 0.6
+                position: (-11, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (12)
+                length: 0.6
+                position: (-12, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (13)
+                length: 0.6
+                position: (-13, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (14)
+                length: 0.6
+                position: (-14, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (15)
+                length: 0.6
+                position: (-15, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (16)
+                length: 0.6
+                position: (-16, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (17)
+                length: 0.6
+                position: (-17, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (18)
+                length: 0.6
+                position: (-18, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (19)
+                length: 0.6
+                position: (-19, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (20)
+                length: 0.6
+                position: (-20, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (21)
+                length: 0.6
+                position: (-21, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (22)
+                length: 0.6
+                position: (-22, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (23)
+                length: 0.6
+                position: (-23, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (24)
+                length: 0.6
+                position: (-24, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (25)
+                length: 0.6
+                position: (-25, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (26)
+                length: 0.6
+                position: (-26, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (27)
+                length: 0.6
+                position: (-27, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (28)
+                length: 0.6
+                position: (-28, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (29)
+                length: 0.6
+                position: (-29, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (30)
+                length: 0.6
+                position: (-30, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Data (31)
+                length: 0.6
+                position: (-31, 0.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (0)
+                length: 0.6
+                position: (0, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (1)
+                length: 0.6
+                position: (-1, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (2)
+                length: 0.6
+                position: (-2, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (3)
+                length: 0.6
+                position: (-3, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (4)
+                length: 0.6
+                position: (-4, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (5)
+                length: 0.6
+                position: (-5, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (6)
+                length: 0.6
+                position: (-6, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (7)
+                length: 0.6
+                position: (-7, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (8)
+                length: 0.6
+                position: (-8, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (9)
+                length: 0.6
+                position: (-9, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (10)
+                length: 0.6
+                position: (-10, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (11)
+                length: 0.6
+                position: (-11, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (12)
+                length: 0.6
+                position: (-12, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (13)
+                length: 0.6
+                position: (-13, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (14)
+                length: 0.6
+                position: (-14, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (15)
+                length: 0.6
+                position: (-15, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (16)
+                length: 0.6
+                position: (-16, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (17)
+                length: 0.6
+                position: (-17, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (18)
+                length: 0.6
+                position: (-18, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (19)
+                length: 0.6
+                position: (-19, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (20)
+                length: 0.6
+                position: (-20, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (21)
+                length: 0.6
+                position: (-21, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (22)
+                length: 0.6
+                position: (-22, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Address (23)
+                length: 0.6
+                position: (-23, 1.5, -0.5)
+                rotation: (270, 0, 0)
+            - # Type Select (0)
+                length: 0.4
+                position: (0, 2, 0)
+                rotation: (0, 0, 0)
+            - # Type Select (1)
+                length: 0.4
+                position: (-1, 2, 0)
+                rotation: (0, 0, 0)
+            - # Clock
+                length: 0.6
+                position: (-2, 2, 0)
+                rotation: (0, 0, 0)
+            - # Write Enable
+                length: 0.6
+                position: (-3, 2, 0)
+                rotation: (0, 0, 0)
+            - # Reset
+                length: 0.6
+                position: (-4, 2, 0)
+                rotation: (0, 0, 0)
+            - # Chip Enable
+                length: 0.6
+                position: (-5, 2, 0)
+                rotation: (0, 0, 0)
+        outputs:
+            - # Data (0)
+                position: (0, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (1)
+                position: (-1, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (2)
+                position: (-2, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (3)
+                position: (-3, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (4)
+                position: (-4, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (5)
+                position: (-5, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (6)
+                position: (-6, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (7)
+                position: (-7, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (8)
+                position: (-8, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (9)
+                position: (-9, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (10)
+                position: (-10, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (11)
+                position: (-11, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (12)
+                position: (-12, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (13)
+                position: (-13, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (14)
+                position: (-14, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (15)
+                position: (-15, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (16)
+                position: (-16, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (17)
+                position: (-17, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (18)
+                position: (-18, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (19)
+                position: (-19, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (20)
+                position: (-20, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (21)
+                position: (-21, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (22)
+                position: (-22, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (23)
+                position: (-23, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (24)
+                position: (-24, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (25)
+                position: (-25, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (26)
+                position: (-26, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (27)
+                position: (-27, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (28)
+                position: (-28, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (29)
+                position: (-29, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (30)
+                position: (-30, 0.5, 0.5)
+                rotation: (90, 0, 0)
+            - # Data (31)
+                position: (-31, 0.5, 0.5)
+                rotation: (90, 0, 0)
+    logicCode: CirnosCircuits.MultiByteRam
+    placingRules:
+        allowFineRotation: false

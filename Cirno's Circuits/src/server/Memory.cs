@@ -332,11 +332,10 @@ namespace CirnosCircuits {
     public class MultiByteRam : LogicComponent {
         private IOHandler ioHandler;
         private byte[] data;
-        private bool prevClk, clk, writeEnable, readEnable, reset, chipEnable;
-        private int address, dataType, clockIndex, writeIndex, resetIndex, chipEnableIndex, total;
-        private const int dataBits = 32;
-        private const int dataTypeBits = 2;
-        private const int addressBits = 16;
+        private bool prevClk, clk, writeEnable, reset, chipEnable;
+        private int address, dataType, total;
+        private const int DataBits = 32;
+        private const int AddressBits = 24;
         private const int Byte = 0;
         private const int Word = 1;
         private const int DWord = 2;
@@ -347,28 +346,25 @@ namespace CirnosCircuits {
             writeEnable = false;
             reset = false;
             chipEnable = false;
-            total = 1 << addressBits;
+            total = 0x1000000; // 16 MB
             data = new byte[total];
-            clockIndex = dataBits + dataTypeBits + addressBits;
-            writeIndex = clockIndex + 1;
-            resetIndex = writeIndex + 1;
-            chipEnableIndex = resetIndex + 1;
             dataType = 0;
         }
 
         protected override void DoLogicUpdate() {
             var inputData = ioHandler.GetInputAs<int>();
-            address = ioHandler.GetInputAs<int>(32) & 0xffff;
-            dataType = ioHandler.GetInputAs<int>(48) & 0x3;
+            address = ioHandler.GetInputAs<int>(DataBits) & 0xFFFFFF;
+            var controlBits = ioHandler.GetInputAs<int>(DataBits+AddressBits);
 
+            dataType = controlBits & 0x3;
             if (dataType == 3) {
                 dataType = 2;
             }
 
-            clk = Inputs[clockIndex].On;
-            writeEnable = Inputs[writeIndex].On;
-            reset = Inputs[resetIndex].On;
-            chipEnable = Inputs[chipEnableIndex].On;
+            clk = ((controlBits >> 2) & 0x1) == 1;
+            writeEnable = ((controlBits >> 3) & 0x1) == 1;
+            reset = ((controlBits >> 4) & 0x1) == 1;
+            chipEnable = ((controlBits >> 5) & 0x1) == 1;
             var risingEdge = !prevClk && clk;
             
             if (!chipEnable) {
@@ -393,16 +389,14 @@ namespace CirnosCircuits {
                 }
             }
 
-            if (readEnable) {
-                ioHandler.ClearOutputs();
-                var outputData = dataType switch {
-                    Byte => data[address],
-                    Word => (data[address] << 8) | data[address + 1],
-                    DWord => (data[address] << 24) | (data[address + 1] << 16) | (data[address + 2] << 8) | data[address + 3],
-                    _ => 0
-                };
-                ioHandler.OutputNumber(outputData);
-            }
+            ioHandler.ClearOutputs();
+            var outputData = dataType switch {
+                Byte => data[address],
+                Word => (data[address] << 8) | data[address + 1],
+                DWord => (data[address] << 24) | (data[address + 1] << 16) | (data[address + 2] << 8) | data[address + 3],
+                _ => 0
+            };
+            ioHandler.OutputNumber(outputData);
 
             if (reset) { for (var i = 0; i < total; i++) { data[i] = 0; } }
             

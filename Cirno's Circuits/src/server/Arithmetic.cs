@@ -68,20 +68,24 @@ namespace CirnosCircuits {
         protected override void DoLogicUpdate() {
             ioHandler.ClearOutputs();
             if (Inputs[16].On) {
-                sbyte quotient = 0, remainder = 0;
-                sbyte a = ioHandler.GetInputAs<sbyte>();
-                sbyte b = ioHandler.GetInputAs<sbyte>(8);
+                sbyte quotient, remainder;
+                var a = ioHandler.GetInputAs<sbyte>();
+                var b = ioHandler.GetInputAs<sbyte>(8);
                 
-                if (b != 0) {
+                if (a == sbyte.MinValue && b == -1) {
+                    (quotient, remainder) = (a, 0);
+                } else if (b == 0) {
+                    (quotient, remainder) = (0, -1);
+                } else {
                     (quotient, remainder) = Math.DivRem(a, b);
                 }
-            
+
                 ioHandler.OutputNumber(quotient);
                 ioHandler.OutputNumber(remainder, 8);
             } else {
                 byte quotient = 0, remainder = 0xff;
-                byte a = ioHandler.GetInputAs<byte>();
-                byte b = ioHandler.GetInputAs<byte>(8);
+                var a = ioHandler.GetInputAs<byte>();
+                var b = ioHandler.GetInputAs<byte>(8);
                 
                 if (b != 0) {
                     (quotient, remainder) = Math.DivRem(a, b);
@@ -102,11 +106,15 @@ namespace CirnosCircuits {
         protected override void DoLogicUpdate() {
             ioHandler.ClearOutputs();
             if (Inputs[32].On) {
-                short quotient = 0, remainder = 0;
-                short a = ioHandler.GetInputAs<short>();
-                short b = ioHandler.GetInputAs<short>(16);
+                short quotient, remainder;
+                var a = ioHandler.GetInputAs<short>();
+                var b = ioHandler.GetInputAs<short>(16);
                 
-                if (b != 0) {
+                if (a == short.MinValue && b == -1) {
+                    (quotient, remainder) = (a, 0);
+                } else if (b == 0) {
+                    (quotient, remainder) = (0, -1);
+                } else {
                     (quotient, remainder) = Math.DivRem(a, b);
                 }
             
@@ -114,8 +122,8 @@ namespace CirnosCircuits {
                 ioHandler.OutputNumber(remainder, 16);
             } else {
                 ushort quotient = 0, remainder = 0xffff;
-                ushort a = ioHandler.GetInputAs<ushort>();
-                ushort b = ioHandler.GetInputAs<ushort>(16);
+                var a = ioHandler.GetInputAs<ushort>();
+                var b = ioHandler.GetInputAs<ushort>(16);
                 
                 if (b != 0) {
                     (quotient, remainder) = Math.DivRem(a, b);
@@ -136,15 +144,20 @@ namespace CirnosCircuits {
         protected override void DoLogicUpdate() {
             ioHandler.ClearOutputs();
             if (Inputs[64].On) {
-                int a = ioHandler.GetInputAs<int>();
-                int b = ioHandler.GetInputAs<int>(32);
-                (int quotient, int remainder) = b == 0 ? (0, 0) : Math.DivRem(a, b);
-            
+                var a = ioHandler.GetInputAs<int>();
+                var b = ioHandler.GetInputAs<int>(32);
+                int quotient, remainder;
+                if (a == int.MinValue && b == -1) {
+                    (quotient, remainder) = (a, 0);
+                } else {
+                    (quotient, remainder) = b == 0 ? (0, -1) : Math.DivRem(a, b);
+                }
+
                 ioHandler.OutputNumber(quotient);
                 ioHandler.OutputNumber(remainder, 32);
             } else {
-                uint a = ioHandler.GetInputAs<uint>();
-                uint b = ioHandler.GetInputAs<uint>(32);
+                var a = ioHandler.GetInputAs<uint>();
+                var b = ioHandler.GetInputAs<uint>(32);
                 (uint quotient, uint remainder) = b == 0 ? (0, 0xffffffff) : Math.DivRem(a, b);
             
                 ioHandler.OutputNumber(quotient);
@@ -225,107 +238,67 @@ namespace CirnosCircuits {
         }
     }
 
-    public class ByteALU : LogicComponent {
+    public class RISCVALU : LogicComponent {
         private IOHandler ioHandler;
-
-        protected override void Initialize() {
-            ioHandler = new IOHandler(Inputs, Outputs);
-        }
+        private const int AND    = 0b00000;
+        private const int OR     = 0b00001;
+        private const int ADD    = 0b00010;
+        private const int XOR    = 0b00011;
+        private const int SUB    = 0b00110;
+        private const int SLT    = 0b00111;
+        private const int SRL    = 0b01000;
+        private const int SRA    = 0b01001;
+        private const int SLTU   = 0b01010;
+        private const int SLL    = 0b01011;
+        private const int MUL    = 0b01100;
+        private const int MULH   = 0b01101;
+        private const int MULHU  = 0b01110;
+        private const int MULHSU = 0b01111;
+        private const int DIV    = 0b10000;
+        private const int DIVU   = 0b10001;
+        private const int REM    = 0b10010;
+        private const int REMU   = 0b10011;
         
-        protected override void DoLogicUpdate() {
-            byte ua = ioHandler.GetInputAs<byte>();
-            sbyte sa = ioHandler.GetInputAs<sbyte>();
-            byte b = ioHandler.GetInputAs<byte>(8);
-            byte operation = ioHandler.GetInputAs<byte>(16);
-            ushort result = 0;
-            if (operation == 0) {
-                result = (ushort) (ua + b);
-            } else if (operation == 1) {
-                result = (ushort) (ua - b);
-            } else if (operation == 2) {
-                result = (ushort) (ua & b);
-            } else if (operation == 3) {
-                result = (ushort) (ua | b);
-            } else if (operation == 4) {
-                result = (ushort) (ua ^ b);
-            } else if (operation == 5) {
-                result = (ushort) (ua << b);
-            } else if (operation == 6) {
-                result = (ushort) (ua >> b);
-            } else if (operation == 7) {
-                result = (ushort) (sa >> b);
-            }
-
-            ioHandler.OutputNumber(result);
-        }
-    }
-
-    public class WordALU : LogicComponent {
-        private IOHandler ioHandler;
-
         protected override void Initialize() {
             ioHandler = new IOHandler(Inputs, Outputs);
         }
 
         protected override void DoLogicUpdate() {
-            ushort ua = ioHandler.GetInputAs<ushort>();
-            short sa = ioHandler.GetInputAs<short>();
-            ushort b = ioHandler.GetInputAs<ushort>(16);
-            byte operation = ioHandler.GetInputAs<byte>(32);
-            uint result = 0;
-            if (operation == 0) {
-                result = (uint) (ua + b);
-            } else if (operation == 1) {
-                result = (uint) (ua - b);
-            } else if (operation == 2) {
-                result = (uint) (ua & b);
-            } else if (operation == 3) {
-                result = (uint) (ua | b);
-            } else if (operation == 4) {
-                result = (uint) (ua ^ b);
-            } else if (operation == 5) {
-                result = (uint) (ua << b);
-            } else if (operation == 6) {
-                result = (uint) (ua >> b);
-            } else if (operation == 7) {
-                result = (uint) (sa >> b);
-            }
-
-            ioHandler.OutputNumber(result);
-        }
-    }
-
-    public class DWordALU : LogicComponent {
-        private IOHandler ioHandler;
-
-        protected override void Initialize() {
-            ioHandler = new IOHandler(Inputs, Outputs);
-        }
-
-        protected override void DoLogicUpdate() {
-            uint ua = ioHandler.GetInputAs<uint>();
-            int sa = ioHandler.GetInputAs<int>();
-            uint b = ioHandler.GetInputAs<uint>(32);
-            byte operation = ioHandler.GetInputAs<byte>(64);
-            ulong result = 0;
-            if (operation == 0) {
-                result = ua + b;
-            } else if (operation == 1) {
-                result = ua - b;
-            } else if (operation == 2) {
-                result = ua & b;
-            } else if (operation == 3) {
-                result = ua | b;
-            } else if (operation == 4) {
-                result = ua ^ b;
-            } else if (operation == 5) {
-                result = ua << (int) b;
-            } else if (operation == 6) {
-                result = ua >> (int) b;
-            } else if (operation == 7) {
-                result = (ulong) sa >> (int) b;
-            }
-
+            var a = ioHandler.GetInputAs<int>();
+            var b = ioHandler.GetInputAs<int>(32);
+            var opcode = ioHandler.GetInputAs<byte>(64) & 0b11111;
+            var tempA = (long)a;
+            var tempB = (long)(uint)b;
+            var usA = (ulong)(uint)a;
+            var usB = (ulong)(uint)b;
+            var seA = (long)a;
+            var seB = (long)b;
+            var uA = (uint)a;
+            var uB = (uint)b;
+            
+            var result = opcode switch {
+                AND => a & b,                     
+                OR => a | b,                     
+                ADD => a + b,                     
+                XOR => a ^ b,                     
+                SUB => a - b,                     
+                SLT => a < b ? 1 : 0,           
+                SRL => a >>> (b & 0x1F), 
+                SRA => a >> (b & 0x1F), 
+                SLTU => uA < uB ? 1 : 0,
+                SLL => a << (b & 0x1F),           
+                MUL => a * b,                     
+                MULH => (int)((seA * seB) >> 32), 
+                MULHU => (int)((usA * usB) >> 32), 
+                MULHSU => (int)((tempA * tempB) >> 32), 
+                DIV => b == 0 ? -1 : a / b,       
+                DIVU => b == 0 ? -1 : (int)(uA / uB), 
+                REM => b == 0 ? a : a % b,        
+                REMU => b == 0 ? (int)(uint)a : (int)(uA % uB), 
+                _ => 0
+            };
+            
+            ioHandler.ClearOutputs();
             ioHandler.OutputNumber(result);
         }
     }

@@ -2,10 +2,24 @@ using System;
 using LogicAPI.Server.Components;
 
 namespace CirnosCircuits {
+    public class CTI8ControlUnit : LogicComponent {
+        private IOHandler ioHandler;
+        // TODO
+
+        protected override void Initialize() {
+            ioHandler = new IOHandler(Inputs, Outputs);
+        }
+
+        protected override void DoLogicUpdate() {
+            var instruction = ioHandler.GetInputAs<byte>();
+            var state = ioHandler.GetInputAs<byte>(8);
+            var flag = Inputs[16].On;
+            ulong controlSignals = 0;
+        }
+    }
     public enum Opcode {
         NOP, HLT, ADD, SUB, NOR, AND, XOR, RSH, LDI, ADI, JMP, BRH, CAL, RET, LDR, STR
     }
-
     public class BatPU2 : LogicComponent {
         private IOHandler ioHandler;
         private ushort[] callStack;
@@ -329,7 +343,6 @@ namespace CirnosCircuits {
             registerFile[regIndex] = value;
         }
     }
-
     public class Alu6502 : LogicComponent {
         private IOHandler ioHandler;
         private bool decimalMode;
@@ -477,7 +490,6 @@ namespace CirnosCircuits {
             ioHandler.OutputNumber((byte)~a);
         }
     }
-
     public class WozMon : LogicComponent {
         private IOHandler ioHandler;
         private const ushort StartAddress = 0xFF00;
@@ -627,7 +639,6 @@ namespace CirnosCircuits {
             ioHandler.OutputNumber(romData[offset]);
         }
     }
-
     public class ControlUnit6502 : LogicComponent {
         private IOHandler ioHandler;
         private readonly uint[] decodeRom = {
@@ -1155,4 +1166,6 @@ namespace CirnosCircuits {
             ioHandler.OutputNumber(decodeRom[address]);
         }
     }
+    
+    
 }

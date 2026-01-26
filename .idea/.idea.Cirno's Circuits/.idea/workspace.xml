@@ -6,27 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="057aa8a0-d3da-4c24-9590-85158f1c0cec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cirno's Circuits/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/misc.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/squaredisplay32.jecs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/memory.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/memory.jecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/components/sidewayslogic.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/components/sidewayslogic.jecs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/languages/English/English_components.jecs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/manifest.jecs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/manifest.jecs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/programs/2048.hex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/programs/dvd.hex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/programs/gol.hex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/programs/helloworld.hex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/programs/maze.mc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/programs/tetris.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Arithmetic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Arithmetic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/CPU.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Converters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Loader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Memory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Misc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Misc.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/MonoStable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/MonoStable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Plexers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Plexers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cirno's Circuits/src/server/Screens.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cirno's Circuits/src/server/Screens.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CirnosCircuits.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CirnosCircuits.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Docs.md" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Docs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +67,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -92,7 +78,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -169,7 +154,11 @@
       <workItem from="1753587504170" duration="1831000" />
       <workItem from="1764477882674" duration="172000" />
       <workItem from="1764478082573" duration="1284000" />
-      <workItem from="1764957137246" duration="5547000" />
+      <workItem from="1764957137246" duration="5804000" />
+      <workItem from="1765150594893" duration="1212000" />
+      <workItem from="1765586017369" duration="5654000" />
+      <workItem from="1765758098795" duration="3239000" />
+      <workItem from="1769397053959" duration="708000" />
     </task>
     <task id="LOCAL-00001" summary="Major update (V0.4.0)&#10;&#10;Changes:&#10;1 bit De-Multiplexer added&#10;2 bit De-Multiplexer added&#10;3 bit De-Multiplexer added&#10;4 bit De-Multiplexer added&#10;8 bit Counter added&#10;16 bit Counter added&#10;32 bit Counter added&#10;64 bit Counter added&#10;8 bit Adder fixed&#10;8 bit Comparator fixed&#10;All .succ files have been reformated to be much smaller&#10;IOHandler has been reworked for the 100th time">
       <option name="closed" value="true" />
@@ -323,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753085382823</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Removed experimental components&#10;Updated to most recent version of LW">
+      <option name="closed" value="true" />
+      <created>1764976282507</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1764976282507</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Forgot to update manifest.jecs">
+      <option name="closed" value="true" />
+      <created>1764976306530</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1764976306530</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +357,9 @@
     <MESSAGE value="TODO: Add Documentation, update README.md, and possibly remove the screens..." />
     <MESSAGE value="TODO: Stuff with 6502 and fix the dual read registers..." />
     <MESSAGE value="ummm, idk" />
-    <option name="LAST_COMMIT_MESSAGE" value="ummm, idk" />
+    <MESSAGE value="Removed experimental components&#10;Updated to most recent version of LW" />
+    <MESSAGE value="Forgot to update manifest.jecs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forgot to update manifest.jecs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
