@@ -165,7 +165,7 @@ namespace CirnosCircuits {
         private int address;
         private int clockIndex, writeIndex, resetIndex, chipEnableIndex, total;
         
-        protected abstract int addressBits { get; }
+        protected abstract int AddressBits { get; }
         
         protected override void Initialize() {
             ioHandler = new IOHandler(Inputs, Outputs);
@@ -173,9 +173,9 @@ namespace CirnosCircuits {
             writeEnable = false;
             reset = false;
             chipEnable = false;
-            total = 1 << addressBits;
+            total = 1 << AddressBits;
             data = new byte[total];
-            clockIndex = 8 + addressBits;
+            clockIndex = 8 + AddressBits;
             writeIndex = clockIndex + 1;
             resetIndex = writeIndex + 1;
             chipEnableIndex = resetIndex + 1;
@@ -183,7 +183,7 @@ namespace CirnosCircuits {
 
         protected override void DoLogicUpdate() {
             var inputData = ioHandler.GetInputAs<byte>();
-            address = ioHandler.GetInputAs<int>(8) & (addressBits - 1);
+            address = ioHandler.GetInputAs<int>(8) & (total - 1);
             clk = Inputs[clockIndex].On;
             writeEnable = Inputs[writeIndex].On;
             reset = Inputs[resetIndex].On;
@@ -208,35 +208,35 @@ namespace CirnosCircuits {
     }
     
     public class RAM256 : BaseRam {
-        protected override int addressBits => 8;
+        protected override int AddressBits => 8;
     }
     
     public class RAM1k : BaseRam {
-        protected override int addressBits => 10;
+        protected override int AddressBits => 10;
     }
 
     public class RAM2k : BaseRam {
-        protected override int addressBits => 11;
+        protected override int AddressBits => 11;
     }
     
     public class RAM4k : BaseRam {
-        protected override int addressBits => 12;
+        protected override int AddressBits => 12;
     }
     
     public class RAM8k : BaseRam {
-        protected override int addressBits => 13;
+        protected override int AddressBits => 13;
     }
     
     public class RAM16k : BaseRam {
-        protected override int addressBits => 14;
+        protected override int AddressBits => 14;
     }
     
     public class RAM32k : BaseRam {
-        protected override int addressBits => 15;
+        protected override int AddressBits => 15;
     }
 
     public class RAM64k : BaseRam {
-        protected override int addressBits => 16;
+        protected override int AddressBits => 16;
     }
     
     public class DualReadRegisterFileBATPU : LogicComponent {
